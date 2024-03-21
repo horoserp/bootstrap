@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Bootstrap Examples</title>
+
+    <!-- Common Metadata -->
+    <meta name="description" content="My examples of Bootstrap 5.0 fundamentals from W3Schools.">
+    <meta name="author" content="Robert P. Horosewski">
+    <meta name="language" content="english">
+
+    <!-- Open Graph Protocol - used to set up Cards on social media -->
+    <!-- The OPG does not work as we do not have an actual url to use. -->
+    <meta property="og:title" content="Bootstrap Examples">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://horoserp.github.io/bootstrap">
+    <meta property="og:image" content="bootstrap-logo-shadow.png">
+    <meta property="og:description" content="My examples of Bootstrap 5.0 fundamentals from W3Schools.">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Icons for Tabs in Web Browser -->
+    <link rel="icon" href="bootstrap-logo-shadow.png" type="png">
+
+    <!-- Boothstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--My own stylesheet-->
+    <link href="style.css" rel="stylesheet">
+    <!-- Latest compiled BS5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="my-3 border border-3">
+        <h1>This is the Header.</h1>
+        <h2>All <code>div</code> and <code>section</code> elements have <code>my-3</code> and <code>border-3</code> applied to them.</h2>
+    </header>
+    <nav class="my-3 border border-3">
+        <h1>This is the Nav.</h1>
+    </nav>
+    <section class="my-3 border border-3">
+        <h1>Containers:</h1>
+        <div class="container my-3 border border-primary">
+            <h2>This is a fixed width container.</h2>
+            <p>By default, containers have left and right padding only, no top or bottom. </p>
+        </div>
+        <div class="container-fluid my-3 pt-5 border border-danger border-2 bg-dark text-white">
+            <h2>This is a full width container.</h2>
+            <p>It has top padding of 5, as well as a dark background with white text.</p>
+        </div>
+        <div class="conatiner my-3">
+            <div class="container-md border border-warning">
+                <h2>This is a Responsive Container.</h2>
+                <p>It is set with a medium breakpoint (720px). Default is small.</p>
+            </div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Grids:</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Example with 3 equal columns.</h2>
+            <div class="row">
+                <div class="col border">Column 1</div>
+                <div class="col border">Column 2</div>
+                <div class="col border">Column 3</div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-danger">
+            <h2>Reponsive columns that will stack on small devices.</h2>
+            <div class="row">
+                <div class="col-sm-3 border">Column 1</div>
+                <div class="col-sm-3 border">Column 2</div>
+                <div class="col-sm-3 border">Column 3</div>
+                <div class="col-sm-3 border">Column 4</div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-warning">
+            <h2>Two unequal responsive columns.</h2>
+            <div class="row">
+                <div class="col-sm-4 border">Column 1 uses 1/3.</div>
+                <div class="col-sm-8 border">Column 2 uses 2/3.</div>
+            </div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Text/Typography:</h1>
+        <div class="row">
+            <div class="col-sm-6 my-3 border border-3 border-primary">
+                <h2>Able to use <code>h1</code> - <code>h6</code> headings.</h2>
+                <h3>Create bolder font-weight and responsive font-size.</h3>
+                <h4>h3 = 1.3rem + .6vw</h4>
+            </div>
+            <div class="col-sm-6 my-3 border border-3 border-warning">
+                <h2>Display headings have larger font-size and lighter font-weight.</h2>
+                <div class="display-3">Display-3</div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2><code>Small</code> is used to create <small>smaller</small>, secondary text in any heading</h2>
+        </div>
+        <div class="my-3 pt-3 border border-3 border-danger">
+            <h2>Use <code>mark</code> to <mark>highlight</mark> text. Need to add <code>pt-3</code> to fit highlight inside.</h2>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Use <code>abbr</code> to add hover to word with <abbr title="explanation">xpl</abbr>.</h2>
+        </div>
+        <div class="my-3 border border-3 border-dark">
+            <h2>Other useful elements include: <code>blockquote, dl, code, kbd, pre,</code> etc.</h2>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Colors:</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Text</h2>
+            <div class="row">
+                <div class="col-sm-2 border text-muted">Muted</div>
+                <div class="col-sm-2 border text-primary">Primary (important)</div>
+                <div class="col-sm-2 border text-success">Success</div>
+                <div class="col-sm-2 border text-info">Information</div>
+                <div class="col-sm-2 border text-warning">Warning</div>
+                <div class="col-sm-2 border text-light bg-dark">Light</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 border text-danger">Danger</div>
+                <div class="col-sm-2 border text-secondary">Secondary</div>
+                <div class="col-sm-2 border text-white bg-dark">White</div>
+                <div class="col-sm-2 border text-dark">Dark</div>
+                <div class="col-sm-2 border text-body">Body</div>
+                <div class="col-sm-2 border"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 border text-black-50">Add 50% opacity to black text.</div>
+                <div class="col-sm-6 border text-white-50 bg-dark">Add 50% opacity to white text.</div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Background</h2>
+            <h3>Use <code>text-bg-*</code> for contrasting text colors.</h3>
+            <div class="row">
+                <div class="col-sm-3 border text-bg-primary">Primary</div>
+                <div class="col-sm-3 border text-bg-success">Success</div>
+                <div class="col-sm-3 border text-bg-info">Info</div>
+                <div class="col-sm-3 border text-bg-warning">Warning</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 border text-bg-danger">Danger</div>
+                <div class="col-sm-3 border text-bg-secondary">Secondary</div>
+                <div class="col-sm-3 border text-bg-dark">Dark</div>
+                <div class="col-sm-3 border text-bg-light">Light</div>
+            </div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Tables:</h1>
+        <h2>Tables have a light padding and horizontal dividers.</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Robert</td>
+                    <td>Peter</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Mary Lee</td>
+                    <td>Matuza</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Christopher</td>
+                    <td>Anthony</td>
+                    <td>Horosewski</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Striped</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Robert</td>
+                    <td>Peter</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Mary Lee</td>
+                    <td>Matuza</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Christopher</td>
+                    <td>Anthony</td>
+                    <td>Horosewski</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Bordered</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Robert</td>
+                    <td>Peter</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Mary Lee</td>
+                    <td>Matuza</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Christopher</td>
+                    <td>Anthony</td>
+                    <td>Horosewski</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Hover Rows</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Robert</td>
+                    <td>Peter</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Mary Lee</td>
+                    <td>Matuza</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Christopher</td>
+                    <td>Anthony</td>
+                    <td>Horosewski</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Black/Dark</h2>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Robert</td>
+                    <td>Peter</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Mary Lee</td>
+                    <td>Matuza</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Christopher</td>
+                    <td>Anthony</td>
+                    <td>Horosewski</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Dark Striped</h2>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Robert</td>
+                    <td>Peter</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Mary Lee</td>
+                    <td>Matuza</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Christopher</td>
+                    <td>Anthony</td>
+                    <td>Horosewski</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Hoverable Dark</h2>
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Robert</td>
+                    <td>Peter</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Mary Lee</td>
+                    <td>Matuza</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Christopher</td>
+                    <td>Anthony</td>
+                    <td>Horosewski</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Borderless</h2>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Robert</td>
+                    <td>Peter</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Mary Lee</td>
+                    <td>Matuza</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Christopher</td>
+                    <td>Anthony</td>
+                    <td>Horosewski</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Contextual Classes - whole table or individual rows or cells</h2>
+        <table class="table">
+            <thead>
+                <tr class="table-dark">
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-primary">
+                    <td>Robert</td>
+                    <td>Peter</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Mary Lee</td>
+                    <td class="text-bg-danger">Matuza</td>
+                    <td>Horosewski</td>
+                </tr>
+                <tr>
+                    <td>Christopher</td>
+                    <td>Anthony</td>
+                    <td>Horosewski</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Responsive - wrap table in <code>table-responsive</code> container.</h2>
+        <div class="table-responsive" id="resp-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Middle Name</th>
+                        <th>Last Name</th>
+                        <th>Nickname</th>
+                        <th>Birthday</th>
+                        <th>Favorite Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Robert</td>
+                        <td>Peter</td>
+                        <td>Horosewski</td>
+                        <td>Rob</td>
+                        <td>December 1st</td>
+                        <td>Purple</td>
+                    </tr>
+                    <tr>
+                        <td>Mary Lee</td>
+                        <td>Matuza</td>
+                        <td>Horosewski</td>
+                        <td>ML</td>
+                        <td>December 22nd</td>
+                        <td>Black/Green</td>
+                    </tr>
+                    <tr>
+                        <td>Christopher</td>
+                        <td>Anthony</td>
+                        <td>Horosewski</td>
+                        <td>Chris</td>
+                        <td>January 16th</td>
+                        <td>Cyan</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Images</h1>
+        <div class="my-3 border border-3 border-primary">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2>Rounded Corners</h2>
+                    <img src="Big Ben.jpg" class="rounded w-50" alt="Big Ben">
+                </div>
+                <div class="col-sm-4">
+                    <h2>Circle</h2>
+                    <img src="Big Ben.jpg" class="rounded-circle w-50" alt="Big Ben">
+                </div>
+                <div class="col-sm-4">
+                    <h2>Thumbnail (bordered)</h2>
+                    <img src="Big Ben.jpg" class="img-thumbnail w-50" alt="Big Ben">
+                </div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-warning" style="height: 225px;">
+            <h2>Float (-start|end)</h2>
+            <img src="Big Ben.jpg" class="float-start" width="152" height="168" alt="Big Ben">
+            <img src="Big Ben.jpg" class="float-end" width="152" height="168" alt="Big Ben">
+        </div>
+        <div class="my-3 border border-3 border-danger">
+            <h2>Centered</h2>
+            <img src="Big Ben.jpg" class="d-block mx-auto w-25" alt="Big Ben">
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Responsive Images (needs width and height)</h2>
+            <img src="Big Ben.jpg" class="img-fluid" alt="Big Ben" width="1100" height="500">
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Jumbotron</h1>
+        <p>Introduced in BS3 but no longer supported. You can use a <code>&lt;div&gt;</code> element
+        and add special helper and color classes to achieve the same effect.</p>
+        <div class="my-4 p-5 bg-primary text-white rounded">
+            <h1>Jumbotron Example</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p> 
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Alerts</h1>
+        <p>Add <code>.alert</code> with <code>.alert-*</code> (* represents contextual class) to container.</p>
+        <div class="alert alert-success">Success!</div>
+        <div class="alert alert-info">Alerts can contain <a href="#resp-table">links</a> or "matching colors" <a href="#resp-table" class="alert-link">links.</a></div>
+        <div class="alert alert-info alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            Closing Alerts with <code>.dismissible</code> and a button.
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            Animated Alerts
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Buttons</h1>
+        <h2>...with Contextual Classes on links, buttons or inputs.</h2>
+        <div class="my-3 py-3 border border-3 border-info">
+            <button type="button" class="btn">Basic</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+        <h2>Button Ouline (doesn't really work with Basic or Link)</h2>
+        <div class="my-3 py-3 border border-3 border-success">
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+        </div>
+        <h2>Sizes</h2>
+        <div class="my-3 py-3 border border-3 border-danger">
+            <button type="button" class="btn btn-primary btn-lg">Large</button>
+            <button type="button" class="btn btn-primary">Default</button>
+            <button type="button" class="btn btn-primary btn-sm">Small</button>
+        </div>
+        <h2>Block Level Buttons (spans the entire width of parent) - use <code>.d-grid</code>
+        "helper" class on parent and <code>.gap-*</code> class to control space between buttons.</h2>
+        <div class="d-grid  my-3 py-3 gap-3 border border-3 border-warning">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+        </div>
+        <h2>Active and Disabled - use <code>.disabled</code> on links and <code>disabled</code> attribute on buttons.</h2>
+        <div class="my-3 py-3 border border-3 border-primary">
+            <button type="button" class="btn btn-primary active">Primary Active</button>
+            <button type="button" class="btn btn-primary disabled">Primary Disabled</button>
+        </div>
+        <h2 id="spinner-buttons">Spinner buttons - add <code>&lt;span&gt;</code> inside button with <code>.spinner-border</code>
+            and <code>.spinner-border-sm</code>.</h2>
+        <div class="my-3 border border-3 border-dark text">
+            <button type="button" class="btn btn-primary my-3 py-2">
+                <span class="spinner-border align-middle me-2"></span>
+                Default
+            </button>
+            <button type="button" class="btn btn-primary py-2">
+                <span class="spinner-border spinner-border-sm align-middle me-2"></span>
+                Small
+            </button>
+            <button type="button" class="btn btn-primary py-2">
+                <span class="spinner-grow spinner-grow align-middle me-2"></span>
+                Default
+            </button>
+            <button type="button" class="btn btn-primary py-2">
+                <span class="spinner-grow spinner-grow-sm align-middle me-2"></span>
+                Small
+            </button>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h2>Button Groups - group a series of buttons together on a single line.</h2>
+        <div class="my-3 border border-3 border-success">
+            <h3>Put buttons in a container with <code>.btn-group</code>.</h3>
+            <div class="btn-group border border-3 py-3">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-primary">
+            <h3>Sizes (lg & sm) <code>.btn-group-lg .button-group-sm</code>.</h3>
+            <div class="btn-group btn-group-lg border border-3 py-3">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
+            <div class="btn-group border border-3 py-3">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
+            <div class="btn-group btn-group-sm border border-3 py-3">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-danger">
+            <h3>Vertical Button groups use <code>.btn-group-vertical</code>.</h3>
+            <div class="btn-group-vertical border border-3 py-3">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-warning">
+            <h3>Inline by default.</h3>
+            <div class="btn-group border border-3 py-3">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
+            <div class="btn-group border border-3 py-3">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
+        </div>
+        <div id="btn-grp-drop" class="my-3 border border-3 border-info">
+            <h3>Nesting Button Groups and Dropdown Menus</h3>
+            <div class="btn-group py-3">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Item 1</a>
+                        <a class="dropdown-item" href="#">Item 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Badges</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2><span class="badge bg-info">Note</span> Badges scale to match the size of the parent element.</h2>
+        </div>
+        <div class="my-3 border border-3 border-secondary">
+            <h2>Pill Badges <code>.rounded-pill</code>. <span class="badge rounded-pill bg-secondary">Secondary</span></h2>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Badges can be contained by another element, such as a button.</h2>
+            <button type="button" class="btn btn-success">
+                Button <span class="badge bg-danger">4</span>
+            </button>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Progress Bars - use Width property on child.</h1>
+        <div class="progress my-3">
+            <div class="progress-bar" style="width: 80%;"></div>
+        </div>
+        <h2>Add border to parent.</h2>
+        <div class="progress my-3 border border-3 border-primary">
+            <div class="progress-bar" style="width: 80%;"></div>
+        </div>
+        <h2>Use height property on parent. Default 1rem(~16px).</h2>
+        <div class="progress my-3">
+            <div class="progress-bar" style="width: 40%;"></div>
+        </div>
+        <div class="progress my-3" style="height: 25px;">
+            <div class="progress-bar" style="width: 60%;"></div>
+        </div>
+        <h2>Labels - add label to child prop.</h2>
+        <div class="progress my-3">
+            <div class="progress-bar" style="width: 50%;">50% finished</div>
+        </div>
+        <h2> Colored Progress Bar - add bg contextual class to child.</h2>
+        <div class="progress my-3">
+            <div class="progress-bar bg-success" style="width: 80%;"></div>
+        </div>
+        <h2>Striped Progress Bar - add <code>.progress-bar-striped</code> to child.</h2>
+        <div class="progress my-3">
+            <div class="progress-bar bg-info progress-bar-striped" style="width: 80%;"></div>
+        </div>
+        <h2>Animated Progress Bar - add <code>progress-bar-animated</code> to child.</h2>
+        <h3><span class="badge rounded-pill bg-primary">Note:</span> must be striped!</h3>
+        <div class="progress my-3">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 80%;"></div>
+        </div>
+        <h2>Multiple Progress Bars</h2>
+        <div class="progress my-3">
+            <div class="progress-bar bg-success" style="width: 40%">Free Space</div>
+            <div class="progress-bar bg-warning" style="width: 10%">Warning</div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 20%">Danger</div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Spinners</h1>
+        <h2>Default - add <code>.spinner-border</code> to container.</h2>
+        <div class="spinner-border"></div>
+        <h2>Colored - add text color utilities (e.g. <code>.text-primary</code>)</h2>
+        <div class="spinner-border text-primary"></div>
+        <h2>Growing Spinners - use <code>.spinner-grow</code> to container.</h2>
+        <div class="spinner-grow text-danger"></div>
+        <h2>Spinner Buttons - <a href="#spinner-buttons">see above</a>.</h2>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Pagination</h1>
+        <h2>Basic - add <code>.pagination</code> to <code>&lt;ul&gt;</code> and
+        <code>.page-item</code> to <code>&lt;li&gt;</code> and <code>.page-link</code>
+        to <code>&lt;a&gt;</code>.</h2>
+        <h3>Active - add <code>.active</code> to <code>&lt;li&gt;</code>.</h3>
+        <h3>Disabled - add <code>.disabled</code> to <code>&lt;li&gt;</code>.</h3>
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link disabled" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <h2>Size - add <code>.pagination-lg|sm</code> to <code>&lt;ul&gt;</code>.</h2>
+        <ul class="pagination pagination-sm">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <ul class="pagination pagination-lg">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <h2>Alignment - use <code>.justify-content</code>.</h2>
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <ul class="pagination justify-content-end">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <h2>Breadcrumbs - indicate current pages location in a hieracrchy.</h2>
+        <h3>Use <code>.breadcrumb</code> and <code>.breadcrumb-item</code> with child prop.</h3>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Photos</a></li>
+            <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+            <li class="breadcrumb-item"><a href="#">Italy</a></li>
+            <li class="breadcrumb-item"><a href="#">Rome</a></li>
+        </ul>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>List Groups</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Basic uses <code>&lt;ul&gt;</code> with <code>.list-group</code>
+            and <code>&lt;li&gt;</code> with <code>.list-group-item</code>.</h2>
+            <h3>Use <code>.active</code> or <code>.disabled</code>.</h3>
+            <ul class="list-group py-3">
+                <li class="list-group-item">First item</li>
+                <li class="list-group-item active">Second item</li>
+                <li class="list-group-item">Third item</li>
+                <a href="#" class="list-group-item list-group-item-action disabled">Disabled</a>
+            </ul>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>List Group with Linked Items</h2>
+            <h3 class="my-3">Use <code>&lt;div&gt;</code> with <code>&lt;a&gt;</code>.</h3>
+            <h3>For grey background on hover, add <code>.list-group-item-action</code>.</h3>
+            <div class="list-group py-3">
+                <a href="#" class="list-group-item list-group-item-action">First item</a>
+                <a href="#" class="list-group-item list-group-item-action">Second item</a>
+                <a href="#" class="list-group-item list-group-item-action">Third item</a>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2>Use <code>.list-group-flush</code> on container to remove most borders.</h2>
+            <ul class="list-group list-group-flush py-3">
+                <li class="list-group-item">First item</li>
+                <li class="list-group-item">Second item</li>
+                <li class="list-group-item">Third item</li>
+            </ul>
+        </div>
+        <div class="my-3 border border-3 border-warning">
+            <h2>Numbered Lists - use <code>.list-group-numbered</code> on container.</h2>
+            <ul class="list-group list-group-numbered py-3">
+                <li class="list-group-item">First item</li>
+                <li class="list-group-item">Second item</li>
+                <li class="list-group-item">Third item</li>
+            </ul>
+        </div>
+        <div class="my-3 border border-3 border-danger">
+            <h2>Horizontal List Group - use <code>.list-group-horizontal</code> on container.</h2>
+            <ul class="list-group list-group-horizontal py-3">
+                <li class="list-group-item">First item</li>
+                <li class="list-group-item">Second item</li>
+                <li class="list-group-item">Third item</li>
+            </ul>
+        </div>
+        <div class="my-3 border border-3 border-dark">
+            <h2>Contextual Classes - add <code>.list-group-item-*</code> to child.</h2>
+            <h3>This example with hover.</h3>
+            <ul class="list-group py-3">
+                <li class="list-group-item list-group-item-action list-group-item-primary">First item</li>
+                <li class="list-group-item list-group-item-action list-group-item-success">Second item</li>
+                <li class="list-group-item list-group-item-action list-group-item-warning">Third item</li>
+            </ul>
+        </div>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Link Items with Contextual Classes - add same class as above</h2>
+            <div class="list-group py-3">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">First item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Second item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Third item</a>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>List Group with Badges - add <code>&lt;span class="badge bg-* rounded-pill&gt;</code>
+            to child.</h2>
+            <h3><span class="badge bg-warning">Note: </span> Add <code>.d-flex .justify-content-between
+                .align-items-center</code> to <code>&lt;li&gt;</code> to space correctly.</h3>
+            <ul class="list-group py-3">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    First item
+                    <span class="badge bg-danger rounder-pill">15</span>
+                </li>
+                <li class="list-group-item">Second item</li>
+                <li class="list-group-item">Third item</li>
+            </ul>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Cards</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Basic - use <code>.card</code> on the container and <code>.card-header .card-body
+                .card-footer</code> on <code>&lt;div&gt;</code> with content in child prop.</h2>
+            <div class="card my-3">
+                <div class="card-header">Basic Card</div>
+                <div class="card-body">Content goes here!</div>
+                <div class="card-footer">Footer</div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Contextual Cards - use <code>.bg-*</code> on container.</h2>
+            <div class="card bg-success my-3">
+                <div class="card-header">Basic Card</div>
+                <div class="card-body">Content goes here!</div>
+                <div class="card-footer">Footer</div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2>Titles, text and links</h2>
+            <h3>Use <code>.card-title</code> on header tag inside of body.</h3>
+            <h3>Use <code>.card-text</code> on <code>&lt;p&gt;</code> inside of body.</h3>
+            <h3>Use <code>.card-link</code> inside <code>&lt;a&gt;</code> inside of body.</h3>
+            <div class="card my-3">
+                <div class="card-header">Basic Card</div>
+                <div class="card-body">
+                    <h4 class="card-title">TITLE</h4>
+                    <p class="card-text">This is the card text.</p>
+                    <a href="#" class="card-link">Here is a link</a>
+                </div>
+                <div class="card-footer">Footer</div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-warning">
+            <h2>Card Images - Add <code>.card-img-top|bottom</code> to an <code>&lt;img&gt;</code>.</h2>
+            <h3><span class="badge bg-warning">Note: </span>Add image outside of card body.</h3>
+            <div class="card ms-5" style="width: 400px">
+                <img src="Big Ben.jpg" class="card-img-top" alt="Big Ben" width="100%">
+                <div class="card-header">Basic Card</div>
+                <div class="card-body">
+                    <h4 class="card-title">TITLE</h4>
+                    <p class="card-text">This is the card text.</p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                </div>
+                <div class="card-footer">Footer</div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-dark">
+            <h2>Card Image Overlays - Add a <code>&lt;div&gt;</code> as sibling of <code>&lt;img&gt;</code>
+            with <code>.card-img-overlay</code>.</h2>
+            <div class="card ms-5" style="width: 400px">
+                <img src="Big Ben.jpg" class="card-img-top" alt="Big Ben" width="100%">
+                <div class="card-img-overlay">
+                    <div class="card-header">Basic Card</div>
+                    <div class="card-body">
+                        <h4 class="card-title">TITLE</h4>
+                        <p class="card-text">This is the card text.</p>
+                        <a href="#" class="btn btn-primary">See Details</a>
+                    </div>
+                    <div class="card-footer">Footer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1 id="dropdown">Dropdowns</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Add <code>.dropdown</code> to container.</h2>
+            <h2>Add <code>&lt;button&gt;</code> with <code>.dropdown-toggle</code> and attribute of
+            <code>data-bs-toggle="dropdown"</code>.</h2>
+            <h2>Add <code>.dropdown-menu</code> as <code>&lt;ul&gt;</code> and <code>.dropdown-item</code>
+            to each element.</h2>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Link 1</a></li>
+                    <li><a href="#" class="dropdown-item">Link 2</a></li>
+                    <li><a href="#" class="dropdown-item">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Dropdown Divider - add <code>&lt;hr class="dropdown-divider"&gt;</code>
+            inside a <code>&lt;li&gt;</code> to create a divider.</h2>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Link 1</a></li>
+                    <li><a href="#" class="dropdown-item">Link 2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a href="#" class="dropdown-item">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2>Dropdown Header - add <code>.dropdown-header</code> to a header inside of a
+            <code>&lt;li&gt;</code> to create a header.</h2>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><h5 class="dropdown-header">HEADER</h5></li>
+                    <li><a href="#" class="dropdown-item">Link 1</a></li>
+                    <li><a href="#" class="dropdown-item">Link 2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><h5 class="dropdown-header">Header 2</h5></li>
+                    <li><a href="#" class="dropdown-item">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-warning">
+            <h2>Diasble and Active</h2>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><h5 class="dropdown-header">HEADER</h5></li>
+                    <li><a href="#" class="dropdown-item active">Active</a></li>
+                    <li><a href="#" class="dropdown-item disabled">Disabled</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><h5 class="dropdown-header">Header 2</h5></li>
+                    <li><a href="#" class="dropdown-item">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-danger">
+            <h2>Dropdown Position - Add <code>.dropend|dropstart</code> to container.</h2>
+            <h3>This changes where dropdown menu appears.</h3>
+            <div class="d-flex justify-content-around">
+                <div class="dropdown dropstart">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                    <ul class="dropdown-menu">
+                        <li><h5 class="dropdown-header">HEADER</h5></li>
+                        <li><a href="#" class="dropdown-item">Link 1</a></li>
+                        <li><a href="#" class="dropdown-item">Link 2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h5 class="dropdown-header">Header 2</h5></li>
+                        <li><a href="#" class="dropdown-item">Link 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropend">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                    <ul class="dropdown-menu">
+                        <li><h5 class="dropdown-header">HEADER</h5></li>
+                        <li><a href="#" class="dropdown-item">Link 1</a></li>
+                        <li><a href="#" class="dropdown-item">Link 2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h5 class="dropdown-header">Header 2</h5></li>
+                        <li><a href="#" class="dropdown-item">Link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-dark">
+            <h2>Dropdown Menu Right - align dropdown menu to right on long button text.</h2>
+            <h3>Add <code>.dropdown-menu-end</code> to element with <code>.dropdown-menu</code>.</h3>
+            <div class="d-flex justify-content-around">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                        Dropdown button with a really long title
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><h5 class="dropdown-header">HEADER</h5></li>
+                        <li><a href="#" class="dropdown-item active">Active</a></li>
+                        <li><a href="#" class="dropdown-item disabled">Disabled</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h5 class="dropdown-header">Header 2</h5></li>
+                        <li><a href="#" class="dropdown-item">Link 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                        Normal Dropdown button with a really long title
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><h5 class="dropdown-header">HEADER</h5></li>
+                        <li><a href="#" class="dropdown-item active">Active</a></li>
+                        <li><a href="#" class="dropdown-item disabled">Disabled</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h5 class="dropdown-header">Header 2</h5></li>
+                        <li><a href="#" class="dropdown-item">Link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Dropup - Replace <code>.dropdown</code> with <code>.dropup</code>.</h2>
+            <div class="dropup">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropup</button>
+                <ul class="dropdown-menu">
+                    <li><h5 class="dropdown-header">HEADER</h5></li>
+                    <li><a href="#" class="dropdown-item active">Active</a></li>
+                    <li><a href="#" class="dropdown-item disabled">Disabled</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><h5 class="dropdown-header">Header 2</h5></li>
+                    <li><a href="#" class="dropdown-item">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Dropdown Text - add <code>&lt;span&gt;</code> with <code>.dropdown-item-text</code>
+            to <code>&lt;li&gt;</code>.</h2>
+            <h3>Adds plain text to a dropdown (no link)</h3>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><h5 class="dropdown-header">HEADER</h5></li>
+                    <li><a href="#" class="dropdown-item active">Active</a></li>
+                    <li><a href="#" class="dropdown-item disabled">Disabled</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><h5 class="dropdown-header">Header 2</h5></li>
+                    <li><span class="dropdown-item-text">Just Text</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2>Grouped Buttons with Dropdowns</h2>
+            <a href="#btn-grp-drop">See Example Here</a>
+        </div>
+        <div class="my-3 border border-3 border-warning">
+            <h2>Vertical Button Group with Dropdown</h2>
+            <h3>Add a Dropdown to a Vertical Button Group</h3>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tablet</a></li>
+                    <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Collapsibles</h1>
+        <h2>Used to hide/show large amount of content.</h2>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Add a button/link with href/<code>data-bs-target</code> to ID of your collapsible element and
+                <code>data-bs-toggle="collapse"</code> attribute. Then add <code>.collapse</code>
+                to your collapsible element. Use <code>.show</code> to show content initially.
+            </h2>
+            <button type="button" class="btn btn-primary" data-bs-target="#content" data-bs-toggle="collapse">Read more!</button>
+            <div id="content" class="collapse">This is some text that is shown/hidden by a button press.</div>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Build an accordion by extending the card component.</h2>
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                      Collapsible Group Item #1
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                      Lorem ipsum..
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                      Collapsible Group Item #2
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                      Lorem ipsum..
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                      Collapsible Group Item #3
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                      Lorem ipsum..
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Navs</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Basic</h2>
+            <h3>Add <code>.nav</code> to <code>&lt;ul&gt;</code>, <code>.nav-item</code> to
+            <code>&lt;li&gt;</code> and <code>.nav-link</code> to links.</h3>
+            <nav>
+                <ul class="nav py-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Aligned</h2>
+            <h3>Add <code>.justify-content-center|end</code> to <code>&lt;ul&gt;</code>.</h3>
+            <nav>
+                <ul class="nav justify-content-center py-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="nav justify-content-end py-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2>Vertical</h2>
+            <h3>Add <code>.flex-column</code> to <code>&lt;ul&gt;</code>.</h3>
+            <nav>
+                <ul class="nav flex-column py-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-warning">
+            <h2>Tabs</h2>
+            <h3>Add <code>.nav-tabs</code> to <code>&lt;ul&gt;</code>.</h3>
+            <h3><span class="badge bg-warning">Note:</span> Use <code>.active</code>.</h3>
+            <nav>
+                <ul class="nav nav-tabs py-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-danger">
+            <h2>Pills</h2>
+            <h3>Add <code>nav-pills</code> to <code>&lt;ul&gt;</code>.</h3>
+            <nav>
+                <ul class="nav nav-pills py-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-dark">
+            <h2>Justify Tabs/Pills</h2>
+            <h3>Add <code>.nav-justified</code> to <code>&lt;ul&gt;</code>.</h3>
+            <nav>
+                <ul class="nav nav-tabs nav-justified py-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="nav nav-pills nav-justified py-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Pills with Dropdown</h2>
+            <nav>
+                <ul class="nav nav-pills py-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Link 1</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Tabs with Dropdown</h2>
+            <nav>
+                <ul class="nav nav-tabs py-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Link 1</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2>Toggleable/Dynamic Tabs</h2>
+            <h3>Add <code>data-bs-toggle="tab"</code> attribute to each link. Add <code>.tab-pane</code> with
+            a unique ID for every tab and wrap them inside a <code>&lt;div&gt;</code> element with
+            <code>.tab-content</code>.</h3>
+            <h3>Use <code>.fade</code> on <code>.tab-pane</code> to fade in and out when clicked.</h3>
+            <nav>
+                <ul class="nav nav-tabs py-3">
+                    <li class="nav-item">
+                        <a href="#link1" class="nav-link active" data-bs-toggle="tab">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#link2" class="nav-link" data-bs-toggle="tab">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#link3" class="nav-link" data-bs-toggle="tab">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="link1">This is text for the first tab.</div>
+                    <div class="tab-pane fade" id="link2">This is text for the second tab.</div>
+                    <div class="tab-pane fade" id="link3">This is text for the third tab.</div>
+                </div>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-warning">
+            <h2>Toggleable/Dynamic Pills</h2>
+            <h3>Add <code>data-bs-toggle="pill"</code> attribute to each link. Add <code>.tab-pane</code> with
+            a unique ID for every tab and wrap them inside a <code>&lt;div&gt;</code> element with
+            <code>.tab-content</code>.</h3>
+            <h3>Use <code>.fade</code> on <code>.tab-pane</code> to fade in and out when clicked.</h3>
+            <nav>
+                <ul class="nav nav-pills py-3">
+                    <li class="nav-item">
+                        <a href="#pill1" class="nav-link active" data-bs-toggle="pill">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pill2" class="nav-link" data-bs-toggle="pill">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pill3" class="nav-link" data-bs-toggle="pill">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="pill1">This is text for the first pill.</div>
+                    <div class="tab-pane fade" id="pill2">This is text for the second pill.</div>
+                    <div class="tab-pane fade" id="pill3">This is text for the third pill.</div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Navbars</h1>
+        <h3>A navigation header placed at the top of the page that can extend or collapse
+            based on screen size.</h3>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Basic</h2>
+            <h3>Add <code>.navbar</code> and <code>.navbar-expand-xxl|xl|lg|md|sm</code> to
+            <code>&lt;nav&gt;</code>.</h3>
+            <h3><span class="badge bg-warning">Note:</span> Don't forget to add <code>bg-*</code> here!</h3>
+            <h3>Add <code>.navbar-nav</code> to <code>&lt;ul&gt;</code>.</h3>
+            <h3>Add <code>&lt;li&gt;</code> elements with <code>.nav-item</code> followed
+            by an <code>&lt;a&gt;</code> with <code>.nav-link</code>.</h3>
+            <nav class="navbar navbar-expand-md bg-primary my-3">
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-bg-primary">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-bg-primary">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-bg-primary">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Vertical</h2>
+            <h3>Remove <code>.navbar-expand-*</code>.</h3>
+            <nav class="navbar bg-primary my-3">
+                <div class="container-fluid">
+                    <ul class="navbar-nav my">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-bg-primary">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-bg-primary">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-bg-primary">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2>Centered</h2>
+            <h3>Add <code>.justify-content-center</code> to <code>&lt;nav&gt;</code>.</h3>
+            <h3><span class="badge bg-danger">Note:</span> Previous two examples used
+            a <code>&lt;div&gt;</code> with <code>.container-fluid</code> around the
+            <code>&lt;ul&gt;</code>. <code>.justify-content-*</code> will not work in those
+            cases.</h3>
+            <nav class="my-3 navbar justify-content-center navbar-expand-md bg-primary">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-bg-primary">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-bg-primary">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-bg-primary">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-warning">
+            <h2>Justify Content Between</h2>
+            <h3>Add <code>.justify-content-around</code> to <code>&lt;ul&gt;</code> and
+                add <code>.w-100</code>.</h3>
+            <nav class="my-3 navbar navbar-expand-md bg-primary">
+                <ul class="navbar-nav justify-content-around w-100">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-bg-primary">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-bg-primary">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-bg-primary">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-danger">
+            <h2>Colors</h2>
+            <h3>Use contextual bg colors on <code>nav</code>, as well as
+            <code>.navbar-dark|light</code> to change text color.</h3>
+            <nav class="my-3 navbar navbar-expand-md bg-success navbar-dark">
+                <ul class="navbar-nav justify-content-around w-100">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-dark">
+            <h2>Brand/Logo</h2>
+            <h3>Use <code>.navbar-brand</code> in an <code>&lt;a&gt;</code> child of a <code>div</code>
+                right below the <code>&lt;nav&gt;</code>.</h3>
+            <h3>When used with images, BS5 will auto style the image to fit vertically.</h3>
+            <h3>Use <code>.navbar-text</code> when adding text to navbar to ensure proper styling.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Use <code>text-decoration-none</code> on
+            parent to remove underline.</h3>
+            <nav class="my-3 navbar navbar-expand-md bg-info navbar-dark">
+                <div class="container-fluid">
+                    <a class="nav-bar-brand text-decoration-none" href="#">
+                        <img src="Big Ben.jpg" alt="Big Ben" style="width: 50px;" class="rounded-pill">
+                        <span class="navbar-text ms-3">Big Ben</span>
+                    </a>
+                </div>
+                <ul class="navbar-nav justify-content-around w-100">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Collapsible Navigation Bar (Hamburger)</h2>
+            <h3>Add a button after the Logo with <code>.navbar-toggler , data-bs-toggle="collapse" and
+                data-bs-target="#ID"</code>. Use a <code>&lt;span&gt; .navbar-toggler-icon</code> for icon.</h3>
+            <h3>Then wrap the navbar links with a <code>&lt;div&gt; .collapse navbar-collapse</code>
+            with an ID that matches the target of the button.</h3>
+            <nav class="my-3 navbar navbar-expand-md bg-dark navbar-dark">
+                <img src="Big Ben.jpg" alt="Big Ben" style="width: 50px;" class="rounded-pill">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#hamburger">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="hamburger">
+                    <ul class="navbar-nav justify-content-end w-100">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Navbars with Dropdown</h2>
+            <h3>Simply add a <a href="#dropdown">Dropdown</a>.</h3>
+            <nav class="my-3 navbar navbar-expand-md bg-dark navbar-dark">
+                <img src="Big Ben.jpg" alt="Big Ben" style="width: 50px;" class="rounded-pill">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#hamburger2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="hamburger2">
+                    <ul class="navbar-nav justify-content-end w-100">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 3</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link</a></li>
+                                <li><a class="dropdown-item" href="#">Another Link</a></li>
+                                <li><a class="dropdown-item" href="#">A Third Link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2>Navbar Forms and Buttons</h2>
+            <h3>You can add Forms in the Navbar.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Use <code>.me-auto</code> on <code>&lt;ul&gt;</code>
+            to right justify Search box/button.</h3>
+            <nav class="my-3 navbar navbar-expand-md bg-warning navbar-light">
+                <img src="Big Ben.jpg" alt="Big Ben" style="width: 50px;" class="rounded-pill">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#hamburger3">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5" id="hamburger3">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 3</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-success me-2" type="button">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="my-3 border border-3 border-warning">
+            <h2>Fixed Navigation Bar - stays visible at top|bottom even when scrolling.</h2>
+            <h3>Add <code>.fixed-top|bottom</code> to <code>&lt;nav&gt;</code>.</h3>
+            <nav class="my-3 navbar navbar-expand-md bg-primary navbar-dark" id="fixed">
+                <img src="Big Ben.jpg" alt="Big Ben" style="width: 50px;" class="rounded-pill">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#hamburger3">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5" id="hamburger3">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 3</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-secondary me-2" onclick="fixTop(1)" id="top">Fix to Top</button>
+                    <button type="button" class="btn btn-secondary me-2" onclick="fixTop(2)" id="bottom">Fix to Bottom</button>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-secondary me-2" type="button">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <script>
+        let pressed = 0;
+        function fixTop(position) {
+            const element = document.getElementById("fixed");
+            const topButton = document.getElementById("top");
+            const bottomButton = document.getElementById("bottom");
+            if(position === 1) {
+                element.classList.toggle("fixed-top");
+                bottomButton.classList.toggle("disabled");
+                pressed = !pressed;
+            } else {
+                element.classList.toggle("fixed-bottom");
+                topButton.classList.toggle("disabled");
+                pressed = !pressed;
+            }
+            if (pressed) {
+                topButton.innerHTML = "Reset";
+                bottomButton.innerHTML = "Reset";
+            } else {
+                topButton.innerHTML = "Fix to Top";
+                bottomButton.innerHTML = "Fix to Bottom";
+            }
+        }
+    </script>
+</body>

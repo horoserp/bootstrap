@@ -38,9 +38,9 @@
         <h1>This is the Header.</h1>
         <h2>All <code>div</code> and <code>section</code> elements have <code>my-3</code> and <code>border-3</code> applied to them.</h2>
     </header>
-    <nav class="my-3 border border-3">
+    <!-- <nav class="my-3 border border-3">
         <h1>This is the Nav.</h1>
-    </nav>
+    </nav> -->
     <section class="my-3 border border-3">
         <h1>Containers:</h1>
         <div class="container my-3 border border-primary">
@@ -1588,8 +1588,9 @@
             </nav>
         </div>
         <div class="my-3 border border-3 border-warning">
-            <h2>Fixed Navigation Bar - stays visible at top|bottom even when scrolling.</h2>
-            <h3>Add <code>.fixed-top|bottom</code> to <code>&lt;nav&gt;</code>.</h3>
+            <h2>Fixed and Sticky Navigation Bars</h2>
+            <h3>Add <code>.fixed-top|bottom</code> or <code>.sticky-top</code> to <code>&lt;nav&gt;</code>.</h3>
+            <h3><span class="badge bg-danger">NOTE:</span> Sticky only works inside it's parent container!</h3>
             <nav class="my-3 navbar navbar-expand-md bg-primary navbar-dark" id="fixed">
                 <img src="Big Ben.jpg" alt="Big Ben" style="width: 50px;" class="rounded-pill">
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#hamburger3">
@@ -1609,12 +1610,39 @@
                     </ul>
                     <button type="button" class="btn btn-secondary me-2" onclick="fixTop(1)" id="top">Fix to Top</button>
                     <button type="button" class="btn btn-secondary me-2" onclick="fixTop(2)" id="bottom">Fix to Bottom</button>
+                    <button type="button" class="btn btn-secondary me-2" onclick="fixTop(3)" id="sticky">Sticky</button>
                     <form class="d-flex">
                         <input class="form-control me-2" type="text" placeholder="Search">
                         <button class="btn btn-secondary me-2" type="button">Search</button>
                     </form>
                 </div>
             </nav>
+            <div class="container-fluid"><br>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+            </div>
         </div>
     </section>
     <script>
@@ -1623,21 +1651,29 @@
             const element = document.getElementById("fixed");
             const topButton = document.getElementById("top");
             const bottomButton = document.getElementById("bottom");
+            const stickyButton = document.getElementById("sticky");
             if(position === 1) {
                 element.classList.toggle("fixed-top");
                 bottomButton.classList.toggle("disabled");
+                stickyButton.classList.toggle("disabled");
                 pressed = !pressed;
-            } else {
+            } else if (position === 2) {
                 element.classList.toggle("fixed-bottom");
                 topButton.classList.toggle("disabled");
+                stickyButton.classList.toggle("disabled");
+                pressed = !pressed;
+            } else {
+                element.classList.toggle("sticky-top");
+                topButton.classList.toggle("disabled");
+                bottomButton.classList.toggle("disabled");
                 pressed = !pressed;
             }
             if (pressed) {
-                topButton.innerHTML = "Reset";
-                bottomButton.innerHTML = "Reset";
+                topButton.innerHTML = bottomButton.innerHTML = stickyButton.innerHTML = "Reset";
             } else {
                 topButton.innerHTML = "Fix to Top";
                 bottomButton.innerHTML = "Fix to Bottom";
+                stickyButton.innerHTML = "Sticky";
             }
         }
     </script>

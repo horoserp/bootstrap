@@ -1669,7 +1669,7 @@
                     Then add <code>&lt;div&gt;</code> with <code>.carousel-item</code> for each image. Don't
                     forget <code>.active</code> and to use <code>.d-block .w-100</code> on <code>&lt;img&gt;</code>.
                     <span class="badge bg-warning">NOTE:</span> Use style <code>object-fit: contain|cover</code>
-                    in addition to setting image width/height to 100% to correct image. Use height xx%vh on
+                    and <code>object-position</code> in addition to setting image width/height to 100% to correct image. Use height xx%vh on
                     <code>carousel-item</code> to change size of carousel.</h4>
                 </li>
                 <li class="list-group-item">
@@ -1710,6 +1710,67 @@
                 <button type="button" class="carousel-control-next" data-bs-target="#slideshow1" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
+            </div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Modal - dialog box/popup displayed on top of the current page.</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Basic</h2>
+            <h3>Modals have 3 parts: Header, Body and Footer.</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h4>Start with a <code>&lt;button&gt;</code> with <code>data-bs-toggle="modal"</code>
+                    and <code>data-bs-target="#ID"</code> to open modal.</h4>
+                </li>
+                <li class="list-group-item">
+                    <h4>Add 3 <code>&lt;div&gt;</code>'s':
+                        <ol>
+                            <li>
+                                <h5><code>.modal</code> and <code>ID</code></h5>
+                            </li>
+                            <li>
+                                <h5><code>.modal-dialog</code></h5>
+                            </li>
+                            <li>
+                                <h5><code>.modal-content</code></h5>
+                            </li>
+                        </ol>
+                </li>
+                <li class="list-group-item">
+                    <h4>Next is a <code>&lt;div&gt;</code> with <code>.modal-header</code>. Follow with
+                    <code>&lt;h4&gt;</code> with <code>.modal-title</code> for Modal Heading. Finally,
+                    <code>&lt;button&gt;</code> with <code>.btn-close data-bs-dismiss="modal"</code>.</h4>
+                </li>
+                <li class="list-group-item">
+                    <h4>Now a <code>&lt;div&gt;</code> with <code>.modal-body</code> which contains
+                    the main text.</h4>
+                </li>
+                <li class="list-group-item">
+                    <h4>To end with, use <code>&lt;div&gt;</code> with <code>.modal-footer</code>. This
+                    contains a <code>&lt;button&gt;</code> with <code>data-bs-dismiss="modal"</code>.</h4>
+                </li>
+                <li class="list-group-item">
+                    <h4><span class="badge bg-info">Optional:</span> Add Animation with <code>.fade</code>
+                    to main container.</h4>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-primary my-3 w-75 d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modal1">Open Modal</button>
+            <div class="modal fade" id="modal1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Modal Example</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            This is an alert from Robert!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -1647,4 +1647,70 @@
             </div>
         </div>
     </section>
+    <section class="my-3 border border-3">
+        <h1>Carousel/Slideshow</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Basic</h2>
+            <h3>Carousels have 3 parts: Indicators/Dots, Carousel/Slideshow and Control Icons.</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h4>Start with a <code>&lt;div&gt;</code> with and ID, <code>.carousel .slide</code> and
+                    attribute <code>data-bs-ride="carousel"</code>.</h4>
+                    <h5><span class="badge bg-info">NOTE:</span> <code>data-bs-ride</code> starts the
+                    animation on page load.</h5>
+                </li>
+                <li class="list-group-item">
+                    <h4>For indicators/dots: Add <code>&lt;div&gt;</code> with <code>.carousel-indicators</code>.
+                    Add a button for each slide with <code>data-bs-target="#ID" data-bs-slide-to="0"</code>.
+                    Don't forget to add <code>.active</code> to beginning slide.</h4>
+                </li>
+                <li class="list-group-item">
+                    <h4>For carousel/slideshow: Add <code>&lt;div&gt;</code> with <code>.carousel-inner</code>.
+                    Then add <code>&lt;div&gt;</code> with <code>.carousel-item</code> for each image. Don't
+                    forget <code>.active</code> and to use <code>.d-block .w-100</code> on <code>&lt;img&gt;</code>.
+                    <span class="badge bg-warning">NOTE:</span> Use style <code>object-fit: contain|cover</code>
+                    in addition to setting image width/height to 100% to correct image. Use height xx%vh on
+                    <code>carousel-item</code> to change size of carousel.</h4>
+                </li>
+                <li class="list-group-item">
+                    <h4>For controls/icons: Add <code>&lt;button&gt;</code> with <code>.carousel-control-prev|next
+                    data-bs-target="#ID" data-bs-slide="prev|next"</code>. Add <code>&lt;span&gt;</code> with
+                    <code>.carousel-control-prev|next-icon</code> as button text.</h4>
+                </li>
+                <li class="list-group-item">
+                    <h4><span class="badge bg-info">NOTE:</span> For Captions: Add <code>&lt;div&gt;</code>
+                    as sibling to <code>&lt;img&gt;</code> with <code>.carousel-caption</code> and add
+                    <code>&lt;h3&gt;</code> and/or <code>&lt;p&gt;</code>.</h4>
+                </li>
+            </ul>
+            <div class="carousel slide" data-bs-ride="carousel" id="slideshow1" style="height: 50vh;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slideshow1" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#slideshow1" data-bs-slide-to="1"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="height: 50vh;">
+                        <img src="Big Ben.jpg" alt="Big Ben" class="d-block w-100 active" style="object-fit: cover; width: 100% !important; height: 100% !important;">
+                        <div class="carousel-caption">
+                            <h3>Big Ben</h3>
+                            <p>object-fit: cover;</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-secondary" style="height: 50vh;">
+                        <img src="bootstrap-logo-shadow.png" alt="Bootstrap Logo" class="d-block w-100" style="object-fit: contain; width: 100% !important; height: 100% !important;">
+                        <div class="carousel-caption">
+                            <h3>Bootstrap Logo</h3>
+                            <p>object-fit: contain;</pss=>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#slideshow1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#slideshow1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
 </body>

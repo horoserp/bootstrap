@@ -1989,4 +1989,114 @@
                 </div>
             </div>
     </section>
+    <section class="my-3 border border-3">
+        <h1>Tooltips - small pop-up box that appears on hover.</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Basic</h2>
+            <h3>Add <code>data-bs-toggle="tooltip"</code> attribute to an element, then
+            use <code>title</code> attribute to specify tooltip text.</h3>
+            <h3><span class="badge bg-warning">NOTE:</span> Requires JS initilization to work correctly.</h3>
+            <div data-bs-toggle="tooltip" title="This is a tooltip!" class="display-6 text-center pb-3">
+                Hover over me to see a tooltip.
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Positioning</h2>
+            <h3>Appears on top by default. Use <code>data-bs-placement="top|bottom|left|right"</code>
+            to change.</h3>
+            <h3><span class="badge bg-danger">NOTE:</span> Put tooltip element inside a container when
+            trying to center.</h3>
+            <div class="d-flex justify-content-center mb-3">
+                <div data-bs-toggle="tooltip" data-bs-placement="right" title="Right Tooltip" class="display-6">
+                    Hover
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Popovers - A tooltip that respondes to clicks instead of hover.</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Basic</h2>
+            <h3>Add <code>data-bs-toggle="popover"</code> atrribute to an element. Use <code>title</code>
+            to specify header text and <code>data-bs-content</code> for body text.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Popovers are contained in a single button.</h3>
+            <h3><span class="badge bg-warning">NOTE:</span> Popovers require JS initialization to work correctly.</h3>
+            <button type="button" class="btn btn-primary my-3 w-25 d-block mx-auto" data-bs-toggle="popover" title="My Popover" data-bs-content="This is some text.">
+                Toggle Popover
+            </button>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Positioning</h2>
+            <h3>Appears on the right side by default. Use <code>data-bs-placement="top|bottom|left|right"</code>
+            to change.</h3>
+            <button type="button" class="btn btn-success d-block mx-auto w-25 my-3" data-bs-toggle="popover" title="Left Side" data-bs-content="Popover appears on the left." data-bs-placement="left">
+                Toggle Popover
+            </button>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2>Closing</h2>
+            <h3>To close by clicking outside the element, add <code>data-bs-trigger="focus"</code>.</h3>
+            <button type="button" class="btn btn-info d-block my-3 mx-auto w-25" data-bs-toggle="popover" title="Change Focus" data-bs-content="Close by changing focus." data-bs-trigger="focus">
+                Toggle Popover
+            </button>
+        </div>
+        <div class="my border border-3 border-warning">
+            <h2>Hoverable</h2>
+            <h3>Add <code>data-bs-trigger="hover"</code>.</h3>
+            <button type="button" class="btn btn-warning d-block my-3 mx-auto w-25" data-bs-toggle="popover" title="Hoverable" data-bs-content="This popover is seen on hover." data-bs-trigger="hover">
+                Toggle Popover
+            </button>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Toast - a Modal that disappears after a short while.</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Basic</h2>
+            <h3>Toasts include a header and a body inside of a container.</h3>
+            <h3><span class="badge bg-warning">NOTE:</span> Toasts require JS initialization to work correctly if
+                you want to open it with a button. Alternatively, use <code>.show</code> to always show toast.</h3>
+            <div class="list-group">
+                <h3 class="list-group-item">Start with a <code>&lt;div&gt;</code> with
+                <code>.toast</code>. Add a button to close the toast using <code>data-bs-dismiss="toast"</code>.</h3>
+                <h3 class="list-group-item">Add a <code>&lt;div&gt;</code> with <code>.toast-header</code>.</h3>
+                <h3 class="list-group-item">Add a <code>&lt;div&gt;</code> with <code>.toast-body</code>.</h3>
+            </div>
+            <button type="button" class="btn btn-primary d-block mt-3 w-25" id="toastbtn">Show Toast</button>
+            <div class="toast">
+                <div class="toast-header">
+                    <strong class="me-auto">My Toast to You!</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                    <p>I hope you have a wonderful and prosperous New Year!</p>
+                </div>
+            </div>
+            <div class="my-3"></div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Scrollspy - Used to automatically update active link based on scroll position.</h1>
+    </section>
+
+    <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        // Initialize popovers
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+        // Initialize all toasts to open when you click a button
+        document.getElementById("toastbtn").onclick = function() {
+            var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+            var toastList = toastElList.map(function(toastEl) {
+                return new bootstrap.Toast(toastEl)
+            })
+            toastList.forEach(toast => toast.show())
+        }
+    </script>
+
 </body>

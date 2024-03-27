@@ -35,7 +35,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="50">
     <header class="my-3 border border-3">
         <h1>This is the Header.</h1>
         <h2>All <code>div</code> and <code>section</code> elements have <code>my-3</code> and <code>border-3</code> applied to them.</h2>
@@ -1590,7 +1590,7 @@
             </nav>
         </div>
         <div class="my-3 border border-3 border-warning">
-            <h2>Fixed and Sticky Navigation Bars</h2>
+            <h2 id="my-navbar">Fixed and Sticky Navigation Bars</h2>
             <h3>Add <code>.fixed-top|bottom</code> or <code>.sticky-top</code> to <code>&lt;nav&gt;</code>.</h3>
             <h3><span class="badge bg-danger">NOTE:</span> Sticky only works inside it's parent container!</h3>
             <nav class="my-3 navbar navbar-expand-md bg-primary navbar-dark" id="fixed">
@@ -1601,13 +1601,13 @@
                 <div class="collapse navbar-collapse ms-5" id="hamburger3">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Link 1</a>
+                            <a href="#section1" class="nav-link">Link 1</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Link 2</a>
+                            <a href="#section2" class="nav-link">Link 2</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Link 3</a>
+                            <a href="#section3" class="nav-link">Link 3</a>
                         </li>
                     </ul>
                     <button type="button" class="btn btn-secondary me-2" onclick="fixTop(1)" id="top">Fix to Top</button>
@@ -1620,6 +1620,7 @@
                 </div>
             </nav>
             <div class="container-fluid"><br>
+                <p id="section1">Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
@@ -1627,6 +1628,7 @@
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p id="section2">Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
@@ -1634,9 +1636,7 @@
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-                <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+                <p id="section3">Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
                 <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
@@ -2076,6 +2076,13 @@
     </section>
     <section class="my-3 border border-3">
         <h1>Scrollspy - Used to automatically update active link based on scroll position.</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h3>Add <code>data-bs-spy="scroll", data-bs-target=".navbar", data-bs-offset="50"</code> to the <code>body</code> element.</h3>
+            <h3>See Fixed-top Navbar example <a href="#my-navbar">here</a>.</h3>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Offcanvas - Often used as sidebar navigation and hidden by default.</h1>
     </section>
 
     <script>

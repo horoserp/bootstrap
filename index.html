@@ -2100,6 +2100,9 @@
                     Add a <code>button</code> outside the offcanva to open it with <code>data-bs-toggle="offcanvas",
                     data-bs-target="#ID"</code>.
                 </h3>
+                <h3><span class="badge bg-danger"><strong>NOTE:</strong></span> <strong>DO NOT</strong> use buttons
+                to open the Offcanvas; use anchor elements instead with <code>type="button"</code>. Otherwise,
+                the position will reset when the Offcanvas is closed!</h3>
                 <div class="offcanvas offcanvas-start" id="my-offcanvas">
                     <div class="offcanvas-header">
                         <h1 class="offcanvas-title">My Offcanvas</h1>
@@ -2119,7 +2122,7 @@
                         </ul>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary d-block my-3 mx-auto w-75" data-bs-toggle="offcanvas" data-bs-target="#my-offcanvas">Open Sidebar</button>
+                <a type="button" class="btn btn-primary d-block my-3 mx-auto w-75" data-bs-toggle="offcanvas" data-bs-target="#my-offcanvas">Open Sidebar</a>
             </div>
         </div>
         <div class="my-3 border border-3 border-success">
@@ -2145,7 +2148,7 @@
                     </ul>
                 </div>
             </div>
-            <button type="button" class="btn btn-success d-block w-75 mx-auto my-3 d-md-none" data-bs-toggle="offcanvas" data-bs-target="#my-offcanvas1">Open Responsive Offcanvas</button>
+            <a type="button" class="btn btn-success d-block w-75 mx-auto my-3 d-md-none" data-bs-toggle="offcanvas" data-bs-target="#my-offcanvas1">Open Responsive Offcanvas</a>
         </div>
         <div class="my-3 border border-3 border-info">
             <h2>Dark Offcanvas</h2>
@@ -2159,7 +2162,7 @@
                 <div class="offcanvas-body">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
+                            <a class="nav-link" href="#my-navbar">Link 1</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link 2</a>
@@ -2170,7 +2173,7 @@
                     </ul>
                 </div>
             </div>
-            <button type="button" class="btn btn-info d-block mx-auto my-3 w-75" data-bs-toggle="offcanvas" data-bs-target="#my-offcanvas2">Open Dark Offcanvas</button>
+            <a type="button" class="btn btn-info d-block mx-auto my-3 w-75" data-bs-toggle="offcanvas" data-bs-target="#my-offcanvas2">Open Dark Offcanvas</a>
         </div>
     </section>
     <section class="my-3 border border-3">

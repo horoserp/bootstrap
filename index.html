@@ -2173,6 +2173,94 @@
             <button type="button" class="btn btn-info d-block mx-auto my-3 w-75" data-bs-toggle="offcanvas" data-bs-target="#my-offcanvas2">Open Dark Offcanvas</button>
         </div>
     </section>
+    <section class="my-3 border border-3">
+        <h1>Utilities/Helper Classes</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Borders</h2>
+            <div class="container">
+                <h3 class="my-3 border">
+                    <code>.border</code> adds a standard grey border.
+                </h3>
+                <h3 class="my-3 border-bottom">
+                    Adding <code>.border-top|bottom|start|end</code> puts a border only on that side.
+                </h3>
+                <h3 class="my-3 border border-bottom-0">
+                    Adding <code>.border-*-0</code> removes that border segment.
+                </h3>
+                <h3 class="my-3 border border-5">
+                    Add <code>.border-*</code> where * is 1-5 to increase border width.
+                </h3>
+                <h3 class="my-3 border border-danger">
+                    Use <code>.border-*</code>, where * is a contextual class, to add color.
+                </h3>
+                <h3 class="my-3 border border-info rounded-3">
+                    Add <code>.rounded-*</code> to add border-radius. * can be between 0 and 5.
+                </h3>
+                <h3 class="my-3 border border-primary rounded-circle text-center">
+                    Add <code>.rounded-circle</code> for a circle.
+                </h3>
+                <h3 class="my-3 border border-success rounded-pill">
+                    Add <code>.rounded-pill</code> for a large border-radius.
+                </h3>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Floats</h2>
+            <h3 class="text-primary">Float Start, Float End and Clearfix</h3>
+            <h3>Use <code>.float-start|end</code> to justify text.</h3>
+            <h3>Use <code>.clearfix</code> on container to make floats stay in their parent container.</h3>
+            <div class="container">
+                <div class="clearfix">
+                    <span class="float-end border border-5">Float Right</span>
+                    <span class="float-start border border-5">Float Left</span>
+                </div>
+            </div>
+            <h3 class="text-success">Responsive Floats</h3>
+            <h3>Use <code>.float-sm|md|lg|xl|xxl|none-start|end</code>.</h3>
+            <div class="container">
+                <div class="my-3 border border-3">
+                    <div class="float-sm-end">Float right on small screens or wider.</div><br>
+                    <div class="float-md-end">Float rigth on medium screens or wider.</div><br>
+                    <div class="float-lg-end">Float rigth on large screens or wider.</div><br>
+                    <div class="float-xl-end">Float rigth on extra large screens or wider.</div><br>
+                    <div class="float-xxl-end">Float rigth on XXL screens or wider.</div><br>
+                    <div class="float-none">Float none.</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2>Formatting</h2>
+            <h3 class="text-primary">Centering</h3>
+            <h3>Use <code>.mx-auto</code> to center a block.</h3>
+            <h3><span class="badge bg-danger">NOTE:</span> You need to specify a width.</h3>
+            <div class="mx-auto my-3 bg-info w-50">Center</div>
+            <h3 class="text-success">Width</h3>
+            <h3>Use <code>.w-25|50|75|100|auto</code> or <code>.mw-100</code> to set the width.</h3>
+            <div class="container">
+                <div class="my-3 border border-3">
+                    <div class="w-25 bg-primary">Width: 25%</div>
+                    <div class="w-50 bg-success">Width: 50%</div>
+                    <div class="w-75 bg-info">Width: 75%</div>
+                    <div class="w-100 bg-warning">Width: 100%</div>
+                    <div class="w-auto bg-danger">Width: Auto</div>
+                    <div class="mw-100 bg-dark text-white" style="width: 2000px;">Max Width: 100%</div>
+                </div>
+            </div>
+            <h3 class="text-info">Height</h3>
+            <h3>Use <code>.h-25|50|75|100|auto</code> or <code>.mh-100</code> to set the height.</h3>
+            <h3><span class="badge bg-danger">NOTE:</span> Your container needs a specified height.</h3>
+            <div class="container">
+                <div class="my-3 border border-3" style="height: 200px;">
+                    <div class="h-25 d-inline-block p-2 bg-primary">Height: 25%</div>
+                    <div class="h-50 d-inline-block p-2 bg-success">Height: 50%</div>
+                    <div class="h-75 d-inline-block p-2 bg-info">Height: 75%</div>
+                    <div class="h-100 d-inline-block p-2 bg-warning">Height: 100%</div>
+                    <div class="h-auto d-inline-block p-2 bg-danger">Height: Auto</div>
+                    <div class="mh-100 d-inline-block p-2 bg-dark text-white" style="height: 1000px;">Max Height: 100%</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script>
         // Initialize tooltips

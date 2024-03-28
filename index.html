@@ -2083,6 +2083,95 @@
     </section>
     <section class="my-3 border border-3">
         <h1>Offcanvas - Often used as sidebar navigation and hidden by default.</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Basic</h2>
+            <div class="list-group">
+                <h3 class="list-group-item">
+                    Add a container with <code>.offcanvas .offcanvas-start|end|top|bottom</code> and an ID.
+                </h3>
+                <h3 class="list-group-item">
+                    Add a container with <code>.offcanvas-header</code> which contains an <code>h1</code>
+                    with <code>.offcanvas-title</code> and a <code>button</code> to close the offcanvas.
+                </h3>
+                <h3 class="list-group-item">
+                    Add a container with <code>.offcanvas-body</code> that contains your main content (links/buttons).
+                </h3>
+                <h3 class="list-group-item">
+                    Add a <code>button</code> outside the offcanva to open it with <code>data-bs-toggle="offcanvas",
+                    data-bs-target="#ID"</code>.
+                </h3>
+                <div class="offcanvas offcanvas-start" id="my-offcanvas">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">My Offcanvas</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary d-block my-3 mx-auto w-75" data-bs-toggle="offcanvas" data-bs-target="#my-offcanvas">Open Sidebar</button>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Responsive - control when to show/hide offcanvas on different screen widths.</h2>
+            <h3>Add <code>.offcanvas-sm|md|lg|xl|xxl</code> to main container.</h3>
+            <h3><span class="badge bg-danger">NOTE:</span> Hide the Offcanvas Button by using <code>.d-md-none</code>.</h3>
+            <div class="offcanvas offcanvas-end offcanvas-md" id="my-offcanvas1">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Responsive Offcanvas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="btn btn-success d-block w-75 mx-auto my-3 d-md-none" data-bs-toggle="offcanvas" data-bs-target="#my-offcanvas1">Open Responsive Offcanvas</button>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2>Dark Offcanvas</h2>
+            <h3>Add <code>.text-bg-dark</code> to main container to create a dark offcanvas menu.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Add <code>.btn-close-whie</code> to your closing button.</h3>
+            <div class="offcanvas offcanvas-start text-bg-dark" id="my-offcanvas2">
+                <div class="offcanvas-header">
+                    <h3 class="offcanvas-title">Dark Offcanvas</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="btn btn-info d-block mx-auto my-3 w-75" data-bs-toggle="offcanvas" data-bs-target="#my-offcanvas2">Open Dark Offcanvas</button>
+        </div>
     </section>
 
     <script>

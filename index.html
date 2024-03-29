@@ -37,6 +37,7 @@
 
 <body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="50">
     <header class="my-3 border border-3">
+        <a type="button" class="my-3 btn btn-primary mx-auto d-block w-50" href="#bottom-of-page">Bottom</a>
         <h1>This is the Header.</h1>
         <h2>All <code>div</code> and <code>section</code> elements have <code>my-3</code> and <code>border-3</code> applied to them.</h2>
     </header>
@@ -114,7 +115,7 @@
         </div>
     </section>
     <section class="my-3 border border-3">
-        <h1>Colors:</h1>
+        <h1 id="colors">Colors:</h1>
         <div class="my-3 border border-3 border-primary">
             <h2>Text</h2>
             <div class="row">
@@ -2263,7 +2264,114 @@
                 </div>
             </div>
         </div>
+        <div class="my-3 border border-3 border-warning">
+            <h2>Spacing</h2>
+            <h3>Use format: <code>&#123;property&#125;&#123;sides&#125;-&#123;breakpoint&#125;-&#123;size&#125;</code></h3>
+            <h3><span class="badge bg-warning">NOTE:</span> Sides and Breakpoint are optional.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Size can also be set to auto for margin.</h3>
+            <h3 class="text-primary">Margin (<code>.m</code>)</h3>
+            <div class="container">
+                <div class="my-3 border border-3">
+                    <div class="bg-primary text-bg-primary m-1">I have a .25rem (size 1) margin on all sides (.m-1).</div>
+                    <div class="bg-success text-bg-success mt-2">I have a .50rem (size 2) margin on the top (.mt-2).</div>
+                    <div class="bg-info text-bg-info mb-3">I have a 1rem (size 3) margin on the bottom (.mb-3).</div>
+                    <div class="bg-warning text-bg-warning ms-4">I have a 1.5rem (size 4) margin on the left (.ms-4).</div>
+                    <div class="bg-danger text-bg-danger me-5">I have a 3rem (size 5) margin on the right (.me-5).</div>
+                    <div class="bg-dark text-bg-dark mx-3">I have a 1rem (size 3) margin on the left and right (.mx-3).</div>
+                    <div class="bg-secondary text-bg-secondary my-3">I have a 1 rem (size 3) margin on the top and bottom (.my-3).</div>
+                    <div class="bg-primary text-bg-primary ms-auto" style="width: 400px;">I have margin left set to auto [w:400px] (.ms-auto).</div>
+                    <div class="bg-success text-bg-success m-md-3">I have a 1rem (size 3) margin on all sides on md screens (.m-md-3).</div>
+                </div>
+            </div>
+            <h3 class="text-success">Padding (<code>.p</code>)</h3>
+            <div class="container">
+                <div class="my-3 border border-3">
+                    <div class="bg-primary text-bg-primary p-1">I have a .25rem (size 1) margin on all sides (.m-1).</div>
+                    <div class="bg-success text-bg-success pt-2">I have a .50rem (size 2) margin on the top (.mt-2).</div>
+                    <div class="bg-info text-bg-info pb-3">I have a 1rem (size 3) margin on the bottom (.mb-3).</div>
+                    <div class="bg-warning text-bg-warning ps-4">I have a 1.5rem (size 4) margin on the left (.ms-4).</div>
+                    <div class="bg-danger text-bg-danger pe-5">I have a 3rem (size 5) margin on the right (.me-5).</div>
+                    <div class="bg-dark text-bg-dark px-3">I have a 1rem (size 3) margin on the left and right (.mx-3).</div>
+                    <div class="bg-secondary text-bg-secondary py-3">I have a 1 rem (size 3) margin on the top and bottom (.my-3).</div>
+                    <div class="bg-primary text-bg-primary p-md-3">I have a 1rem (size 3) margin on all sides on md screens (.p-md-3).</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-danger">
+            <h2>Shadows</h2>
+            <h3>Add a shadow to an element by using <code>.shadow-none|sm|blank|lg</code>.</h3>
+            <div class="container">
+                <div class="shadow-none p-4 my-5 bg-light">No Shadow</div>
+                <div class="shadow-sm p-4 my-5 bg-white">Small Shadow</div>
+                <div class="shadow p-4 my-5 bg-white">Default Shadow</div>
+                <div class="shadow-lg p-4 my-5 bg-white">Large Shadow</div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-dark">
+            <h2>Vertical Align</h2>
+            <h3>Use <code>align-baseline|top|middle|bottom|text-top|text-bottom</code>.</h3>
+            <h3><span class="badge bg-danger">NOTE:</span> <strong>ONLY</strong> works on inline and table cell elements!</h3>
+            <div class="container">
+                <h1 class="display-1">
+                    <span class="align-baseline">Baseline</span>
+                    <span class="align-top">Top</span>
+                    <span class="align-middle">Middle</span>
+                    <span class="align-bottom">Bottom</span>
+                    <br>
+                    <span>Default</span>
+                    <span class="align-text-top">Text-Top</span>
+                    <span class="align-text-bottom">Text-Bottom</span>
+                </h1>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Aspect Ratio</h2>
+            <h3>Creates responsive video or slideshows based on width of parent.</h3>
+            <h3>Add <code>.ratio .ratio-1x1|4x3|16x9|21x9</code> to container.</h3>
+            <div class="container">
+                <h2>1:1</h2>
+                <div class="ratio ratio-1x1 my-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m80E1K75vDI?si=ljyLTLtbCp9_kG8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <h2>4:3</h2>
+                <div class="ratio ratio-4x3 my-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m80E1K75vDI?si=ljyLTLtbCp9_kG8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <h2>16:9</h2>
+                <div class="ratio ratio-16x9 my-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m80E1K75vDI?si=ljyLTLtbCp9_kG8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <h2>21:9</h2>
+                <div class="ratio ratio-21x9 my-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m80E1K75vDI?si=ljyLTLtbCp9_kG8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-success">
+            <h2>Visibility</h2>
+            <h3>Add <code>.invisible|.visible</code> to control an elements visibility.</h3>
+            <h3><span class="badge bg-warning">NOTE:</span> This does not change the CSS display value.</h3>
+            <div class="container">
+                <h1 class="display-4 text-center">There is a hidden <span class="invisible">word</span> in the middle.</h1>
+            </div>
+            <h3 class="text-primary">Screenreaders</h3>
+            <h3>Add <code>.visually-hidden</code> to hide an element on all devices except screen readers.</h3>
+            <h1 class="display-4 text-center">I have a hidden <span class="visually-hidden">word</span> except on screenreaders.</h1>
+        </div>
+        <div class="my-3 border border-3 border-info">
+            <h2>Close Icon</h2>
+            <h3>Use <code>.btn-close</code> to style a close icon - for alerts and modals mostly.</h3>
+            <div class="container my-3">
+                <button type="button" class="d-block w-50 mx-auto btn-close"></button>
+            </div>
+        </div>
+        <div class="my-3 border border-3 border-warning">
+            <h3>Colors (Text and Background)</h3>
+            <h3>See <a href="#colors" class="text-success">Colors</a></h3>
+        </div>
     </section>
+
+    <div id="bottom-of-page">Bottom</div>
 
     <script>
         // Initialize tooltips

@@ -2396,8 +2396,126 @@
                 </div>
             </div>
             <div class="container">
-                <div class="my-3 bg-dark text-white w-25 mx-auto">
-                    <div class="p-2 text-center">This is just a container that has a dark background with white text.</div>
+                <div class="d-flex justify-content-center my-3">
+                    <div class="p-2 bg-dark text-white">This is just a container that has a dark background with white text.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Flex</h1>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">Basic</h2>
+            <h3>Add <code>.d-flex</code> to a container.</h3>
+            <div class="container my-3">
+                <div class="d-flex p-3 bg-secondary text-white">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="p-2 bg-success">Flex Item 2</div>
+                    <div class="p-2 bg-info">Flex Item 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-success">
+            <h2 class="text-success">Inline Flex</h2>
+            <h3>To create an inline flex container, use <code>.d-inline-flex</code>.</h3>
+            <div class="container my-3">
+                <div class="d-inline-flex p-3 bg-secondary text-white">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="p-2 bg-success">Flex Item 2</div>
+                    <div class="p-2 bg-info">Flex Item 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-info">
+            <h2 class="text-info">Horizontal Direction</h2>
+            <h3>To right align and reverse order of flex items, use <code>.flex-row-reverse</code>.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Default is <code>.flex-row</code>.</h3>
+            <div class="container my-3">
+                <div class="d-flex flex-row-reverse p-3 bg-secondary text-white">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="p-2 bg-success">Flex Item 2</div>
+                    <div class="p-2 bg-info">Flex Item 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-warning">
+            <h2 class="text-warning">Vertical Direction</h2>
+            <h3>To display the flex items vertically, use <code>.flex-column</code> or
+                <code>.flex-column-reverse</code>.</h3>
+            <div class="container my-3">
+                <div class="d-flex flex-column p-3 bg-secondary text-white">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="p-2 bg-success">Flex Item 2</div>
+                    <div class="p-2 bg-info">Flex Item 3</div>
+                </div>
+                <div class="d-flex flex-column-reverse p-3 mt-3 bg-secondary text-white">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="p-2 bg-success">Flex Item 2</div>
+                    <div class="p-2 bg-info">Flex Item 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-danger">
+            <h2 class="text-danger">Justify Content</h2>
+            <h3>Use <code>.justify-content-start|end|center|between|around</code> to change
+            the alignment of flex items on the main axis.</h3>
+            <div class="container my-3">
+                <div class="d-flex justify-content-start p-3 mt-3 bg-secondary text-white">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="p-2 bg-success">Flex Item 2</div>
+                    <div class="p-2 bg-info">Flex Item 3</div>
+                </div>
+                <div class="d-flex justify-content-end p-3 mt-3 bg-secondary text-white">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="p-2 bg-success">Flex Item 2</div>
+                    <div class="p-2 bg-info">Flex Item 3</div>
+                </div>
+                <div class="d-flex justify-content-center p-3 mt-3 bg-secondary text-white">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="p-2 bg-success">Flex Item 2</div>
+                    <div class="p-2 bg-info">Flex Item 3</div>
+                </div>
+                <div class="d-flex justify-content-between p-3 mt-3 bg-secondary text-white">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="p-2 bg-success">Flex Item 2</div>
+                    <div class="p-2 bg-info">Flex Item 3</div>
+                </div>
+                <div class="d-flex justify-content-around p-3 my-3 bg-secondary text-white">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="p-2 bg-success">Flex Item 2</div>
+                    <div class="p-2 bg-info">Flex Item 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-dark">
+            <h2 class="text-dark">Fill/Equal Widths</h2>
+            <h3>Use <code>.flex-fill</code> on each flex-item.</h3>
+            <div class="container my-3">
+                <div class="d-flex p-3 my-3 bg-secondary text-white text-center">
+                    <div class="flex-fill p-2 bg-primary">Flex Item 1</div>
+                    <div class="flex-fill p-2 bg-success">Flex Item 2</div>
+                    <div class="flex-fill p-2 bg-info">Flex Item 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">Grow</h2>
+            <h3>Use <code>.flex-grow-1</code> on a single flex-item to make it take up the
+                rest of the space.</h3>
+            <div class="container my-3">
+                <div class="d-flex p-3 my-3 bg-secondary text-white text-center">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="flex-grow-1 p-2 bg-success">Flex Item 2</div>
+                    <div class="p-2 bg-info">Flex Item 3</div>
+                </div>
+            </div>
+            <h2 class="text-primary">Shrink</h2>
+            <h3><span class="badge bg-warning">NOTE:</span> I used padding to fix the vertical alignment.</h3>
+            <div class="container my-3 align-items-center">
+                <div class="d-flex p-3 my-3 bg-secondary text-white text-center">
+                    <div class="p-2 pt-4 bg-primary w-100">Flex Item 1</div>
+                    <div class="flex-shrink-1 p-2 bg-success">Shrink Item 2</div>
+                    <div class="flex-shrink-1 p-2 bg-info">Shrink Item 3</div>
                 </div>
             </div>
         </div>

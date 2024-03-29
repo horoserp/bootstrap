@@ -67,3 +67,13 @@ function fixTop(position) {
     }
 
 }
+
+// Theme Switcher
+function themeSwitch() {
+    if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+        document.documentElement.setAttribute('data-bs-theme','light')
+    }
+    else {
+        document.documentElement.setAttribute('data-bs-theme','dark')
+    }
+}

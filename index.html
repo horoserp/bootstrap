@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -2368,6 +2368,38 @@
         <div class="my-3 border border-3 border-warning">
             <h3>Colors (Text and Background)</h3>
             <h3>See <a href="#colors" class="text-success">Colors</a></h3>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Dark Mode</h1>
+        <div class="my-3 border border-3 border-primary">
+            <h2>Add <code>data-bs-theme="dark"</code> to <code>&lt;html&gt;</code> or a specific component.</h2>
+            <div class="container">
+                <h3 class="text-center">Change Global Theme</h3>
+                <button type="button" class="btn btn-primary d-block w-50 mx-auto my-3"  onclick="themeSwitch()" id="btnSwitch">Switch</button>
+            </div>
+            <div class="container my-3">
+                <h3 class="text-center">Card with a Dark Theme applied</h3>
+                <div class="card rounded-5 mx-auto" style="width: 400px;" data-bs-theme="dark">
+                    <img class=".card-img-top rounded-top-5" src="Big Ben.jpg" alt="Big Ben">
+                    <div class="card-header display-6">Big Ben</div>
+                    <div class="card-body">
+                        <h3 class="card-title">Dark Themed Card</h3>
+                        <div class="card-text">
+                            This is a Dark Themed Card. Notice how only this component changes
+                            theme, not the entire web page.
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <h4>Robert</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="my-3 bg-dark text-white w-25 mx-auto">
+                    <div class="p-2 text-center">This is just a container that has a dark background with white text.</div>
+                </div>
+            </div>
         </div>
     </section>
 

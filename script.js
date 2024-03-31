@@ -1,5 +1,6 @@
 let pressed = 0;
 
+// Function to change Fixed/Sticky attribute
 function fixTop(position) {
     const element = document.getElementById("fixed");
     const topButton = document.getElementById("top");
@@ -76,4 +77,10 @@ function themeSwitch() {
     else {
         document.documentElement.setAttribute('data-bs-theme','dark')
     }
+}
+
+// Function to change Wrap attribute
+function modifyWrap(elementID, attribute) {
+    const element = document.getElementById(elementID);
+    element.classList.toggle(attribute);
 }

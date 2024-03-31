@@ -2510,12 +2510,88 @@
                 </div>
             </div>
             <h2 class="text-primary">Shrink</h2>
+            <h3>Use <code>.flex-shrink-1</code> to make a flex item shrink if necessary.</h3>
             <h3><span class="badge bg-warning">NOTE:</span> I used padding to fix the vertical alignment.</h3>
             <div class="container my-3 align-items-center">
                 <div class="d-flex p-3 my-3 bg-secondary text-white text-center">
                     <div class="p-2 pt-4 bg-primary w-100">Flex Item 1</div>
                     <div class="flex-shrink-1 p-2 bg-success">Shrink Item 2</div>
                     <div class="flex-shrink-1 p-2 bg-info">Shrink Item 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-success">
+            <h2 class="text-success">Order</h2>
+            <h3>Use <code>.order-0|1|2|3|4|5</code> to change the order. The lower number is shown
+            first.</h3>
+            <div class="container my-3">
+                <div class="d-flex p-3 my-3 bg-secondary text-white text-center">
+                    <div class="p-2 order-3 bg-primary">Flex Item 1 (order-3)</div>
+                    <div class="p-2 order-1 bg-success">Shrink Item 2 (order-1)</div>
+                    <div class="p-2 order-2 bg-info">Shrink Item 3 (order-2)</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-warning">
+            <h2 class="text-warning">Auto Margins</h2>
+            <h3>Use <code>.ms-auto</code> to right justify flex items, and <code>.me.auto</code>
+            to left justify flex items. These classes get applied to the flex items.</h3>
+            <div class="container my-3">
+                <div class="d-flex p-3 my-3 bg-secondary text-white text-center">
+                    <div class="p-2 bg-primary ms-auto">Flex Item 1</div>
+                    <div class="p-2 bg-success">Shrink Item 2</div>
+                    <div class="p-2 bg-info">Shrink Item 3</div>
+                </div>
+                <div class="d-flex p-3 my-3 bg-secondary text-white text-center">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="p-2 bg-success">Shrink Item 2</div>
+                    <div class="p-2 bg-info me-auto">Shrink Item 3</div>
+                </div>
+                <h3 class="text-center"><code>.ms-auto</code> applied to 2nd flex item.</h3>
+                <div class="d-flex p-3 my-3 bg-secondary text-white text-center">
+                    <div class="p-2 bg-primary">Flex Item 1</div>
+                    <div class="p-2 bg-success ms-auto">Shrink Item 2</div>
+                    <div class="p-2 bg-info">Shrink Item 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-dark">
+            <h2 class="text-dark">Wrap</h2>
+            <h3>Change how the flex items wrap in a flex container by using <code>.flex-wrap</code>,
+            <code>flex-wrap-reverse</code> or <code>flex-nowrap</code> (default).</h3>
+            <div class="container my-3">
+                <button type="button" onclick="modifyWrap('my-flex', 'flex-nowrap')" class="btn btn-primary w-25 mx-auto d-block my-3">No Wrap</button>
+                <button type="button" onclick="modifyWrap('my-flex', 'flex-wrap')" class="btn btn-primary w-25 mx-auto d-block my-3">Wrap</button>
+                <button type="button" onclick="modifyWrap('my-flex', 'flex-wrap-reverse')" class="btn btn-primary w-25 mx-auto d-block my-3">Reverse Wrap</button>
+                <div class="d-flex bg-light" id="my-flex">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                    <div class="p-2 border">Flex item 4</div>
+                    <div class="p-2 border">Flex item 5</div>
+                    <div class="p-2 border">Flex item 6</div>
+                    <div class="p-2 border">Flex item 7</div>
+                    <div class="p-2 border">Flex item 8</div>
+                    <div class="p-2 border">Flex item 9</div>
+                    <div class="p-2 border">Flex item 10</div>
+                    <div class="p-2 border">Flex item 11</div>
+                    <div class="p-2 border">Flex item 12</div>
+                    <div class="p-2 border">Flex item 13 </div>
+                    <div class="p-2 border">Flex item 14</div>
+                    <div class="p-2 border">Flex item 15</div>
+                    <div class="p-2 border">Flex item 16</div>
+                    <div class="p-2 border">Flex item 17</div>
+                    <div class="p-2 border">Flex item 18</div>
+                    <div class="p-2 border">Flex item 19</div>
+                    <div class="p-2 border">Flex item 20</div>
+                    <div class="p-2 border">Flex item 21</div>
+                    <div class="p-2 border">Flex item 22</div>
+                    <div class="p-2 border">Flex item 23</div>
+                    <div class="p-2 border">Flex item 24</div>
+                    <div class="p-2 border">Flex item 25</div>
+                    <div class="p-2 border">Flex item 26</div>
+                    <div class="p-2 border">Flex item 27</div>
+                    <div class="p-2 border">Flex item 28</div>
                 </div>
             </div>
         </div>

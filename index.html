@@ -2666,9 +2666,154 @@
             </div>
         </div>
         <div class="my-3 mx-1 border border-3 border-info">
-            <h2>Responsive Flex Classes</h2>
+            <h2 class="text-info">Responsive Flex Classes</h2>
             <h3><span class="badge bg-info">NOTE:</span> All flex classes come with additional
             responsive classes, so you can set a specific flex class on a specific screen size.</h3>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Forms</h1>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">Stacked Form</h2>
+            <h3>Add <code>.form-control</code> to <code>&lt;input&gt;</code> and
+            <code>&lt;textarea&gt;</code>.</h3>
+            <h3>Add <code>.form-label</code> to each label element.</h3>
+            <h3><span class="badge bg-warning">NOTE:</span> Checkboxes have different markup and
+            will be discussed later.</h3>
+            <form class="my-3">
+                <div class="container bg-light border border-3 border-dark rounded py-1">
+                    <div class="my-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                    </div>
+                    <div class="my-3">
+                        <label for="pwd" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="pswd">
+                    </div>
+                    <div class="form-check my-3">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember">Remember Me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-success">
+            <h2 class="text-success">Inline Forms (Row/Grid)</h2>
+            <h3>Use <code>.row</code> and <code>.col</code> to make form elements appear side by side.</h3>
+            <form class="my-3">
+                <div class="container bg-light border border-3 border-dark rounded py-1">
+                    <div class="row">
+                        <div class="col">
+                            <div class="my-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="my-3">
+                                <label for="pwd" class="form-label">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="pswd">
+                            </div>
+                            <button type="submit" class="btn btn-success mb-2 d-block ms-auto">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-info">
+            <h2 class="text-info">Form Control Size</h2>
+            <h3>Add <code>form-control-sm|lg</code> to <code>.form-control</code>.</h3>
+            <form class="my-3">
+                <div class="container bg-light border border-3 border-dark rounded py-1">
+                    <div class="row">
+                        <div class="col">
+                            <div class="my-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control form-control-sm" id="email" placeholder="Enter Email" name="email">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="my-3">
+                                <label for="fname" class="form-label">First Name:</label>
+                                <input type="password" class="form-control" id="fname" placeholder="Enter First Name" name="first-name">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="my-3">
+                                <label for="pwd" class="form-label">Password:</label>
+                                <input type="password" class="form-control form-control-lg" id="pwd" placeholder="Enter Password" name="pswd">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-warning">
+            <h2 class="text-warning">Disabled and Readonly</h2>
+            <h3>Use attributes <code>disabled</code> and <code>readonly</code> in addition
+            to <code>.form-control</code>.</h3>
+            <form class="my-3">
+                <div class="container bg-light border border-3 border-dark rounded py-1">
+                    <div class="row">
+                        <div class="col">
+                            <div class="my-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="my-3">
+                                <label for="fname" class="form-label">First Name:</label>
+                                <input type="text" class="form-control" disabled id="fname" placeholder="Enter First Name" name="first-name">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="my-3">
+                                <label for="pwd" class="form-label">Password:</label>
+                                <input type="password" class="form-control" readonly id="pwd" placeholder="Enter Password" name="pswd">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-danger">
+            <h2 class="text-danger">Plain Text Inputs</h2>
+            <h3>Use <code>.form-control-plaintext</code> on fields to remove borders but keep
+            margins and padding.</h3>
+            <form class="my-3">
+                <div class="container bg-light border border-3 border-dark rounded py-1">
+                    <div class="row">
+                        <div class="col">
+                            <div class="my-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="my-3">
+                                <label for="pwd" class="form-label">Password:</label>
+                                <input type="password" class="form-control-plaintext bg-white" id="pwd" placeholder="Enter Password" name="pswd">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-dark">
+            <h2 class="text-dark">Color Picker</h2>
+            <h3>Use an input with <code>type="color"</code>, <code>.form-control .form-control-color</code>
+            and <code>value="#CCCCCC"</code> to create a color picker.</h3>
+            <form class="my-3">
+                <div class="container bg-light border border-3 border-dark rounded py-1">
+                    <div class="my-3">
+                        <label for="picker" class="form-label">Color Picker:</label>
+                        <input type="color" class="form-control form-control-color" value="FF0000">
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 

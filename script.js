@@ -94,3 +94,48 @@ function modifyWrap(elementID, attribute, buttonID) {
         document.getElementById('flex-btn-2').classList.toggle("disabled");
     }
 }
+
+// Function to change vertical alignment of Flex items
+function flexAlign(attribute) {
+    switch (attribute) {
+        case 'start':
+            document.getElementById("my-flex2").className = "d-flex flex-wrap bg-light align-content-start";
+            break;
+        case 'end':
+            document.getElementById("my-flex2").className = "d-flex flex-wrap bg-light align-content-end";
+            break;
+        case 'center':
+            document.getElementById("my-flex2").className = "d-flex flex-wrap bg-light align-content-center";
+            break;
+        case 'around':
+            document.getElementById("my-flex2").className = "d-flex flex-wrap bg-light align-content-around";
+            break;
+        case 'between':
+            document.getElementById("my-flex2").className = "d-flex flex-wrap bg-light align-content-between";
+            break;
+        case 'stretch':
+            document.getElementById("my-flex2").className = "d-flex flex-wrap bg-light align-content-stretch";
+            break;
+    }
+}
+
+// Function to change the vertical alignment of a single Flex item
+function alignSelf(attribute) {
+    switch (attribute) {
+        case 'start':
+            document.getElementById("flex-item").className = "p-2 border border-3 border-info align-self-start";
+            break;
+        case 'end':
+            document.getElementById("flex-item").className = "p-2 border border-3 border-info align-self-end";
+            break;
+        case 'center':
+            document.getElementById("flex-item").className = "p-2 border border-3 border-info align-self-center";
+            break;
+        case 'baseline':
+            document.getElementById("flex-item").className = "p-2 border border-3 border-info align-self-baseline";
+            break;
+        case 'stretch':
+            document.getElementById("flex-item").className = "p-2 border border-3 border-info align-self-stretch";
+            break;
+    }
+}

@@ -2560,9 +2560,11 @@
             <h3>Change how the flex items wrap in a flex container by using <code>.flex-wrap</code>,
             <code>flex-wrap-reverse</code> or <code>flex-nowrap</code> (default).</h3>
             <div class="container my-3">
-                <button type="button" id="flex-btn-1" onclick="modifyWrap('my-flex', 'flex-nowrap', 'flex-btn-1')" class="btn btn-primary w-25 mx-auto d-block my-3">No Wrap (Default)</button>
-                <button type="button" id="flex-btn-2" onclick="modifyWrap('my-flex', 'flex-wrap', 'flex-btn-2')" class="btn btn-primary w-25 mx-auto d-block my-3">Wrap</button>
-                <button type="button" id="flex-btn-3" onclick="modifyWrap('my-flex', 'flex-wrap-reverse', 'flex-btn-3')" class="btn btn-primary w-25 mx-auto d-block my-3">Reverse Wrap</button>
+                <div class="d-flex justify-content-around">
+                    <button type="button" id="flex-btn-1" onclick="modifyWrap('my-flex', 'flex-nowrap', 'flex-btn-1')" class="btn btn-dark w-25 my-3">No Wrap (Default)</button>
+                    <button type="button" id="flex-btn-2" onclick="modifyWrap('my-flex', 'flex-wrap', 'flex-btn-2')" class="btn btn-dark w-25 my-3">Wrap</button>
+                    <button type="button" id="flex-btn-3" onclick="modifyWrap('my-flex', 'flex-wrap-reverse', 'flex-btn-3')" class="btn btn-dark w-25 my-3">Reverse Wrap</button>
+                </div>
                 <div class="d-flex bg-light" id="my-flex">
                     <div class="p-2 border">Flex item 1</div>
                     <div class="p-2 border">Flex item 2</div>
@@ -2594,6 +2596,79 @@
                     <div class="p-2 border">Flex item 28</div>
                 </div>
             </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">Align Content/Items</h2>
+            <h3>Control the vertical alignment of mutliple rows of flex items by adding <code>.align-content-
+            start|end|center|between|around|stretch</code>.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Stretch is default.</h3>
+            <h3><span class="badge bg-warning">NOTE:</span> Use <code>.align-items-*</code> for
+            single rows of flex items. Valid classes are <code>start|end|center|baseline|stretch</code>.</h3>
+            <div class="container my-3">
+                <div class="d-flex justify-content-around">
+                    <button type="button" onclick="flexAlign('start')" class="btn btn-primary my-3" style="width: 10vw;">Start</button>
+                    <button type="button" onclick="flexAlign('end')" class="btn btn-primary my-3" style="width: 10vw;">End</button>
+                    <button type="button" onclick="flexAlign('center')" class="btn btn-primary my-3" style="width: 10vw;">Center</button>
+                    <button type="button" onclick="flexAlign('around')" class="btn btn-primary my-3" style="width: 10vw;">Around</button>
+                    <button type="button" onclick="flexAlign('between')" class="btn btn-primary my-3" style="width: 10vw;">Between</button>
+                    <button type="button" onclick="flexAlign('stretch')" class="btn btn-primary my-3" style="width: 10vw;">Stretch</button>
+                </div>
+                <div class="d-flex flex-wrap bg-light" style="height: 200px" id="my-flex2">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                    <div class="p-2 border">Flex item 4</div>
+                    <div class="p-2 border">Flex item 5</div>
+                    <div class="p-2 border">Flex item 6</div>
+                    <div class="p-2 border">Flex item 7</div>
+                    <div class="p-2 border">Flex item 8</div>
+                    <div class="p-2 border">Flex item 9</div>
+                    <div class="p-2 border">Flex item 10</div>
+                    <div class="p-2 border">Flex item 11</div>
+                    <div class="p-2 border">Flex item 12</div>
+                    <div class="p-2 border">Flex item 13 </div>
+                    <div class="p-2 border">Flex item 14</div>
+                    <div class="p-2 border">Flex item 15</div>
+                    <div class="p-2 border">Flex item 16</div>
+                    <div class="p-2 border">Flex item 17</div>
+                    <div class="p-2 border">Flex item 18</div>
+                    <div class="p-2 border">Flex item 19</div>
+                    <div class="p-2 border">Flex item 20</div>
+                    <div class="p-2 border">Flex item 21</div>
+                    <div class="p-2 border">Flex item 22</div>
+                    <div class="p-2 border">Flex item 23</div>
+                    <div class="p-2 border">Flex item 24</div>
+                    <div class="p-2 border">Flex item 25</div>
+                    <div class="p-2 border">Flex item 26</div>
+                    <div class="p-2 border">Flex item 27</div>
+                    <div class="p-2 border">Flex item 28</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-success">
+            <h2 class="text-success">Align Self</h2>
+            <h3>Use <code>align-self-start|end|center|baseline|stretch</code> to chance the vertical
+            alignment of a single flex item.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Stretch is default.</h3>
+            <div class="container my-3">
+                <div class="d-flex justify-content-around">
+                    <button type="button" onclick="alignSelf('start')" class="btn btn-success my-3" style="width: 10vw;">Start</button>
+                    <button type="button" onclick="alignSelf('end')" class="btn btn-success my-3" style="width: 10vw;">End</button>
+                    <button type="button" onclick="alignSelf('center')" class="btn btn-success my-3" style="width: 10vw;">Center</button>
+                    <button type="button" onclick="alignSelf('baseline')" class="btn btn-success my-3" style="width: 10vw;">Baseline</button>
+                    <button type="button" onclick="alignSelf('stretch')" class="btn btn-success my-3" style="width: 10vw;">Stretch</button>
+                </div>
+                <div class="d-flex flex-wrap bg-light" style="height: 200px">
+                    <div class="p-2 border">Flex item 1</div>
+                    <div class="p-2 border border-3 border-info" id="flex-item">Flex item 2</div>
+                    <div class="p-2 border">Flex item 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-info">
+            <h2>Responsive Flex Classes</h2>
+            <h3><span class="badge bg-info">NOTE:</span> All flex classes come with additional
+            responsive classes, so you can set a specific flex class on a specific screen size.</h3>
         </div>
     </section>
 

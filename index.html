@@ -2560,9 +2560,9 @@
             <h3>Change how the flex items wrap in a flex container by using <code>.flex-wrap</code>,
             <code>flex-wrap-reverse</code> or <code>flex-nowrap</code> (default).</h3>
             <div class="container my-3">
-                <button type="button" onclick="modifyWrap('my-flex', 'flex-nowrap')" class="btn btn-primary w-25 mx-auto d-block my-3">No Wrap</button>
-                <button type="button" onclick="modifyWrap('my-flex', 'flex-wrap')" class="btn btn-primary w-25 mx-auto d-block my-3">Wrap</button>
-                <button type="button" onclick="modifyWrap('my-flex', 'flex-wrap-reverse')" class="btn btn-primary w-25 mx-auto d-block my-3">Reverse Wrap</button>
+                <button type="button" id="flex-btn-1" onclick="modifyWrap('my-flex', 'flex-nowrap', 'flex-btn-1')" class="btn btn-primary w-25 mx-auto d-block my-3">No Wrap (Default)</button>
+                <button type="button" id="flex-btn-2" onclick="modifyWrap('my-flex', 'flex-wrap', 'flex-btn-2')" class="btn btn-primary w-25 mx-auto d-block my-3">Wrap</button>
+                <button type="button" id="flex-btn-3" onclick="modifyWrap('my-flex', 'flex-wrap-reverse', 'flex-btn-3')" class="btn btn-primary w-25 mx-auto d-block my-3">Reverse Wrap</button>
                 <div class="d-flex bg-light" id="my-flex">
                     <div class="p-2 border">Flex item 1</div>
                     <div class="p-2 border">Flex item 2</div>

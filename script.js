@@ -80,7 +80,17 @@ function themeSwitch() {
 }
 
 // Function to change Wrap attribute
-function modifyWrap(elementID, attribute) {
+function modifyWrap(elementID, attribute, buttonID) {
     const element = document.getElementById(elementID);
     element.classList.toggle(attribute);
+    if(buttonID === 'flex-btn-1') {
+        document.getElementById('flex-btn-2').classList.toggle("disabled");
+        document.getElementById('flex-btn-3').classList.toggle("disabled");
+    } else if (buttonID === 'flex-btn-2') {
+        document.getElementById('flex-btn-1').classList.toggle("disabled");
+        document.getElementById('flex-btn-3').classList.toggle("disabled");
+    } else {
+        document.getElementById('flex-btn-1').classList.toggle("disabled");
+        document.getElementById('flex-btn-2').classList.toggle("disabled");
+    }
 }

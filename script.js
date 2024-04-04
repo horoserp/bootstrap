@@ -150,3 +150,34 @@ function startup() {
         document.getElementById("output").innerHTML = this.value;
     }
 }
+
+// Function to add multiple attribute to select element
+function toggleMultiple() {
+    const element = document.getElementById("select1");
+    const button = document.getElementById("selectButton");
+    const element2 = document.getElementById("selectLabel1");
+    element.toggleAttribute("multiple");
+    if (button.innerHTML === "Change to Select Multiple") {
+        button.innerHTML = "Change to Select One";
+        element2.innerHTML = "Select List (Multiple)";
+    } else {
+        button.innerHTML = "Change to Select Multiple";
+        element2.innerHTML = "Select List (One)"
+    }
+}
+
+// Function to change the menu size of a Select input
+function selectSize(size) {
+    const element = document.getElementById("select2");
+    switch(size) {
+        case 'small':
+            element.className = "form-select form-select-sm";
+            break;
+        case 'normal':
+            element.className = "form-select";
+            break;
+        case 'large':
+            element.className = "form-select form-select-lg";
+            break;
+    }
+}

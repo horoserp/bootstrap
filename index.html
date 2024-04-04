@@ -2823,6 +2823,79 @@
             </form>
         </div>
     </section>
+    <section class="my-3 border border-3">
+        <h1>Select Inputs</h1>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">Select Menu</h2>
+            <h3>Add <code>.form-select</code> to the <code>&lt;select&gt;</code> element.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Add <code>multiple</code> attribute to
+            allow several items to be picked.</h3>
+            <button class="btn btn-primary d-block mx-auto w-25 my-3" onclick="toggleMultiple()" id="selectButton">Change to Select Multiple</button>
+            <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                <label for="select1" class="form-label" id="selectLabel1">Select List (One)</label>
+                <select class="form-select" id="select1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-success">
+            <h2 class="text-success">Size</h2>
+            <h3>Add <code>.form-select-sm|lg</code> to change the select menu size.</h3>
+            <div class="container d-flex justify-content-around">
+                <button class="btn btn-success my-3 w-25" onclick="selectSize('small')">Change to Small Size</button>
+                <button class="btn btn-success my-3 w-25" onclick="selectSize('normal')">Change to Normal Size</button>
+                <button class="btn btn-success my-3 w-25" onclick="selectSize('large')">Change to Large Size</button>
+            </div>
+            <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                <label for="select2" class="form-label" id="sizeLabel">Small Select Menu</label>
+                <select class="form-select form-select-sm" id="select2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-info">
+            <h2 class="text-info">Disabled</h2>
+            <h3>Add <code>disabled</code> to the select menu.</h3>
+            <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                <label for="select3" class="form-label">Disabled Select Menu</label>
+                <select class="form-select" id="select3" disabled>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-warning">
+            <h2 class="text-warning">Data Lists</h2>
+            <h3>Use Bootstrap to style data lists, which is a list of pre-defined options
+            for an <code>&lt;input&gt;</code> element.</h3>
+            <h3><span class="badge bg-warning">NOTE:</span> Data Lists allow for typed entries!</h3>
+                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                    <label for="select4" class="form-label">Choose Car:</label>
+                    <input class="form-control" list="cars" name="car" id="car">
+                    <datalist id="cars">
+                        <option value="Ford"></option>
+                        <option value="Chevrolet"></option>
+                        <option value="Ram"></option>
+                        <option value="Toyota"></option>
+                        <option value="Honda"></option>
+                    </datalist>
+                </div>
+            </div>
+    </section>
+    <section class="my-3 border border-3">
+
+    </section>
 
     <div id="bottom-of-page">Bottom</div>
 

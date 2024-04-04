@@ -2880,21 +2880,87 @@
             <h3>Use Bootstrap to style data lists, which is a list of pre-defined options
             for an <code>&lt;input&gt;</code> element.</h3>
             <h3><span class="badge bg-warning">NOTE:</span> Data Lists allow for typed entries!</h3>
-                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
-                    <label for="select4" class="form-label">Choose Car:</label>
-                    <input class="form-control" list="cars" name="car" id="car">
-                    <datalist id="cars">
-                        <option value="Ford"></option>
-                        <option value="Chevrolet"></option>
-                        <option value="Ram"></option>
-                        <option value="Toyota"></option>
-                        <option value="Honda"></option>
-                    </datalist>
-                </div>
+            <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                <label for="browser" class="form-label">Choose your browser from the list:</label>
+                <input class="form-control" list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
             </div>
+        </div>
     </section>
     <section class="my-3 border border-3">
-
+        <h1>Checkboxes and Radio Buttons</h1>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">Checkboxes - used for multiple selections</h2>
+            <h3>Start with a wrapper element with <code>.form-check</code>.</h3>
+            <h3>Add a label element with <code>.form-check-label</code>.</h3>
+            <h3>Finish by adding an input element with <code>.form-check-input</code>.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Use <code>checked</code> to have an
+            option checked by default.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Use <code>disabled</code> to have an
+            option disabled.</h3>
+            <form>
+                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                    <div class="d-flex justify-content-around">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="value" checked>
+                            <label class="form-check-label" for="check1">Checked</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="value">
+                            <label class="form-check-label" for="check2">Option 2</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check3" name="option3" value="value" disabled>
+                            <label class="form-check-label" for="check3">Disabled</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-success">
+            <h2 class="text-success">Radio Buttons - used for single selections</h2>
+            <h3>Same as checkboxes but change input type to <code>radio</code>.</h3>
+            <h3><span class="badge bg-danger">NOTE:</span> Radio buttons in a set must share
+            the same name attribute.</h3>
+            <form>
+                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                    <div class="d-flex justify-content-around">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="radioopt" value="value" checked>
+                            <label class="form-check-label" for="radio1">Checked</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="radioopt" value="value">
+                            <label class="form-check-label" for="radio2">Option 2</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio3" name="radioopt" value="value" disabled>
+                            <label class="form-check-label" for="radio3">Disabled</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-info">
+            <h2 class="text-info">Toggle Switches</h2>
+            <h3>Use <code>.form-switch</code> on the main wrapper (<code>.form-check</code>)</h3>
+            <form>
+                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="check4" name="option1" value="value" checked>
+                            <label class="form-check-label" for="check4">Toggle Switch</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
 
     <div id="bottom-of-page">Bottom</div>

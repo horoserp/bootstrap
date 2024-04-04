@@ -2708,13 +2708,13 @@
                         <div class="col">
                             <div class="my-3">
                                 <label for="email" class="form-label">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                                <input type="email" class="form-control" id="email1" placeholder="Enter Email" name="email">
                             </div>
                         </div>
                         <div class="col">
                             <div class="my-3">
                                 <label for="pwd" class="form-label">Password:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="pswd">
+                                <input type="password" class="form-control" id="pwd1" placeholder="Enter Password" name="pswd">
                             </div>
                             <button type="submit" class="btn btn-success mb-2 d-block ms-auto">Submit</button>
                         </div>
@@ -2731,7 +2731,7 @@
                         <div class="col">
                             <div class="my-3">
                                 <label for="email" class="form-label">Email:</label>
-                                <input type="email" class="form-control form-control-sm" id="email" placeholder="Enter Email" name="email">
+                                <input type="email" class="form-control form-control-sm" id="email2" placeholder="Enter Email" name="email">
                             </div>
                         </div>
                         <div class="col">
@@ -2743,7 +2743,7 @@
                         <div class="col">
                             <div class="my-3">
                                 <label for="pwd" class="form-label">Password:</label>
-                                <input type="password" class="form-control form-control-lg" id="pwd" placeholder="Enter Password" name="pswd">
+                                <input type="password" class="form-control form-control-lg" id="pwd2" placeholder="Enter Password" name="pswd">
                             </div>
                         </div>
                     </div>
@@ -2760,19 +2760,19 @@
                         <div class="col">
                             <div class="my-3">
                                 <label for="email" class="form-label">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                                <input type="email" class="form-control" id="email3" placeholder="Enter Email" name="email">
                             </div>
                         </div>
                         <div class="col">
                             <div class="my-3">
                                 <label for="fname" class="form-label">First Name:</label>
-                                <input type="text" class="form-control" disabled id="fname" placeholder="Enter First Name" name="first-name">
+                                <input type="text" class="form-control" disabled id="fname2" placeholder="Enter First Name" name="first-name">
                             </div>
                         </div>
                         <div class="col">
                             <div class="my-3">
                                 <label for="pwd" class="form-label">Password:</label>
-                                <input type="password" class="form-control" readonly id="pwd" placeholder="Enter Password" name="pswd">
+                                <input type="password" class="form-control" readonly id="pwd3" placeholder="Enter Password" name="pswd">
                             </div>
                         </div>
                     </div>
@@ -2789,13 +2789,13 @@
                         <div class="col">
                             <div class="my-3">
                                 <label for="email" class="form-label">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                                <input type="email" class="form-control" id="email4" placeholder="Enter Email" name="email">
                             </div>
                         </div>
                         <div class="col">
                             <div class="my-3">
                                 <label for="pwd" class="form-label">Password:</label>
-                                <input type="password" class="form-control-plaintext bg-white" id="pwd" placeholder="Enter Password" name="pswd">
+                                <input type="password" class="form-control-plaintext bg-white" id="pwd4" placeholder="Enter Password" name="pswd">
                             </div>
                         </div>
                     </div>
@@ -2809,8 +2809,15 @@
             <form class="my-3">
                 <div class="container bg-light border border-3 border-dark rounded py-1">
                     <div class="my-3">
-                        <label for="picker" class="form-label">Color Picker:</label>
-                        <input type="color" class="form-control form-control-color" value="FF0000">
+                        <div class="row">
+                            <div class="col">
+                                <label for="picker" class="form-label">Color Picker:</label>
+                                <input type="color" class="form-control form-control-color" value="#FF0000" name="color" id="picker">
+                            </div>
+                            <div class="col align-self-center">
+                                You chose the color: <span id="output">#FF0000</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </form>
@@ -2820,16 +2827,19 @@
     <div id="bottom-of-page">Bottom</div>
 
     <script>
+
         // Initialize tooltips
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
           return new bootstrap.Tooltip(tooltipTriggerEl)
         })
+
         // Initialize popovers
         var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             return new bootstrap.Popover(popoverTriggerEl)
         })
+
         // Initialize all toasts to open when you click a button
         document.getElementById("toastbtn").onclick = function() {
             var toastElList = [].slice.call(document.querySelectorAll('.toast'))
@@ -2838,6 +2848,7 @@
             })
             toastList.forEach(toast => toast.show())
         }
+
     </script>
 
 </body>

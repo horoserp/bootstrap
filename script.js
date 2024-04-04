@@ -1,5 +1,7 @@
 let pressed = 0;
 
+window.addEventListener("load", startup, false);
+
 // Function to change Fixed/Sticky attribute
 function fixTop(position) {
     const element = document.getElementById("fixed");
@@ -137,5 +139,14 @@ function alignSelf(attribute) {
         case 'stretch':
             document.getElementById("flex-item").className = "p-2 border border-3 border-info align-self-stretch";
             break;
+    }
+}
+
+// Functions to run after load
+function startup() {
+    // Function to display color picked from color input
+    document.querySelector("#picker").addEventListener("change", displayColor);
+    function displayColor() {
+        document.getElementById("output").innerHTML = this.value;
     }
 }

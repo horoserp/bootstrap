@@ -181,3 +181,8 @@ function selectSize(size) {
             break;
     }
 }
+
+// Function to output selected range value
+function outputValue(h4ID, inputID) {
+    document.getElementById(h4ID).innerHTML = document.getElementById(inputID).value;
+}

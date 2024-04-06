@@ -2962,6 +2962,50 @@
             </form>
         </div>
     </section>
+    <section class="my-3 border border-3">
+        <h1>Range</h1>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">Custom</h2>
+            <h3>Add <code>.form-range</code> to the input with <code>type="range"</code>.</h3>
+            <form>
+                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                    <div class="d-flex justify-content-center">
+                        <label class="form-label" for="my-range">Custom Range</label>
+                        <input type="range" class="form-range align-self-center" id="my-range" onchange="outputValue('rangeval', 'my-range')">
+                    </div>
+                    <h4 id="rangeval">50</h4>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-success">
+            <h2 class="text-success">Steps</h2>
+            <h3>Change the interval between range numbers by adding <code>step="#"</code> to input.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Default step is 1.</h3>
+            <form>
+                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                    <div class="d-flex justify-content-center">
+                        <label class="form-label" for="my-range2">Custom Step</label>
+                        <input type="range" class="form-range align-self-center" id="my-range2" step="10" onchange="outputValue('rangeval2', 'my-range2')">
+                    </div>
+                    <h4 id="rangeval2">50</h4>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-info">
+            <h2 class="text-info">Min and Max</h2>
+            <h3>Change the range by using <code>min</code> and <code>max</code> attributes.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Default min is 1 and default max is 100.</h3>
+            <form>
+                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                    <div class="d-flex justify-content-center">
+                        <label class="form-label" for="my-range3">Custom Range</label>
+                        <input type="range" class="form-range align-self-center" id="my-range3" min="10" max="20" onchange="outputValue('rangeval3', 'my-range3')">
+                    </div>
+                    <h4 id="rangeval3">15</h4>
+                </div>
+            </form>
+        </div>
+    </section>
 
     <div id="bottom-of-page">Bottom</div>
 

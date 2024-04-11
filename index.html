@@ -3126,6 +3126,56 @@
             </form>
         </div>
     </section>
+    <section class="my-3 border border-3">
+        <h1>Floating/Animated Labels</h1>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">Basic</h2>
+            <h3>You can have your labels replace the placeholder text inside an input and float/animate
+                when you focus on the input field.</h3>
+            <h3><span class="badge bg-danger">NOTE:</span> The <code>&lt;label&gt;</code> element must come
+                after the <code>&lt;input&gt;</code> element and the <code>placeholder</code> attribute
+                is required even though it is not shown.</h3>
+            <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                <form>
+                    <div class="form-floating my-3">
+                        <input type="email" class="form-control" id="email10" placeholder="Enter Email" name="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating my-3">
+                        <input type="password" class="form-control" id="pswd10" placeholder="Enter Password" name="pswd">
+                        <label for="pswd10">Password</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-success">
+            <h2 class="text-success">Textarea</h2>
+            <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                <div class="form-floating">
+                    <textarea class="form-control" id="comment10" name="text" placeholder="Comment"></textarea>
+                    <label for="comment10">Comments</label>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-info">
+            <h2 class="text-info">Select Menus</h2>
+            <h3>You can use "floating-labels" on select menus. </h3>
+            <h3><span class="badge bg-warning">NOTE:</span> The label will always appear
+                in the top left corner, inside the select menu.</h3>
+            <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                <div class="form-floating">
+                    <select class="form-select" id="my-list10" name="my-list">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <label for="my-list10">Select One</label>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div id="bottom-of-page">Bottom</div>
 

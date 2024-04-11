@@ -3163,16 +3163,53 @@
             <h3><span class="badge bg-warning">NOTE:</span> The label will always appear
                 in the top left corner, inside the select menu.</h3>
             <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
-                <div class="form-floating">
-                    <select class="form-select" id="my-list10" name="my-list">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                    <label for="my-list10">Select One</label>
-                </div>
+                <form>
+                    <div class="form-floating">
+                        <select class="form-select" id="my-list10" name="my-list">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <label for="my-list10">Select One</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="my-3 border border-3">
+        <h1>Form Validation</h1>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">Basic</h2>
+            <h3>Use <code>.was-validated</code> (before) or <code>.needs-validation</code> (after) to the
+                <code>&lt;form&gt;</code> element depending on if you want feedback to
+                occur before or after form submission.</h3>
+            <h3>You can also use <code>.valid-feedback</code> or <code>.invalid-feedback</code>
+                in a <code>&lt;div&gt;</code> to tell the user what's missing or needs to be done
+                before submission.</h3>
+            <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                <form class="was-validated">
+                    <div class="form-floating my-3">
+                        <input type="email" class="form-control" id="email11" placeholder="Enter Email" name="email" required>
+                        <label for="email11">Email</label>
+                        <div class="valid-feedback">Valid</div>
+                        <div class="invalid-feedback">Please enter a valid email address - hover over the exlamation mark for details.</div>
+                    </div>
+                    <div class="form-floating my-3">
+                        <input type="password" class="form-control" id="pswd11" placeholder="Enter Password" name="pswd" required>
+                        <label for="pswd11">Password</label>
+                        <div class="valid-feedback">Valid</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-check my-3">
+                        <input type="checkbox" class="form-check-input" id="check10" name="remember" required>
+                        <label for="check10" class="form-check-label">Agree</label>
+                        <div class="valid-feedback">Valid</div>
+                        <div class="invalid-feedback">Check this box to submit form.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
     </section>

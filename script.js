@@ -186,3 +186,24 @@ function selectSize(size) {
 function outputValue(h4ID, inputID) {
     document.getElementById(h4ID).innerHTML = document.getElementById(inputID).value;
 }
+
+// Function to change the input group size
+function inputSize (size) {
+    const element = document.getElementById("input-size");
+    switch(size) {
+        case 'small':
+            element.className = "input-group input-group-sm";
+            break;
+        case 'normal':
+            element.className = "input-group";
+            break;
+        case 'large':
+            element.className = "input-group input-group-lg";
+            break;
+    }
+}
+
+// Function to change dropdown text to selected choice
+function topDomain(type) {
+    document.getElementById("domain-button").innerHTML = type;
+}

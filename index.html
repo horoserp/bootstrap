@@ -3006,6 +3006,126 @@
             </form>
         </div>
     </section>
+    <section class="my-3 border border-3">
+        <h1>Input Groups</h1>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">Basic</h2>
+            <h3>Add icons, text or buttons in front of or behind an input field as "help text".</h3>
+            <h3>Use <code>.input-group</code> on a wrapper and <code>.input-group-text</code> on
+            a <code>&lt;span&gt;</code>.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> I have used multiple helpers in this example.</h3>
+            <form>
+                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                    <div class="d-flex justify-content-center align-items-baseline">
+                        <div class="me-3">
+                            <label class="form-label" for="inputgrp">Website</label>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">https://www.</span>
+                            <input type="text" class="form-control" placeholder="Second-Level Domain" id="inputgrp">
+                            <span class="input-group-text">.com</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-success">
+            <h2 class="text-success">Size</h2>
+            <h3>Add <code>.input-group-sm|lg</code> to <code>.input-group</code> to change the
+                size of an input group.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> I have used multiple inputs and helpers in this example.</h3>
+            <div class="container d-flex justify-content-around">
+                <button class="btn btn-success my-3 w-25" onclick="inputSize('small')">Chagne to Small Size</button>
+                <button class="btn btn-success my-3 w-25" onclick="inputSize('normal')">Chagne to Default Size</button>
+                <button class="btn btn-success my-3 w-25" onclick="inputSize('large')">Chagne to Large Size</button>
+            </div>
+            <form>
+                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                    <div class="d-flex justify-content-center align-items-baseline">
+                        <div class="me-3">
+                            <label class="form-label" for="inputgrp2">Website</label>
+                        </div>
+                        <div class="input-group input-group-sm" id="input-size">
+                            <span class="input-group-text">https://www.</span>
+                            <input type="text" class="form-control" placeholder="Second-Level Domain" id="inputgrp2">
+                            <span class="input-group-text">.</span>
+                            <input type="text" class="form-control" placeholder="Top-Level Domain">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-info">
+            <h2 class="text-info">Input Groups with Checkboxes and Radios</h2>
+            <h3>You can use Checkboxes and Radios as helpers.</h3>
+            <h3>Wrap your Checkbox/Radio in a <code>&lt;div&gt;</code> with <code>.input-group-text</code>
+                followed by your <code>&lt;input&gt;</code>.</h3>
+            <h3><span class="badge bg-warning">NOTE:</span> I have disabled these inputs.</h3>
+            <form>
+                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                    <div class="w-25 d-block mx-auto my-auto text-center mb-2">
+                        <label class="form-label" for="inputgrp3">Which Website do you prefer?</label>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text">
+                            <input type="checkbox">
+                        </div>
+                        <input disabled type="text" class="form-control" placeholder="https://www.google.com">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text">
+                            <input type="radio">
+                        </div>
+                        <input disabled type="text" class="form-control" placeholder="https://www.bing.com">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-warning">
+            <h2 class="text-warning">Input Group Buttons</h2>
+            <h3>Add buttons to input groups.</h3>
+            <form>
+                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                    <div class="d-flex justify-content-center align-items-baseline">
+                        <div class="me-3">
+                            <label class="form-label" for="inputgrp4">Required</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control text-center" placeholder="Agree to Our Terms & Conditions" id="inputgrp4">
+                            <button type="button" class="btn btn-primary">Agree</button>
+                            <button type="button" class="btn btn-danger">Disagree</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-dark">
+            <h2 class="text-dark">Input Groups with Dropdowns</h2>
+            <h3>Place the Dropdown inside the Button Group.</h3>
+            <form>
+                <div class="container bg-light border border-3 border-dark rounded py-3 my-3">
+                    <div class="d-flex justify-content-center align-items-baseline">
+                        <div class="me-3">
+                            <label class="form-label" for="inputgrp5">Website</label>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">www.</span>
+                            <input type="text" class="form-control text-center" placeholder="Second-Level Domain" id="inputgrp5">
+                            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" id="domain-button">
+                                Top-Level Domain
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" onclick="topDomain('.com')">.com</a></li>
+                                <li><a class="dropdown-item" onclick="topDomain('.edu')">.edu</a></li>
+                                <li><a class="dropdown-item" onclick="topDomain('.org')">.org</a></li>
+                                <li><a class="dropdown-item" onclick="topDomain('.gov')">.gov</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 
     <div id="bottom-of-page">Bottom</div>
 

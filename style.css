@@ -1,0 +1,53 @@
+@media only screen and (max-width: 575px) {
+    .small, .medium, .large, .xlarge, .xxlarge {
+        display: none;
+    }
+    .xsmall {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .xsmall, .medium, .large, .xlarge, .xxlarge {
+        display: none;
+    }
+    .small {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .xsmall, .small, .large, .xlarge, .xxlarge {
+        display: none;
+    }
+    .medium {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .xsmall, .small, .medium, .xlarge, .xxlarge {
+        display: none;
+    }
+    .large {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .xsmall, .small, .medium, .large, .xxlarge {
+        display: none;
+    }
+    .xlarge {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .xsmall, .small, .medium, .large, .xlarge {
+        display: none;
+    }
+    .xxlarge {
+        display: block;
+    }
+}

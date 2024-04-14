@@ -3301,6 +3301,263 @@
             </div>
         </div>
     </section>
+    <section class="my-3 border border-3">
+        <h1>Responsive Grid Examples</h1>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">X-Small</h2>
+            <h3>A grid with two columns split 25/75% on all devices.</h3>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-3 bg-primary text-bg-primary p-3">
+                        25%
+                    </div>
+                    <div class="col-9 bg-dark text-bg-dark p-3">
+                        75%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-success">
+            <h2 class="text-success">Small</h2>
+            <h3>A grid with two columns split 33/66% on small devices and larger.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> This example uses @media query to change
+                the display setting of <code>&lt;div&gt;</code>'s to render the correct
+                percentages.</h3>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-sm-4 bg-success text-bg-success p-3 xsmall">
+                        100%
+                    </div>
+                    <div class="col-sm-8 bg-dark text-bg-dark p-3 xsmall">
+                        100%
+                    </div>
+                    <div class="col-sm-4 bg-success text-bg-success p-3 small">
+                        33%
+                    </div>
+                    <div class="col-sm-8 bg-dark text-bg-dark p-3 small">
+                        66%
+                    </div>
+                    <div class="col-sm-4 bg-success text-bg-success p-3 medium">
+                        33%
+                    </div>
+                    <div class="col-sm-8 bg-dark text-bg-dark p-3 medium">
+                        66%
+                    </div>
+                    <div class="col-sm-4 bg-success text-bg-success p-3 large">
+                        33%
+                    </div>
+                    <div class="col-sm-8 bg-dark text-bg-dark p-3 large">
+                        66%
+                    </div>
+                    <div class="col-sm-4 bg-success text-bg-success p-3 xlarge">
+                        33%
+                    </div>
+                    <div class="col-sm-8 bg-dark text-bg-dark p-3 xlarge">
+                        66%
+                    </div>
+                    <div class="col-sm-4 bg-success text-bg-success p-3 xxlarge">
+                        33%
+                    </div>
+                    <div class="col-sm-8 bg-dark text-bg-dark p-3 xxlarge">
+                        66%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-info">
+            <h2 class="text-info">Medium</h2>
+            <h3>A grid with two columns split 50/50% on medium devices and larger, but 25/75% on
+                small devices and 100% on xsmall devices.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> This example uses @media query to change
+                the display setting of <code>&lt;div&gt;</code>'s to render the correct
+                percentages.</h3>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-sm-3 col-md-6 bg-info text-bg-info p-3 xsmall">
+                        100%
+                    </div>
+                    <div class="col-sm-9 col-md-6 bg-dark text-bg-dark p-3 xsmall">
+                        100%
+                    </div>
+                    <div class="col-sm-3 col-md-6 bg-info text-bg-info p-3 small">
+                        25%
+                    </div>
+                    <div class="col-sm-9 col-md-6 bg-dark text-bg-dark p-3 small">
+                        75%
+                    </div>
+                    <div class="col-sm-3 col-md-6 bg-info text-bg-info p-3 medium">
+                        50%
+                    </div>
+                    <div class="col-sm-9 col-md-6 bg-dark text-bg-dark p-3 medium">
+                        50%
+                    </div>
+                    <div class="col-sm-3 col-md-6 bg-info text-bg-info p-3 large">
+                        50%
+                    </div>
+                    <div class="col-sm-9 col-md-6 bg-dark text-bg-dark p-3 large">
+                        50%
+                    </div>
+                    <div class="col-sm-3 col-md-6 bg-info text-bg-info p-3 xlarge">
+                        50%
+                    </div>
+                    <div class="col-sm-9 col-md-6 bg-dark text-bg-dark p-3 xlarge">
+                        50%
+                    </div>
+                    <div class="col-sm-3 col-md-6 bg-info text-bg-info p-3 xxlarge">
+                        50%
+                    </div>
+                    <div class="col-sm-9 col-md-6 bg-dark text-bg-dark p-3 xxlarge">
+                        50%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-warning">
+            <h2 class="text-warning">Large</h2>
+            <h3>A grid with two columns split 33/66% on large devices and larger, 50/50% on medium
+                devices, 25/75% on small devices and 100% on xsmall devices.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> This example uses @media query to change
+                the display setting of <code>&lt;div&gt;</code>'s to render the correct
+                percentages.</h3>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-sm-3 col-md-6 col-lg-4 bg-warning text-bg-warning p-3 xsmall">
+                        100%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 bg-dark text-bg-dark p-3 xsmall">
+                        100%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 bg-warning text-bg-warning p-3 small">
+                        25%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 bg-dark text-bg-dark p-3 small">
+                        75%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 bg-warning text-bg-warning p-3 medium">
+                        50%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 bg-dark text-bg-dark p-3 medium">
+                        50%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 bg-warning text-bg-warning p-3 large">
+                        33%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 bg-dark text-bg-dark p-3 large">
+                        66%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 bg-warning text-bg-warning p-3 xlarge">
+                        33%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 bg-dark text-bg-dark p-3 xlarge">
+                        66%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 bg-warning text-bg-warning p-3 xxlarge">
+                        33%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 bg-dark text-bg-dark p-3 xxlarge">
+                        66%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-danger">
+            <h2 class="text-danger">X-Large</h2>
+            <h3>A grid with two columns split 20/80% on x-large devices and larger, 33/66% on large devices,
+                50/50% on medium devices, 25/75% on small devices and 100% on xsmall devices.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> This example uses @media query to change
+                the display setting of <code>&lt;div&gt;</code>'s to render the correct
+                percentages.</h3>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-danger text-bg-danger p-3 xsmall">
+                        100%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-dark text-bg-dark p-3 xsmall">
+                        100%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-danger text-bg-danger p-3 small">
+                        25%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-dark text-bg-dark p-3 small">
+                        75%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-danger text-bg-danger p-3 medium">
+                        50%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-dark text-bg-dark p-3 medium">
+                        50%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-danger text-bg-danger p-3 large">
+                        33%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-dark text-bg-dark p-3 large">
+                        66%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-danger text-bg-danger p-3 xlarge">
+                        20%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-dark text-bg-dark p-3 xlarge">
+                        80%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-danger text-bg-danger p-3 xxlarge">
+                        20%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-dark text-bg-dark p-3 xxlarge">
+                        80%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-dark">
+            <h2 class="text-dark">XX-Large</h2>
+            <h3>A grid with two columns split 8/92% on xx-large devices, 20/80% on x-large devices,
+                33/66% on large devices, 50/50% on medium devices, 25/75% on small devices and 100%
+                on xsmall devices.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> This example uses @media query to change
+                the display setting of <code>&lt;div&gt;</code>'s to render the correct
+                percentages.</h3>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 col-xxl-1 bg-primary text-bg-primary p-3 xsmall">
+                        100%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 col-xxl-11 bg-dark text-bg-dark p-3 xsmall">
+                        100%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 col-xxl-1 bg-success text-bg-success p-3 small">
+                        25%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 col-xxl-11 bg-dark text-bg-dark p-3 small">
+                        75%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 col-xxl-1 bg-info text-bg-info p-3 medium">
+                        50%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 col-xxl-11 bg-dark text-bg-dark p-3 medium">
+                        50%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 col-xxl-1 bg-warning text-bg-warning p-3 large">
+                        33%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 col-xxl-11 bg-dark text-bg-dark p-3 large">
+                        66%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 col-xxl-1 bg-danger text-bg-danger p-3 xlarge">
+                        20%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 col-xxl-11 bg-dark text-bg-dark p-3 xlarge">
+                        80%
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 col-xxl-1 bg-light text-bg-light p-3 xxlarge">
+                        8%
+                    </div>
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 col-xxl-11 bg-dark text-bg-dark p-3 xxlarge">
+                        92%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div id="bottom-of-page">Bottom</div>
 

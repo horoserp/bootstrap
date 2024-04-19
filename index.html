@@ -3558,6 +3558,169 @@
             </div>
         </div>
     </section>
+    <section class="my-3 border border-3">
+        <h1>Grid Examples</h1>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">Three Equal Columns</h2>
+            <h3><span class="badge bg-info">NOTE:</span> You can have 2, 3, 4 and 6 equal
+                width columns.</h3>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col bg-danger text-bg-danger p-3">col</div>
+                    <div class="col p-3">col</div>
+                    <div class="col bg-primary text-bg-primary p-3">col</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-success">
+            <h2 class="text-success">Three Equal Columns Using Numbers</h2>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-4 bg-danger text-bg-danger p-3">col-4</div>
+                    <div class="col-4 p-3">col-4</div>
+                    <div class="col-4 bg-primary text-bg-primary p-3">col-4</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-info">
+            <h2 class="text-info">Three Unequal Columns (25/50/25)</h2>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-3 bg-danger text-bg-danger p-3">col-3</div>
+                    <div class="col-6 p-3">col-6</div>
+                    <div class="col-3 bg-primary text-bg-primary p-3">col-3</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-warning">
+            <h2 class="text-warning">Setting One Column Width</h2>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col bg-danger text-bg-danger p-3">col</div>
+                    <div class="col-6 p-3">col-6</div>
+                    <div class="col bg-primary text-bg-primary p-3">col</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-danger">
+            <h2 class="text-danger">Row Cols</h2>
+            <h3>You can control how many items appear in a row adding <code>.row-cols-*</code>
+                to <code>.row</code>.</h3>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row row-cols-1 text-center">
+                    <div class="col bg-danger text-bg-danger p-3">row-cols-1</div>
+                    <div class="col p-3">row-cols-1</div>
+                    <div class="col bg-primary text-bg-primary p-3">row-cols-1</div>
+                </div>
+            </div>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row row-cols-2 text-center">
+                    <div class="col bg-danger text-bg-danger p-3">row-cols-2</div>
+                    <div class="col p-3">row-cols-2</div>
+                    <div class="col bg-primary text-bg-primary p-3">row-cols-2</div>
+                    <div class="col p-3 bg-dark"></div>
+                </div>
+            </div>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row row-cols-3 text-center">
+                    <div class="col bg-danger text-bg-danger p-3">row-cols-3</div>
+                    <div class="col p-3">row-cols-3</div>
+                    <div class="col bg-primary text-bg-primary p-3">row-cols-3</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-dark">
+            <h2 class="text-dark">Unequal Columns</h2>
+            <h3><span class="badge bg-warning">NOTE:</span> Column numbers must be <= 12.</h3>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-3 bg-danger text-bg-danger p-3">col-3</div>
+                    <div class="col-6 p-3">col-6</div>
+                    <div class="col bg-primary text-bg-primary p-3">col (1.5)</div>
+                    <div class="col bg-dark text-bg-dark p-3">col (1.5)</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-primary">
+            <h2 class="text-primary">Equal Height</h2>
+            <h3>The grid sizes vertically to the largest item in the row, whether
+                because of text or CSS height.</h3>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col bg-danger text-bg-danger p-3">col</div>
+                    <div class="col p-5">col p-5</div>
+                    <div class="col bg-primary text-bg-primary p-3">col</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-success">
+            <h2 class="text-success">Nested Columns</h2>
+            <h3>The second grid must be the child of the selected column (i.e. before
+                the closing of the column div).</h3>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-8 bg-warning text-bg-warning p-3">
+                        col-8
+                        <div class="row text-center mt-3">
+                            <div class="col-6 bg-primary text-bg-primary rounded p-3">col-6</div>
+                            <div class="col-6 bg-dark text-bg-dark rounded p-3">col-6</div>
+                        </div>
+                    </div>
+                    <div class="col-4 bg-danger text-bg-danger p-3">col-4</div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-1 border border-3 border-info">
+            <h2 class="text-info">Gutters</h2>
+            <h3>Change the gutters (space between columns) by adding <code>.g-1|2|3|4|5</code>
+                to the row.</h3>
+            <h3><span class="badge bg-info">NOTE:</span> Default is <code>.g-4</code>.</h3>
+            <h3><span class="badge bg-danger">NOTE:</span> Changing the gutter does not affect any
+                borders you have applied!</h3>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-12 bg-info">g-0</div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-2 bg-danger text-bg-danger">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div class="col bg-primary text-bg-primary">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </div>
+                </div>
+            </div>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-12 bg-info">g-4</div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-2 bg-danger text-bg-danger">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div class="col bg-primary text-bg-primary">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </div>
+                </div>
+            </div>
+            <div class="container bg-light border border-3 border-dark rounded my-3">
+                <div class="row text-center">
+                    <div class="col-12 bg-info">g-5</div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-2 bg-danger text-bg-danger">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div class="col bg-primary text-bg-primary">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div id="bottom-of-page">Bottom</div>
 

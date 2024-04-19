@@ -1,3 +1,8 @@
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+}
+
 @media only screen and (max-width: 575px) {
     .small, .medium, .large, .xlarge, .xxlarge {
         display: none;

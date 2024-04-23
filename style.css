@@ -7,6 +7,18 @@
     text-shadow: 3px 3px 5px black;
 }
 
+li {
+    font-size: 1.5rem;
+}
+
+a:hover {
+    background-color: rgb(13, 110, 253);
+}
+
+a:active {
+    background-color: rgb(13, 202, 240);
+}
+
 @media only screen and (max-width: 575px) {
     .small, .medium, .large, .xlarge, .xxlarge {
         display: none;

@@ -45,8 +45,8 @@
         </div>
     </header>
     <div class="row">
-        <div class="col-sm-3 mt-2">
-            <nav class="navbar navbar-expand-md bg-dark bg-gradient navbar-dark py-3">
+        <div class="col-lg-3 mt-2">
+            <nav class="navbar navbar-expand-lg bg-dark bg-gradient navbar-dark py-3">
                 <div class="container-fluid justify-content-center">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#side-nav">
                         <span class="navbar-toggler-icon"></span>
@@ -178,30 +178,48 @@
                 </div>
             </nav>
         </div>
-        <div class="col-sm-9 mt-2">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="border border-3 border-dark rounded mb-3 py-3 text-center">
-                        <h1 class="display-4 pb-3">Code</h1>
+        <div class="col-lg-9 mt-2">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#container-info">Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#fw-container">Container</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#fl-container">Fluid</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#re-container">Responsive</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane" id="container-info">
+                    <div class="border border-3 border-dark rounded mb-3 p-3 text-center">
+                        <h1 class="bg-secondary text-bg-secondary rounded display-4 pb-2">Code</h1>
                         <h2><code>.container</code><br></h2>
                         <h2><code>.container-fluid</code></h2>
+                        <h2><code>.conainer-sm|md|lg|xl</code></h2>
                     </div>
-                    <div class="border border-3 border-dark rounded mb-3 py-3">
-                        <h1 class="display-4 pb-3 text-center">Definitions</h1>
-                        <dl class="ps-4">
+                    <div class="border border-3 border-dark rounded mb-3 p-3">
+                        <h1 class="bg-success text-bg-success rounded display-4 pb-2 text-center">Definitions</h1>
+                        <dl class="ps-3">
                             <dt>container</dt>
                             <dd>&#9642; Provides a responsive fixed width container.</dd>
                             <dt>container-fluid</dt>
                             <dd>&#9642; Provides a full width container (spans the entire
                                 width of the viewport).
                             </dd>
+                            <dt>conainter-sm|md|lg|xl</dt>
+                            <dd>&#9642; Determines when the container should be responsive.</dd>
                         </dl>
                     </div>
                     <div class="border border-3 border-dark rounded p-3">
-                        <h1 class="display-4 pb-3 text-center">Key Points</h1>
-                        <p>
+                        <h1 class="bg-info text-bg-info rounded display-4 pb-2 text-center">Key Points</h1>
+                        <p class="ps-3">
                             Bootstrap requires a containing element to wrap the site contents.<br>
                             Containers are used to pad the content inside them.<br>
+                            By default, containers have left and right padding only, no top or bottom.<br>
                             Breakpoints:<br>
                             <span class="ps-3">XS &lt; 576px</span><br>
                             <span class="ps-3">S &ge; 576px</span><br>
@@ -213,7 +231,17 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-8">col-8</div>
+                <div class="tab-pane container border border-3 border-dark bg-light mt-4 pb-4 active" id="fw-container">
+                    <h2 class="p-3">Fixed Width Example</h2>
+                    <div class="container bg-warning">Container</div>
+                    <div class="container-fluid bg-danger">Fluid</div>
+                </div>
+                <div class="tab-pane container-fluid bg-secondary" id="fl-container">
+                    Full Width
+                </div>
+                <div class="tab-pane container-fluid bg-success" id="re-container">
+                    Responsive
+                </div>
             </div>
         </div>
     </div>

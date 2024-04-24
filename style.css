@@ -11,12 +11,12 @@ li {
     font-size: 1.5rem;
 }
 
-a:hover {
+#side-nav > ul > li > a:hover {
     background-color: rgb(13, 110, 253);
     border-radius: 15px;
 }
 
-a:active {
+#side-nav > ul > li > a:active {
     background-color: rgb(13, 202, 240);
 }
 

@@ -13,6 +13,7 @@ li {
 
 a:hover {
     background-color: rgb(13, 110, 253);
+    border-radius: 15px;
 }
 
 a:active {

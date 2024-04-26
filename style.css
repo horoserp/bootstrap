@@ -11,12 +11,16 @@ li {
     font-size: 1.5rem;
 }
 
-#side-nav > ul > li > a:hover {
+.collapse > ul > li > a:hover, .collapse > ul > li > button:hover {
+    color: white;
+}
+
+.offcanvas-body > ul > li > a:hover {
     background-color: rgb(13, 110, 253);
     border-radius: 15px;
 }
 
-#side-nav > ul > li > a:active {
+.offcanvas-body > ul > li > a:active {
     background-color: rgb(13, 202, 240);
 }
 
@@ -25,6 +29,7 @@ li {
 }
 
 @media only screen and (max-width: 575px) {
+    /* XS */
     .small, .medium, .large, .xlarge, .xxlarge {
         display: none;
     }
@@ -34,6 +39,7 @@ li {
 }
 
 @media only screen and (min-width: 576px) {
+    /* SM */
     .xsmall, .medium, .large, .xlarge, .xxlarge {
         display: none;
     }
@@ -43,6 +49,7 @@ li {
 }
 
 @media only screen and (min-width: 768px) {
+    /* MD */
     .xsmall, .small, .large, .xlarge, .xxlarge {
         display: none;
     }
@@ -52,6 +59,7 @@ li {
 }
 
 @media only screen and (min-width: 992px) {
+    /* LG */
     .xsmall, .small, .medium, .xlarge, .xxlarge {
         display: none;
     }
@@ -61,6 +69,7 @@ li {
 }
 
 @media only screen and (min-width: 1200px) {
+    /* XL */
     .xsmall, .small, .medium, .large, .xxlarge {
         display: none;
     }
@@ -70,10 +79,14 @@ li {
 }
 
 @media only screen and (min-width: 1400px) {
+    /* XXL */
     .xsmall, .small, .medium, .large, .xlarge {
         display: none;
     }
     .xxlarge {
         display: block;
+    }
+    #main-navbar {
+        /* width: 60%; */
     }
 }

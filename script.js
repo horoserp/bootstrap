@@ -74,10 +74,12 @@ function fixTop(position) {
 // Theme Switcher
 function themeSwitch() {
     if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
-        document.documentElement.setAttribute('data-bs-theme','light')
+        document.documentElement.setAttribute('data-bs-theme','light');
+        document.getElementById("theme-toggle").innerHTML = "Dark Mode";
     }
     else {
         document.documentElement.setAttribute('data-bs-theme','dark')
+        document.getElementById("theme-toggle").innerHTML = "Light Mode";
     }
 }
 

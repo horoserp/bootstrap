@@ -6,20 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Containers</title>
+    <title>Basic Grids</title>
 
     <!-- Common Metadata -->
-    <meta name="description" content="BS5 Containers.">
+    <meta name="description" content="BS5 Basic Grids.">
     <meta name="author" content="Robert P. Horosewski">
     <meta name="language" content="english">
 
     <!-- Open Graph Protocol - used to set up Cards on social media -->
     <!-- The OPG does not work as we do not have an actual url to use. -->
-    <meta property="og:title" content="BS5 Containers">
+    <meta property="og:title" content="BS5 Basic Grids">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://horoserp.github.io/bootstrap">
     <meta property="og:image" content="bootstrap-logo-shadow.png">
-    <meta property="og:description" content="Examples of BS5 Containers.">
+    <meta property="og:description" content="BS5 Basic Grids.">
     <meta property="og:locale" content="en_US">
 
     <!-- Icons for Tabs in Web Browser -->
@@ -41,7 +41,7 @@
             <a href="https://horoserp.github.io/Resume/" data-bs-toggle="tooltip" title="See My Resume">
                 <img src="Headshot.png" alt="Headshot of Robert" height="175px" class="rounded-circle float-md-end mt-4">
             </a>
-            <h1 class="display-1 py-3 text-shadow">Containers</h1>
+            <h1 class="display-1 py-3 text-shadow">Basic Grids</h1>
             <nav class="navbar navbar-expand-lg" style="background: rgba(0, 0, 0, 0);" id="main-navbar">
                 <div class="container">
                     <a class="navbar-brand ms-5" href="https://getbootstrap.com/" data-bs-toggle="tooltip" title="https://getbootstrap.com">
@@ -80,10 +80,10 @@
                 </li>
                 <h1 class="text-white my-3">General</h1>
                 <li class="nav-item me-3">
-                    <a class="nav-link ps-4 disabled" href="containers.html">Containers</a>
+                    <a class="nav-link ps-4" href="containers.html">Containers</a>
                 </li>
                 <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="grids.html">Basic Grids</a>
+                    <a class="nav-link ps-4 disabled" href="grids.html">Basic Grids</a>
                 </li>
                 <li class="nav-item me-3">
                     <a class="nav-link ps-4" href="typography.html">Typography</a>
@@ -224,27 +224,27 @@
     </div>
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="tab" href="#container-info">Information</a>
+            <a class="nav-link active" data-bs-toggle="tab" href="#grids-info">Information</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#fw-container">Fixed Width</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#grids-3ec">Three Equal Columns</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#fl-container">Full Width</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#grids-rc">Responsive Columns</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#re-container">Responsive</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#grids-2urc">Two Unequal Responsive Columns</a>
         </li>
     </ul>
     <div class="tab-content">
-        <div class="tab-pane active" id="container-info">
+        <div class="tab-pane active" id="grids-info">
             <div class="row m-5">
                 <div class="col-lg-4 border border-3 border-dark rounded">
                     <div class="p-3 text-center" style="height: 100%;">
-                        <h1 class="bg-secondary text-bg-secondary rounded display-4 mb-3">Code</h1>
-                        <h2 class="align-content-center" style="height: 20%;"><code>.container</code><br></h2>
-                        <h2 class="align-content-center" style="height: 20%;"><code>.container-fluid</code></h2>
-                        <h2 class="align-content-center" style="height: 20%;"><code>.container-sm|md|lg|xl</code></h2>
+                        <h1 class="bg-secondary text-bg-secondary rounded display-4 mb-4">Code</h1>
+                        <h2 class="align-content-center" style="height: 20%;"><code>.row</code><br></h2>
+                        <h2 class="align-content-center" style="height: 20%;"><code>.col</code></h2>
+                        <h2 class="align-content-center" style="height: 20%;"><code>.col-sm|md|lg|xl|xxl-#</code></h2>
                     </div>
                 </div>
                 <div class="col-lg-1 mb-3"></div>
@@ -252,14 +252,16 @@
                     <div class="p-3">
                         <h1 class="bg-success text-bg-success rounded display-4 pb-2 text-center">Definitions</h1>
                         <dl class="ps-3" style="font-size: 22px;">
-                            <dt>container</dt>
-                            <dd>&#9642; Provides a responsive fixed width container.</dd>
-                            <dt>container-fluid</dt>
-                            <dd>&#9642; Provides a full width container (spans the entire
-                                width of the viewport).
+                            <dt>row</dt>
+                            <dd>&#9642; Creates a grid row.</dd>
+                            <dt>col</dt>
+                            <dd>&#9642; Creates a grid column. Without further specification, the columns will
+                                be equal (auto) and unresponsive.
                             </dd>
-                            <dt>container-sm|md|lg|xl</dt>
-                            <dd>&#9642; Determines when the container should be responsive.</dd>
+                            <dt>col-sm|md|lg|xl|xxl-#</dt>
+                            <dd>&#9642; Determines when the grid should be responsive. The # indicates how many
+                                columns it should span.
+                            </dd>
                         </dl>
                     </div>
                 </div>
@@ -267,36 +269,47 @@
             <div class="border border-3 border-dark rounded m-5 p-3">
                 <h1 class="bg-info text-bg-info rounded display-4 pb-2 text-center">Key Points</h1>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Bootstrap requires a containing element to wrap the site contents.</li>
-                    <li class="list-group-item">Containers are used to pad the content inside them.</li>
-                    <li class="list-group-item">By default, containers have left and right padding only, no top or bottom.</li>
-                    <li class="list-group-item">Breakpoints:</li>
-                    <li class="list-group-item"><span class="ps-5">XS &lt; 576px</span></li>
-                    <li class="list-group-item"><span class="ps-5">S &ge; 576px</span></li>
-                    <li class="list-group-item"><span class="ps-5">M &ge; 768px</span></li>
-                    <li class="list-group-item"><span class="ps-5">L &ge; 992px</span></li>
-                    <li class="list-group-item"><span class="ps-5">XL &ge; 1200px</span></li>
-                    <li class="list-group-item"><span class="ps-5">XXL &ge; 1400px</span></li>
-                    <li class="list-group-item">The XXL breakpoint is new in Bootstrap 5.</li>
-                    <li class="list-group-item">At the XS breakpoint, a container will use the full screen.</li>
+                    <li class="list-group-item">The grid system is build with flexbox.</li>
+                    <li class="list-group-item">The grid system allows up to 12 columns across a page.</li>
+                    <li class="list-group-item"><span class="badge bg-danger">NOTE:</span> Make sure the sum of your columns adds up to 12 or less.</li>
+                    <li class="list-group-item">Each breakpoint scales up. If you want to set the same widths
+                        for small and medium, simply specify the small breakpoint.
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="tab-pane my-5" id="fw-container">
-            <h1 class="ps-5">Fixed Width Container</h1>
-            <div class="container bg-primary my-5" style="height: 200px;"></div>
-            <h2 class="ps-5">Add <code>.container</code> to an element.</h2>
+        <div class="tab-pane my-5" id="grids-3ec">
+            <h1>Example with 3 equal columns.</h1>
+            <div class="container my-5 border border-3 border-primary">
+                <div class="row">
+                    <div class="col border" style="height: 200px;">Column 1</div>
+                    <div class="col border" style="height: 200px;">Column 2</div>
+                    <div class="col border" style="height: 200px;">Column 3</div>
+                </div>
+            </div>
+            <h2>Use <code>.row</code> with three <code>.col</code> children.</h2>
         </div>
-        <div class="tab-pane my-5" id="fl-container">
-            <h1 class="ps-5">Full Width Container</h1>
-            <div class="container-fluid bg-success my-5" style="height: 200px;"></div>
-            <h2 class="ps-5">Add <code>.container-fluid</code> to an element.</h2>
+        <div class="tab-pane my-5" id="grids-rc">
+            <h1>Reponsive columns that will stack on small devices.</h1>
+            <div class="container my-5 border border-3 border-primary">
+                <div class="row">
+                    <div class="col-sm-3 border" style="height: 200px;">Column 1</div>
+                    <div class="col-sm-3 border" style="height: 200px;">Column 2</div>
+                    <div class="col-sm-3 border" style="height: 200px;">Column 3</div>
+                    <div class="col-sm-3 border" style="height: 200px;">Column 4</div>
+                </div>
+            </div>
+            <h2>Use four columns with <code>.col-sm-3</code>.</h2>
         </div>
-        <div class="tab-pane my-5" id="re-container">
-            <h1 class="ps-5">Responsive Container.</h1>
-            <div class="container-md bg-info my-5" style="height: 200px;"></div>
-            <h2 class="ps-5">This container is set with a medium breakpoint (720px). Default is small.</h2>
-            <h2 class="ps-5">Add <code>container-sm|md|lg|xl</code> to an element.</h2>
+        <div class="tab-pane my-5" id="grids-2urc">
+            <h1>Two unequal responsive columns.</h1>
+            <div class="container my-5 border border-3 border-primary">
+                <div class="row">
+                    <div class="col-sm-4 border" style="height: 200px;">Column 1 uses 1/3 of the 12 columns.</div>
+                    <div class="col-sm-8 border" style="height: 200px;">Column 2 uses 2/3 of the 12 columns.</div>
+                </div>
+            </div>
+            <h2>Use 2 columns: One with <code>.col-sm-4</code>, one with <code>.col-sm-8</code>.</h2>
         </div>
     </div>
     <footer>

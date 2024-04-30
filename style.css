@@ -11,7 +11,7 @@ li {
     font-size: 1.5rem;
 }
 
-.collapse > ul > li > a:hover, .collapse > ul > li > button:hover {
+.collapse > ul > li > a:hover, .collapse > ul > li > button:hover, .btn:hover {
     color: white;
 }
 

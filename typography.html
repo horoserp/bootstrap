@@ -421,7 +421,7 @@
                 </div>
                 <h2>Use &lt;mark&gt; to encase the text you want highlighted.</h2>
                 <h3><span class="badge bg-warning">NOTE:</span> The highlighting takes vertical space
-                    - consider changing the line-height.</h3>
+                    - consider changing the line-height or padding.</h3>
                     <div class="container d-flex justify-content-end">
                         <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
                     </div>
@@ -516,7 +516,36 @@
             </div>
         </div>
         <div class="tab-pane my-5" id="typography-classes">
-            <div class="border border-3 border-primary bg-light mb-4">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5" id="classes-navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#classes-nav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="classes-nav">
+                        <ul class="navbar-nav justify-content-around w-100">
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#headers-class">.h1-6</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#display">.display</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#lead">.lead</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#initialism">.initialism</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#list-unstyled">.list-unstyled</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#list-inline">.list-inline</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="border border-3 border-primary bg-light mb-4" id="headers-class">
                 <h1>You can use classes on other elements to make them behave as headings.</h1>
                 <div class="container my-5 border border-3 border-secondary bg-white">
                     <p class="h1">Bootstrap h1 Heading</p>
@@ -527,6 +556,86 @@
                     <p class="h6">Bootstrap h6 Heading</p>
                 </div>
                 <h2>Use <code>.h1|h2|h3|h4|h5|h6</code> on a &lt;p&gt; element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="display">
+                <h1>
+                    Display headings are used to stand out more than normal headings
+                    (they have a larger font and lighter font-weight).
+                </h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <h1 class="display-1">Bootstrap Display-1 Heading</h1>
+                    <h1 class="display-2">Bootstrap Display-2 Heading</h1>
+                    <h1 class="display-3">Bootstrap Display-3 Heading</h1>
+                    <h1 class="display-4">Bootstrap Display-4 Heading</h1>
+                    <h1 class="display-5">Bootstrap Display-5 Heading</h1>
+                    <h1 class="display-6">Bootstrap Display-6 Heading</h1>
+                </div>
+                <h2>Use <code>.display-1|2|3|4|5|6</code> on a heading tag.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="lead">
+                <h1>To make a paragraph stand out...</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <p>This is a normal paragraph.</p>
+                    <p class="lead">This paragraph uses the lead class.</p>
+                    <p>This is another normal paragraph.</p=>
+                </div>
+                <h2>Use <code>.lead</code> on a &lt;p&gt; element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="initialism">
+                <h1>To display the text inside an &lt;abbr&gt; element in a slightly smaller font size...</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <p>Normal: The <abbr title="World Wrestling Entertainment">WWE</abbr> was founded in 1953.</p>
+                    <p>Initialism: The <abbr title="World Wrestling Entertainment" class="initialism">WWE</abbr> was founded in 1953.</p>
+                </div>
+                <h2>Use <code>.initialism</code> on a &lt;abbr&gt; element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="list-unstyled">
+                <h1>Remove the default list-style and left margin on list items (immediate children only).</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <ol class="list-unstyled">
+                        <li>Do Laundry</li>
+                        <li>Wash Dishes</li>
+                        <li>Take Out Trash</li>
+                        <ol>
+                            <li>Kitchen</li>
+                            <li>Bathroom</li>
+                            <li>Bedroom</li>
+                        </ol>
+                    </ol>
+                </div>
+                <h2>Use <code>.list-unstyled</code> on a &lt;ul&gt; or &lt;ol&gt; element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="list-inline">
+                <h1>Place all list items on a single line.</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <ol class="list-inline">
+                        <li class="list-inline-item">Do Laundry</li>
+                        <li class="list-inline-item">Wash Dishes</li>
+                        <li class="list-inline-item">Take Out Trash</li>
+                    </ol>
+                </div>
+                <h2>
+                    Use <code>.list-inline</code> on a &lt;ul&gt; or &lt;ol&gt; element and
+                    <code>.list-inline-item</code> an each &lt;li&gt; element.
+                </h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
             </div>
         </div>
         <div class="tab-pane my-5" id="typography-text">

@@ -345,7 +345,7 @@
             </div>
         </div>
         <div class="tab-pane my-5" id="typography-elements">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5" id="typography-navbar">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" id="typography-navbar">
                 <div class="container-fluid">
                     <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#typography-nav">
                         <span class="navbar-toggler-icon"></span>
@@ -516,7 +516,7 @@
             </div>
         </div>
         <div class="tab-pane my-5" id="typography-classes">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5" id="classes-navbar">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" id="classes-navbar">
                 <div class="container-fluid">
                     <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#classes-nav">
                         <span class="navbar-toggler-icon"></span>
@@ -639,6 +639,138 @@
             </div>
         </div>
         <div class="tab-pane my-5" id="typography-text">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" id="text-navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#text-nav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="text-nav">
+                        <ul class="navbar-nav justify-content-around w-100">
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#start">start</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#break">break</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#center">center</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#decoration-none">decoration-none</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#end">end</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#nowrap">nowrap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#lowercase">lowercase</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#uppercase">uppercase</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#capitalize">capitalize</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="border border-3 border-primary bg-light mb-4" id="start">
+                <h1>Left Align Text.</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <p class="text-start">This text is left aligned.</p>
+                </div>
+                <h2>Use <code>.text-start</code> on an element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="break">
+                <h1>Prevent Long Text from breaking your layout.</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <p class="text-break">WITH: AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+                    <p>W/O: AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+                </div>
+                <h2>Use <code>.text-break</code> on an element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="center">
+                <h1>Center Align Text.</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <p class="text-center">This text is center aligned.</p>
+                </div>
+                <h2>Use <code>.text-center</code> on an element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="decoration-none">
+                <h1>Remove the Underline from Links.</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <a href="https://horoserp.github.io/React-Portfolio" class="text-decoration-none">My Portfolio</a>
+                </div>
+                <h2>Use <code>.text-decoration-none</code> on an &lt;a&gt; element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="end">
+                <h1>Right Align Text.</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <p class="text-end">This text is right aligned.</p>
+                </div>
+                <h2>Use <code>.text-end</code> on an element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="nowrap">
+                <h1>Stop text from wrapping.</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <p>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+                </div>
+                <h2>Use <code>.text-nowrap</code> on an element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="lowercase">
+                <h1>Make all text lowercase.</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <p>This Is PascalCase.</p>
+                    <p class="text-lowercase">This Is No Longer PascalCase.</p>
+                </div>
+                <h2>Use <code>.text-lowercase</code> on an element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="uppercase">
+                <h1>Make all text uppercase.</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <p>This Is camelCase.</p>
+                    <p class="text-uppercase">This Is No Longer camelCase.</p>
+                </div>
+                <h2>Use <code>.text-uppercase</code> on an element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
+            <div class="border border-3 border-primary bg-light mb-4" id="capitalize">
+                <h1>Capitalize the first letter of each word.</h1>
+                <div class="container my-5 border border-3 border-secondary bg-white">
+                    <p>This is a normal line of text.</p>
+                    <p class="text-capitalize">This is not a normal line of text.</p>
+                </div>
+                <h2>Use <code>.text-capitalize</code> on an element.</h2>
+                <div class="container d-flex justify-content-end">
+                    <a class="btn bg-dark btn-outline-info my-3" href="#typography-top">Top</a>
+                </div>
+            </div>
         </div>
     </div>
     <footer>

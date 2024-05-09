@@ -42,12 +42,12 @@
                 <img src="Headshot.png" alt="Headshot of Robert" height="175px" class="rounded-circle float-md-end mt-4">
             </a>
             <h1 class="display-1 py-3 text-shadow">Tables</h1>
-            <nav class="navbar navbar-expand-lg" style="background: rgba(0, 0, 0, 0);" id="main-navbar">
+            <nav class="navbar navbar-expand-lg" aria-label="Shortcuts" style="background: rgba(0, 0, 0, 0);" id="main-navbar">
                 <div class="container">
                     <a class="navbar-brand ms-5" href="https://getbootstrap.com/" data-bs-toggle="tooltip" title="https://getbootstrap.com">
                         <img src="bootstrap-logo-shadow.png" alt="Bootstrap Logo" height="50px">
                     </a>
-                    <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                    <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-label="Menu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="main-nav">
@@ -68,342 +68,344 @@
         </div>
     </header>
     <!-- Offcanvas Navigation -->
-    <div class="offcanvas offcanvas-start text-bg-dark" id="side-nav">
-        <div class="offcanvas-header">
-            <h1 class="text-white my-3">Bootstrap 5</h1>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    <nav aria-label="Site">
+        <div class="offcanvas offcanvas-start text-bg-dark" id="side-nav">
+            <div class="offcanvas-header">
+                <h1 class="text-white my-3">Bootstrap 5</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item pt-3 me-3">
+                        <a class="nav-link ps-4" href="index.html">Home</a>
+                    </li>
+                    <h1 class="text-white my-3">General</h1>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="containers.html">Containers</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="grids.html">Basic Grids</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="typography.html">Typography</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="colors.html">Colors</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4 disabled" href="tables.html">Tables</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="images.html">Images</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="jumbotron.html">Jumbotron</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="alerts.html">Alerts</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="buttons.html">Buttons</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="buttongroups.html">Button Groups</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="badges.html">Badges</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="progressbars.html">Progress Bars</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="spinners.html">Spinners</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="pagination.html">Pagination</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="listgroups.html">List Groups</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="collapse.html">Collapse</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="navs.html">Navs</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="navbar.html">Navbar</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="carousel.html">Carousel</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="modal.html">Modal</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="tooltip.html">Tooltip</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="popover.html">Popover</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="toast.html">Toast</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="scrollspy.html">Scrollspy</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="offcanvas.html">Offcanvas</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="utilities.html">Utilities</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="darkmode.html">Dark Mode</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="flex.html">Flex</a>
+                    </li>
+                    <h1 class="text-white my-3">Forms</h1>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="forms.html">Forms</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="selectmenus.html">Select Menus</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="checksradios.html">Checks and Radios</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="range.html">Range</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="inputgroups.html">Input Groups</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="floatinglabels.html">Floating Labels</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="validation.html">Form Validation</a>
+                    </li>
+                    <h1 class="text-white my-3">Grids</h1>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridsystem.html">Grid System</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridstacked.html">Stacked/Horizontal</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridxs.html">Grid XSmall</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridsm.html">Grid Small</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridmd.html">Grid Medium</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridlg.html">Grid Large</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridxl.html">Grid XLarge</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridxxl.html">Grid XXLarge</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridexamples.html">Grid Examples</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="offcanvas-body">
-            <ul class="navbar-nav flex-column">
-                <li class="nav-item pt-3 me-3">
-                    <a class="nav-link ps-4" href="index.html">Home</a>
-                </li>
-                <h1 class="text-white my-3">General</h1>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="containers.html">Containers</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="grids.html">Basic Grids</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="typography.html">Typography</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="colors.html">Colors</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4 disabled" href="tables.html">Tables</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="images.html">Images</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="jumbotron.html">Jumbotron</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="alerts.html">Alerts</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="buttons.html">Buttons</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="buttongroups.html">Button Groups</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="badges.html">Badges</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="progressbars.html">Progress Bars</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="spinners.html">Spinners</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="pagination.html">Pagination</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="listgroups.html">List Groups</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="cards.html">Cards</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="dropdowns.html">Dropdowns</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="collapse.html">Collapse</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="navs.html">Navs</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="navbar.html">Navbar</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="carousel.html">Carousel</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="modal.html">Modal</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="tooltip.html">Tooltip</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="popover.html">Popover</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="toast.html">Toast</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="scrollspy.html">Scrollspy</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="offcanvas.html">Offcanvas</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="utilities.html">Utilities</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="darkmode.html">Dark Mode</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="flex.html">Flex</a>
-                </li>
-                <h1 class="text-white my-3">Forms</h1>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="forms.html">Forms</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="selectmenus.html">Select Menus</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="checksradios.html">Checks and Radios</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="range.html">Range</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="inputgroups.html">Input Groups</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="floatinglabels.html">Floating Labels</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="validation.html">Form Validation</a>
-                </li>
-                <h1 class="text-white my-3">Grids</h1>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="gridsystem.html">Grid System</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="gridstacked.html">Stacked/Horizontal</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="gridxs.html">Grid XSmall</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="gridsm.html">Grid Small</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="gridmd.html">Grid Medium</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="gridlg.html">Grid Large</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="gridxl.html">Grid XLarge</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="gridxxl.html">Grid XXLarge</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link ps-4" href="gridexamples.html">Grid Examples</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    </nav>
     <!-- Tab Navigation -->
-    //TODO: Wrap in <nav> and add aria-labels to both <nav>s. Fix in all pages.
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="tab" href="#tables-info">Information</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#tables-basic">Basic Tables</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#tables-variants">Variants</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#tables-dark">Dark Variants</a>
-        </li>
-    </ul>
-    <!-- Tab Content -->
-    <div class="tab-content">
-        <div class="tab-pane active" id="tables-info">
-            <div class="row m-5">
-                <div class="col-lg-4 border border-3 border-primary rounded">
-                    <div class="p-3 text-center h-100">
-                        <h1 class="bg-secondary text-bg-secondary rounded display-4 mb-4">Code</h1>
-                        <h2 class="align-content-center py-4"><code>.table</code></h2>
-                        <h2 class="align-content-center py-4"><code>.table-striped</code></h2>
-                        <h2 class="align-content-center py-4"><code>.table-bordered</code></h2>
-                        <h2 class="align-content-center py-4"><code>.table-hover</code></h2>
-                        <h2 class="align-content-center py-4"><code>.table-dark</code></h2>
-                        <h2 class="align-content-center py-4"><code>.table-borderless</code></h2>
-                        <h2 class="align-content-center py-4"><code>.table-(contextual class)</code></h2>
-                        <h2 class="align-content-center py-4"><code>.table-sm</code></h2>
-                        <h2 class="align-content-center py-4"><code>.table-responsive-sm|md|lg|xl|xxl</code></h2>
-                        //TODO: Decide if buttons should be an <a> or a <button>. Fix all buttons, in all pages.
-                        //TODO: Change div in button to nav?
+    <nav aria-label="Page">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#tables-info">Information</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tables-basic">Basic Tables</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tables-variants">Variants</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tables-dark">Dark Variants</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <section class="tab-pane active" id="tables-info" aria-label="Information">
+                <div class="row m-5">
+                    <div class="col-lg-4 border border-3 border-primary rounded">
+                        <div class="p-3 text-center h-100">
+                            <h1 class="bg-secondary text-bg-secondary rounded display-4 mb-4">Code</h1>
+                            <h2 class="align-content-center py-4"><code>.table</code></h2>
+                            <h2 class="align-content-center py-4"><code>.table-striped</code></h2>
+                            <h2 class="align-content-center py-4"><code>.table-bordered</code></h2>
+                            <h2 class="align-content-center py-4"><code>.table-hover</code></h2>
+                            <h2 class="align-content-center py-4"><code>.table-dark</code></h2>
+                            <h2 class="align-content-center py-4"><code>.table-borderless</code></h2>
+                            <h2 class="align-content-center py-4"><code>.table-(contextual class)</code></h2>
+                            <h2 class="align-content-center py-4"><code>.table-sm</code></h2>
+                            <h2 class="align-content-center py-4"><code>.table-responsive-sm|md|lg|xl|xxl</code></h2>
+                            <!-- Optional Button to Top //TODO: Use or Delete-->
+                            <!-- <div class="container d-flex justify-content-end">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-1 mb-3" aria-label="Spacer"></div>
+                    <div class="col-lg-7 border border-3 border-primary rounded">
+                        <div class="p-3">
+                            <h1 class="bg-success text-bg-success rounded display-4 pb-2 text-center">Definitions</h1>
+                            <dl class="ps-3" style="font-size: 22px;">
+                                <dt>//TODO: Add Term</dt>
+                                <dd>&#9642; //TODO: Add Definition</dd>
+                                <dt>//TODO: Add Term</dt>
+                                <dd>&#9642; //TODO: Add Definition</dd>
+                                <dt>//TODO: Add Term</dt>
+                                <dd>&#9642; //TODO: Add Definition</dd>
+                            </dl>
+                        </div>
                         <!-- Optional Button to Top //TODO: Use or Delete-->
                         <!-- <div class="container d-flex justify-content-end">
                             <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
                         </div> -->
                     </div>
                 </div>
-                //TODO: This element needs an accesible name! Fix on all pages.
-                <div class="col-lg-1 mb-3"></div>
-                <div class="col-lg-7 border border-3 border-primary rounded">
-                    <div class="p-3">
-                        <h1 class="bg-success text-bg-success rounded display-4 pb-2 text-center">Definitions</h1>
-                        <dl class="ps-3" style="font-size: 22px;">
-                            <dt>//TODO: Add Term</dt>
-                            <dd>&#9642; //TODO: Add Definition</dd>
-                            <dt>//TODO: Add Term</dt>
-                            <dd>&#9642; //TODO: Add Definition</dd>
-                            <dt>//TODO: Add Term</dt>
-                            <dd>&#9642; //TODO: Add Definition</dd>
-                        </dl>
+                <div class="border border-3 border-primary rounded m-5 p-3">
+                    <h1 class="bg-info text-bg-info rounded display-4 pb-2 text-center">Key Points</h1>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">//TODO: Add Key Item</li>
+                        <li class="list-group-item">//TODO: Add Key Item</li>
+                        <li class="list-group-item">//TODO: Add Key Item</li>
+                        <!-- Optional Button to Top //TODO: Use or Delete-->
+                        <!-- <li class="list-group-item">
+                            <div class="container d-flex justify-content-end">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </section>
+            <section class="tab-pane my-5" id="tables-basic" aria-label="Basic Tables">
+                <!-- Option Navbar //TODO: Use or Delete-->
+                <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" aria-label="//TODO: Add Label">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#//TODO: Add ID -nav" aria-label="//TODO: Add Label">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="//TODO: Add ID -nav">
+                            <ul class="navbar-nav justify-content-around w-100">
+                                <li class="nav-item">
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </nav> -->
+                <div class="border border-3 border-primary mb-4" id="//TODO: Add ID if using navbar">
+                    <h1>//TODO: Add Header</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        //TODO: Add content
+                    </div>
+                    <h2>//TODO: Add Instructions</h2>
                     <!-- Optional Button to Top //TODO: Use or Delete-->
                     <!-- <div class="container d-flex justify-content-end">
                         <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
                     </div> -->
                 </div>
-            </div>
-            <div class="border border-3 border-primary rounded m-5 p-3">
-                <h1 class="bg-info text-bg-info rounded display-4 pb-2 text-center">Key Points</h1>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">//TODO: Add Key Item</li>
-                    <li class="list-group-item">//TODO: Add Key Item</li>
-                    <li class="list-group-item">//TODO: Add Key Item</li>
-                    <!-- Optional Button to Top //TODO: Use or Delete-->
-                    <!-- <li class="list-group-item">
-                        <div class="container d-flex justify-content-end">
-                            <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+            </section>
+            <section class="tab-pane my-5" id="tables-variants" aria-label="Table Variants">
+                <!-- Option Navbar //TODO: Use or Delete-->
+                <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" aria-label="//TODO: Add Label">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#//TODO: Add ID -nav" aria-label="//TODO: Add Label">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="//TODO: Add ID -nav">
+                            <ul class="navbar-nav justify-content-around w-100">
+                                <li class="nav-item">
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
+                                </li>
+                            </ul>
                         </div>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-        <div class="tab-pane my-5" id="tables-basic">
-            <!-- Option Navbar //TODO: Use or Delete-->
-            <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded">
-                <div class="container-fluid">
-                    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#//TODO: Add ID -nav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="//TODO: Add ID -nav">
-                        <ul class="navbar-nav justify-content-around w-100">
-                            <li class="nav-item">
-                                <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                            </li>
-                        </ul>
                     </div>
-                </div>
-            </nav> -->
-            <div class="border border-3 border-primary mb-4" id="//TODO: Add ID if using navbar">
-                <h1>//TODO: Add Header</h1>
-                <div class="container my-5 border border-3 border-info shadow-lg">
-                    //TODO: Add content
-                </div>
-                <h2>//TODO: Add Instructions</h2>
-                <!-- Optional Button to Top //TODO: Use or Delete-->
-                <!-- <div class="container d-flex justify-content-end">
-                    <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                </div> -->
-            </div>
-        </div>
-        <div class="tab-pane my-5" id="tables-variants">
-            <!-- Option Navbar //TODO: Use or Delete-->
-            <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded">
-                <div class="container-fluid">
-                    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#//TODO: Add ID -nav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="//TODO: Add ID -nav">
-                        <ul class="navbar-nav justify-content-around w-100">
-                            <li class="nav-item">
-                                <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                            </li>
-                        </ul>
+                </nav> -->
+                <div class="border border-3 border-primary mb-4" id="//TODO: Add ID if using navbar">
+                    <h1>//TODO: Add Header</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        //TODO: Add content
                     </div>
+                    <h2>//TODO: Add Instructions</h2>
+                    <!-- Optional Button to Top //TODO: Use or Delete-->
+                    <!-- <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div> -->
                 </div>
-            </nav> -->
-            <div class="border border-3 border-primary mb-4" id="//TODO: Add ID if using navbar">
-                <h1>//TODO: Add Header</h1>
-                <div class="container my-5 border border-3 border-info shadow-lg">
-                    //TODO: Add content
-                </div>
-                <h2>//TODO: Add Instructions</h2>
-                <!-- Optional Button to Top //TODO: Use or Delete-->
-                <!-- <div class="container d-flex justify-content-end">
-                    <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                </div> -->
-            </div>
-        </div>
-        <div class="tab-pane my-5" id="tables-dark">
-            <!-- Option Navbar //TODO: Use or Delete-->
-            <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded">
-                <div class="container-fluid">
-                    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#//TODO: Add ID -nav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="//TODO: Add ID -nav">
-                        <ul class="navbar-nav justify-content-around w-100">
-                            <li class="nav-item">
-                                <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                            </li>
-                        </ul>
+            </section>
+            <section class="tab-pane my-5" id="tables-dark" aria-label="Dark Tables">
+                <!-- Option Navbar //TODO: Use or Delete-->
+                <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" aria-label="//TODO: Add Label">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#//TODO: Add ID -nav" aria-label="//TODO: Add Label">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="//TODO: Add ID -nav">
+                            <ul class="navbar-nav justify-content-around w-100">
+                                <li class="nav-item">
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </nav> -->
+                <div class="border border-3 border-primary mb-4" id="//TODO: Add ID if using navbar">
+                    <h1>//TODO: Add Header</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        //TODO: Add content
+                    </div>
+                    <h2>//TODO: Add Instructions</h2>
+                    <!-- Optional Button to Top //TODO: Use or Delete-->
+                    <!-- <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div> -->
                 </div>
-            </nav> -->
-            <div class="border border-3 border-primary mb-4" id="//TODO: Add ID if using navbar">
-                <h1>//TODO: Add Header</h1>
-                <div class="container my-5 border border-3 border-info shadow-lg">
-                    //TODO: Add content
-                </div>
-                <h2>//TODO: Add Instructions</h2>
-                <!-- Optional Button to Top //TODO: Use or Delete-->
-                <!-- <div class="container d-flex justify-content-end">
-                    <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                </div> -->
-            </div>
+            </section>
         </div>
-    </div>
+    </main>
     <!-- Footer -->
     <footer>
         <div class="container-fluid bg-dark text-bg-dark py-4">
-            <div class="d-flex flex-column flex-md-row align-items-center align-content-around justify-content-around">
+            <nav class="d-flex flex-column flex-md-row align-items-center align-content-around justify-content-around" aria-label="Footer">
                 <a href="https://horoserp.github.io/Resume/" data-bs-toggle="tooltip" title="See My Resume">
                     <img src="Headshot.png" alt="Headshot of Robert" height="100px" class="rounded-circle my-3">
                 </a>
@@ -418,7 +420,7 @@
                     </a>
                 </div>
                 <h3 class="text-bg-dark text-center my-3">Designed by Robert P. Horosewski &#169; 2024</h3>
-            </div>
+            </nav>
             <p class="pt-3">*The content on this website is based off information presented at <a href="https://www.w3schools.com/bootstrap5/index.php" data-bs-toggle="tooltip" title="https://www.w3schools.com/bootstrap">
                 W3Schools</a> and is not original content provided by the developer.</p>
         </div>

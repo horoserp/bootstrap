@@ -239,6 +239,9 @@
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tables-dark">Dark Variants</a>
             </li>
+            <li>
+                <a class="nav-link" data-bs-toggle="tab" href="#tables-responsive">Responsive</a>
+            </li>
         </ul>
     </nav>
     <main>
@@ -249,155 +252,857 @@
                     <div class="col-lg-4 border border-3 border-primary rounded">
                         <div class="p-3 text-center h-100">
                             <h1 class="bg-secondary text-bg-secondary rounded display-4 mb-4">Code</h1>
-                            <h2 class="align-content-center py-4"><code>.table</code></h2>
-                            <h2 class="align-content-center py-4"><code>.table-striped</code></h2>
-                            <h2 class="align-content-center py-4"><code>.table-bordered</code></h2>
-                            <h2 class="align-content-center py-4"><code>.table-hover</code></h2>
-                            <h2 class="align-content-center py-4"><code>.table-dark</code></h2>
-                            <h2 class="align-content-center py-4"><code>.table-borderless</code></h2>
-                            <h2 class="align-content-center py-4"><code>.table-(contextual class)</code></h2>
-                            <h2 class="align-content-center py-4"><code>.table-sm</code></h2>
-                            <h2 class="align-content-center py-4"><code>.table-responsive-sm|md|lg|xl|xxl</code></h2>
-                            <!-- Optional Button to Top //TODO: Use or Delete-->
-                            <!-- <div class="container d-flex justify-content-end">
-                                <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                            </div> -->
+                            <h2 class="align-content-center py-3"><code>.table</code></h2>
+                            <h2 class="align-content-center py-3"><code>.table-striped</code></h2>
+                            <h2 class="align-content-center py-3"><code>.table-bordered</code></h2>
+                            <h2 class="align-content-center py-3"><code>.table-hover</code></h2>
+                            <h2 class="align-content-center py-3"><code>.table-dark</code></h2>
+                            <h2 class="align-content-center py-3"><code>.table-borderless</code></h2>
+                            <h2 class="align-content-center py-3"><code>.table-(contextual class)</code></h2>
+                            <h2 class="align-content-center py-3"><code>.table-sm</code></h2>
+                            <h2 class="align-content-center py-3"><code>.table-responsive-sm|md|lg|xl|xxl</code></h2>
                         </div>
                     </div>
                     <div class="col-lg-1 mb-3" aria-label="Spacer"></div>
                     <div class="col-lg-7 border border-3 border-primary rounded">
                         <div class="p-3">
                             <h1 class="bg-success text-bg-success rounded display-4 pb-2 text-center">Definitions</h1>
-                            <dl class="ps-3" style="font-size: 22px;">
-                                <dt>//TODO: Add Term</dt>
-                                <dd>&#9642; //TODO: Add Definition</dd>
-                                <dt>//TODO: Add Term</dt>
-                                <dd>&#9642; //TODO: Add Definition</dd>
-                                <dt>//TODO: Add Term</dt>
-                                <dd>&#9642; //TODO: Add Definition</dd>
+                            <dl class="ps-3 pt-3" style="font-size: 22px;">
+                                <dt>Table</dt>
+                                <dd>&#9642; Basic tables include light padding and horizontal dividers.</dd>
+                                <dt>Striped</dt>
+                                <dd>Alternates shaded rows.</dd>
+                                <dt>Bordered</dt>
+                                <dd>&#9642; Adds borders on all sides ot the table and cells.</dd>
+                                <dt>Hover</dt>
+                                <dd>&#9642; Adds gray background to rows on hover.</dd>
+                                <dt>Dark</dt>
+                                <dd>&#9642; Adds a black background.</dd>
+                                <dt>Borderless</dt>
+                                <dd>&#9642; Removes borders from the table.</dd>
+                                <dt>Color</dt>
+                                <dd>&#9642; You can add contextual colors to cells, rows or the entire table.</dd>
+                                <dt>Small</dt>
+                                <dd>&#9642; Reduces the table padding in half.</dd>
+                                <dt>Responsive</dt>
+                                <dd>
+                                    &#9642; Creates a responsive table that will scroll horizontally on screens that
+                                    are less than the breakpoint.
+                                </dd>
                             </dl>
                         </div>
-                        <!-- Optional Button to Top //TODO: Use or Delete-->
-                        <!-- <div class="container d-flex justify-content-end">
-                            <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                        </div> -->
                     </div>
                 </div>
                 <div class="border border-3 border-primary rounded m-5 p-3">
                     <h1 class="bg-info text-bg-info rounded display-4 pb-2 text-center">Key Points</h1>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">//TODO: Add Key Item</li>
-                        <li class="list-group-item">//TODO: Add Key Item</li>
-                        <li class="list-group-item">//TODO: Add Key Item</li>
-                        <!-- Optional Button to Top //TODO: Use or Delete-->
-                        <!-- <li class="list-group-item">
+                        <li class="list-group-item"><code>.table-active</code>: Applies the hover color to the table row or table cell.</li>
+                        <li class="list-group-item">You can use contextual classes on the Table Head.</li>
+                        <li class="list-group-item">To make the table responsive only when the horizontal content is too large, use just
+                            <code>.table-resonsive</code> without a screen designation.
+                        </li>
+                        <li class="list-group-item">Bootstrap 5 puts captions below the table. To put captions at the
+                            top, add <code>.caption-top</code> to the &lt;table&gt; element.
+                        </li>
+                        <li class="list-group-item">
                             <div class="container d-flex justify-content-end">
                                 <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
                             </div>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
             </section>
             <section class="tab-pane my-5" id="tables-basic" aria-label="Basic Tables">
-                <!-- Option Navbar //TODO: Use or Delete-->
-                <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" aria-label="//TODO: Add Label">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#//TODO: Add ID -nav" aria-label="//TODO: Add Label">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="//TODO: Add ID -nav">
-                            <ul class="navbar-nav justify-content-around w-100">
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                            </ul>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Basic Tables</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <!-- <th>Actions (Damage, Difficulty, Uses)</th> -->
+                                        <th>Damage</th>
+                                        <!-- <th>Distance</th>
+                                        <th>Shoot Damage</th>
+                                        <th>Class/Delta Energy</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                </nav> -->
-                <div class="border border-3 border-primary mb-4" id="//TODO: Add ID if using navbar">
-                    <h1>//TODO: Add Header</h1>
-                    <div class="container my-5 border border-3 border-info shadow-lg">
-                        //TODO: Add content
-                    </div>
-                    <h2>//TODO: Add Instructions</h2>
-                    <!-- Optional Button to Top //TODO: Use or Delete-->
-                    <!-- <div class="container d-flex justify-content-end">
+                    <h2>Add <code>.table</code> to the &lt;table&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
                         <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                    </div> -->
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Dark Tables</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table table-dark caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Damage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Add <code>.table</code> and <code>.table-dark</code> to the &lt;table&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Color Tables</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table table-primary caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Damage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead class="table-secondary">
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Damage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td class="table-danger">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td class="table-warning">3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr class="table-info">
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Add color to the entire table, the head, the row or an individual cell by adding
+                        <code>.table-*</code> to the appropriate tag, where * is a contextual class.
+                    </h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Small Tables</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table table-sm caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Damage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Add <code>.table</code> and <code>.table-sm</code> to the &lt;table&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
                 </div>
             </section>
             <section class="tab-pane my-5" id="tables-variants" aria-label="Table Variants">
-                <!-- Option Navbar //TODO: Use or Delete-->
-                <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" aria-label="//TODO: Add Label">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#//TODO: Add ID -nav" aria-label="//TODO: Add Label">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="//TODO: Add ID -nav">
-                            <ul class="navbar-nav justify-content-around w-100">
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                            </ul>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Striped</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table table-striped caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Damage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                </nav> -->
-                <div class="border border-3 border-primary mb-4" id="//TODO: Add ID if using navbar">
-                    <h1>//TODO: Add Header</h1>
-                    <div class="container my-5 border border-3 border-info shadow-lg">
-                        //TODO: Add content
-                    </div>
-                    <h2>//TODO: Add Instructions</h2>
-                    <!-- Optional Button to Top //TODO: Use or Delete-->
-                    <!-- <div class="container d-flex justify-content-end">
+                    <h2>Add <code>.table</code> and <code>.table-striped</code> to the &lt;table&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
                         <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                    </div> -->
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Hover</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table table-hover caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Damage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Add <code>.table</code> and <code>.table-hover</code> to the &lt;table&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Bordered</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table table-bordered caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Damage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Add <code>.table</code> and <code>.table-bordered</code> to the &lt;table&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Borderless</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table table-borderless caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Damage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Add <code>.table</code> and <code>.table-borderless</code> to the &lt;table&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
                 </div>
             </section>
             <section class="tab-pane my-5" id="tables-dark" aria-label="Dark Tables">
-                <!-- Option Navbar //TODO: Use or Delete-->
-                <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" aria-label="//TODO: Add Label">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#//TODO: Add ID -nav" aria-label="//TODO: Add Label">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="//TODO: Add ID -nav">
-                            <ul class="navbar-nav justify-content-around w-100">
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                            </ul>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Dark Striped</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table table-dark table-striped caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Damage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                </nav> -->
-                <div class="border border-3 border-primary mb-4" id="//TODO: Add ID if using navbar">
-                    <h1>//TODO: Add Header</h1>
-                    <div class="container my-5 border border-3 border-info shadow-lg">
-                        //TODO: Add content
-                    </div>
-                    <h2>//TODO: Add Instructions</h2>
-                    <!-- Optional Button to Top //TODO: Use or Delete-->
-                    <!-- <div class="container d-flex justify-content-end">
+                    <h2>Add <code>.table</code>, <code>table-dark</code> and <code>.table-striped</code> to the &lt;table&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
                         <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                    </div> -->
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Dark Hover</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table table-dark table-hover caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Damage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Add <code>.table</code>, <code>table-dark</code> and <code>.table-hover</code> to the &lt;table&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Dark Bordered</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table table-dark table-bordered caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Damage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Add <code>.table</code>, <code>table-dark</code> and <code>.table-bordered</code> to the &lt;table&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Dark Borderless</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table table-dark table-borderless caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Damage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Add <code>.table</code>, <code>table-dark</code> and <code>.table-borderless</code> to the &lt;table&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+            </section>
+            <section class="tab-pane my-5" id="tables-responsive" aria-label="Responsive">
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Responsive Tables</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive">
+                            <table class="table caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Actions (Damage, Difficulty, Uses)</th>
+                                        <th>Damage</th>
+                                        <th>Distance</th>
+                                        <th>Shoot Damage</th>
+                                        <th>Class/Delta Energy</th>
+                                        <th>Notes</th>
+                                        <th>Locations</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>
+                                            Throw (0,0)<br>
+                                            Stab (48,0)<br>
+                                            Slash (16,2)
+                                        </td>
+                                        <td>10</td>
+                                        <td>19</td>
+                                        <td>0</td>
+                                        <td>2/-</td>
+                                        <td>-</td>
+                                        <td>
+                                            Azizi Johari<br>
+                                            (01,06,17) (01,08,19) (04,32,28)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>
+                                            Swing (16,0)<br>
+                                            Parry (8,2)<br>
+                                            Chop (48,3)
+                                        </td>
+                                        <td>30</td>
+                                        <td>8</td>
+                                        <td>0</td>
+                                        <td>0/-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>
+                                            Swing (16,0)<br>
+                                            Parry (8,2)<br>
+                                            Chop (48,3)
+                                        </td>
+                                        <td>34</td>
+                                        <td>10</td>
+                                        <td>0</td>
+                                        <td>0/-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Wrap the entire &lt;table&gt; in a &lt;div&gt; with class <code>.table-responsive</code>.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Responsive Tables - Small</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive-sm">
+                            <table class="table caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Actions (Damage, Difficulty, Uses)</th>
+                                        <th>Damage</th>
+                                        <th>Distance</th>
+                                        <th>Shoot Damage</th>
+                                        <th>Class/Delta Energy</th>
+                                        <th>Notes</th>
+                                        <th>Locations</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>
+                                            Throw (0,0)<br>
+                                            Stab (48,0)<br>
+                                            Slash (16,2)
+                                        </td>
+                                        <td>10</td>
+                                        <td>19</td>
+                                        <td>0</td>
+                                        <td>2/-</td>
+                                        <td>-</td>
+                                        <td>
+                                            Azizi Johari<br>
+                                            (01,06,17) (01,08,19) (04,32,28)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>
+                                            Swing (16,0)<br>
+                                            Parry (8,2)<br>
+                                            Chop (48,3)
+                                        </td>
+                                        <td>30</td>
+                                        <td>8</td>
+                                        <td>0</td>
+                                        <td>0/-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>
+                                            Swing (16,0)<br>
+                                            Parry (8,2)<br>
+                                            Chop (48,3)
+                                        </td>
+                                        <td>34</td>
+                                        <td>10</td>
+                                        <td>0</td>
+                                        <td>0/-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Wrap the entire &lt;table&gt; in a &lt;div&gt; with class <code>.table-responsive-sm</code>.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Responsive Tables - Medium</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive-md">
+                            <table class="table caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Actions (Damage, Difficulty, Uses)</th>
+                                        <th>Damage</th>
+                                        <th>Distance</th>
+                                        <th>Shoot Damage</th>
+                                        <th>Class/Delta Energy</th>
+                                        <th>Notes</th>
+                                        <th>Locations</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>
+                                            Throw (0,0)<br>
+                                            Stab (48,0)<br>
+                                            Slash (16,2)
+                                        </td>
+                                        <td>10</td>
+                                        <td>19</td>
+                                        <td>0</td>
+                                        <td>2/-</td>
+                                        <td>-</td>
+                                        <td>
+                                            Azizi Johari<br>
+                                            (01,06,17) (01,08,19) (04,32,28)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>
+                                            Swing (16,0)<br>
+                                            Parry (8,2)<br>
+                                            Chop (48,3)
+                                        </td>
+                                        <td>30</td>
+                                        <td>8</td>
+                                        <td>0</td>
+                                        <td>0/-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>
+                                            Swing (16,0)<br>
+                                            Parry (8,2)<br>
+                                            Chop (48,3)
+                                        </td>
+                                        <td>34</td>
+                                        <td>10</td>
+                                        <td>0</td>
+                                        <td>0/-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Wrap the entire &lt;table&gt; in a &lt;div&gt; with class <code>.table-responsive-md</code>.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Responsive Tables - Large</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="table-responsive-lg">
+                            <table class="table caption-top">
+                                <caption>Dungeon Master Weapons</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Weight</th>
+                                        <th>Actions (Damage, Difficulty, Uses)</th>
+                                        <th>Damage</th>
+                                        <th>Distance</th>
+                                        <th>Shoot Damage</th>
+                                        <th>Class/Delta Energy</th>
+                                        <th>Notes</th>
+                                        <th>Locations</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dagger</td>
+                                        <td>0.5</td>
+                                        <td>
+                                            Throw (0,0)<br>
+                                            Stab (48,0)<br>
+                                            Slash (16,2)
+                                        </td>
+                                        <td>10</td>
+                                        <td>19</td>
+                                        <td>0</td>
+                                        <td>2/-</td>
+                                        <td>-</td>
+                                        <td>
+                                            Azizi Johari<br>
+                                            (01,06,17) (01,08,19) (04,32,28)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falchion</td>
+                                        <td>3.3</td>
+                                        <td>
+                                            Swing (16,0)<br>
+                                            Parry (8,2)<br>
+                                            Chop (48,3)
+                                        </td>
+                                        <td>30</td>
+                                        <td>8</td>
+                                        <td>0</td>
+                                        <td>0/-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sword</td>
+                                        <td>3.2</td>
+                                        <td>
+                                            Swing (16,0)<br>
+                                            Parry (8,2)<br>
+                                            Chop (48,3)
+                                        </td>
+                                        <td>34</td>
+                                        <td>10</td>
+                                        <td>0</td>
+                                        <td>0/-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2>Wrap the entire &lt;table&gt; in a &lt;div&gt; with class <code>.table-responsive-lg</code>.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
                 </div>
             </section>
         </div>

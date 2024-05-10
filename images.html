@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Images</title>
+
+    <!-- Common Metadata -->
+    <meta name="description" content="Image Exapmles in Bootstrap 5">
+    <meta name="author" content="Robert P. Horosewski">
+    <meta name="language" content="english">
+
+    <!-- Open Graph Protocol - used to set up Cards on social media -->
+    <!-- The OPG does not work as we do not have an actual url to use. -->
+    <meta property="og:title" content="Images">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://horoserp.github.io/bootstrap">
+    <meta property="og:image" content="bootstrap-logo-shadow.png">
+    <meta property="og:description" content="Image Exapmles in Bootstrap 5">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Icons for Tabs in Web Browser -->
+    <link rel="icon" href="bootstrap-logo-shadow.png" type="png">
+
+    <!-- Boothstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--My own stylesheet-->
+    <link href="style.css" rel="stylesheet">
+    <!--My own JavaScript-->
+    <script src="script.js"></script>
+    <!-- Latest compiled BS5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id="top">
+    <!-- Header -->
+    <header class="p-5 bg-primary bg-gradient text-bg-primary rounded">
+        <div class="container">
+            <a href="https://horoserp.github.io/Resume/" data-bs-toggle="tooltip" title="See My Resume">
+                <img src="Headshot.png" alt="Headshot of Robert" height="175px" class="rounded-circle float-md-end mt-4">
+            </a>
+            <h1 class="display-1 py-3 text-shadow">Images</h1>
+            <nav class="navbar navbar-expand-lg" aria-label="Shortcuts" style="background: rgba(0, 0, 0, 0);" id="main-navbar">
+                <div class="container">
+                    <a class="navbar-brand ms-5" href="https://getbootstrap.com/" data-bs-toggle="tooltip" title="https://getbootstrap.com">
+                        <img src="bootstrap-logo-shadow.png" alt="Bootstrap Logo" height="50px">
+                    </a>
+                    <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-label="Menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item mx-5">
+                                <a class="btn bg-dark btn-outline-info my-3" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-5">
+                                <button type="button" class="btn bg-dark btn-outline-info my-3" onclick="themeSwitch()" id="theme-toggle">Dark Mode</button>
+                            </li>
+                            <li class="nav-item mx-5">
+                                <button type="button" class="btn bg-dark btn-outline-info my-3" data-bs-toggle="offcanvas" data-bs-target="#side-nav">Open Menu</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Offcanvas Navigation -->
+    <nav aria-label="Site">
+        <div class="offcanvas offcanvas-start text-bg-dark" id="side-nav">
+            <div class="offcanvas-header">
+                <h1 class="text-white my-3">Bootstrap 5</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item pt-3 me-3">
+                        <a class="nav-link ps-4" href="index.html">Home</a>
+                    </li>
+                    <h1 class="text-white my-3">General</h1>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="containers.html">Containers</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="grids.html">Basic Grids</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="typography.html">Typography</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="colors.html">Colors</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="tables.html">Tables</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4 disabled" href="images.html">Images</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="jumbotron.html">Jumbotron</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="alerts.html">Alerts</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="buttons.html">Buttons</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="buttongroups.html">Button Groups</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="badges.html">Badges</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="progressbars.html">Progress Bars</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="spinners.html">Spinners</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="pagination.html">Pagination</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="listgroups.html">List Groups</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="cards.html">Cards</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="dropdowns.html">Dropdowns</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="collapse.html">Collapse</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="navs.html">Navs</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="navbar.html">Navbar</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="carousel.html">Carousel</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="modal.html">Modal</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="tooltip.html">Tooltip</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="popover.html">Popover</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="toast.html">Toast</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="scrollspy.html">Scrollspy</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="offcanvas.html">Offcanvas</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="utilities.html">Utilities</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="darkmode.html">Dark Mode</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="flex.html">Flex</a>
+                    </li>
+                    <h1 class="text-white my-3">Forms</h1>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="forms.html">Forms</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="selectmenus.html">Select Menus</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="checksradios.html">Checks and Radios</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="range.html">Range</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="inputgroups.html">Input Groups</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="floatinglabels.html">Floating Labels</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="validation.html">Form Validation</a>
+                    </li>
+                    <h1 class="text-white my-3">Grids</h1>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridsystem.html">Grid System</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridstacked.html">Stacked/Horizontal</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridxs.html">Grid XSmall</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridsm.html">Grid Small</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridmd.html">Grid Medium</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridlg.html">Grid Large</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridxl.html">Grid XLarge</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridxxl.html">Grid XXLarge</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link ps-4" href="gridexamples.html">Grid Examples</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Tab Navigation -->
+    <nav aria-label="Page">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#images-info">Information</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#images-style">Style</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#images-position">Position</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#images-responsive">Responsive</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <section class="tab-pane active" id="images-info" aria-label="Information">
+                <div class="row m-5">
+                    <div class="col-lg-4 border border-3 border-primary rounded">
+                        <div class="p-3 text-center h-100">
+                            <h1 class="bg-secondary text-bg-secondary rounded display-4 mb-4">Code</h1>
+                            <h2 class="align-content-center py-3"><code>.rounded</code></h2>
+                            <h2 class="align-content-center py-3"><code>.rounded-circle</code></h2>
+                            <h2 class="align-content-center py-3"><code>.img-thumbnail</code></h2>
+                            <h2 class="align-content-center py-3"><code>.float-start</code></h2>
+                            <h2 class="align-content-center py-3"><code>.float-end</code></h2>
+                            <h2 class="align-content-center py-3"><code>.d-block .mx-auto</code></h2>
+                            <h2 class="align-content-center py-3"><code>.img-fluid</code></h2>
+                            <div class="container d-flex justify-content-end">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 mb-3" aria-label="Spacer"></div>
+                    <div class="col-lg-7 border border-3 border-primary rounded">
+                        <div class="p-3">
+                            <h1 class="bg-success text-bg-success rounded display-4 pb-2 text-center">Definitions</h1>
+                            <dl class="ps-3 pt-3" style="font-size: 22px;">
+                                <dt>Rounded</dt>
+                                <dd>&#9642; Adds rounded corners (border-radius) to an image.</dd>
+                                <dt>Circle</dt>
+                                <dd>&#9642; Shapes the image in a circle.</dd>
+                                <dt>Thumbnail</dt>
+                                <dd>&#9642; Makes the image a thumbnail with a border.</dd>
+                                <dt>Float Start</dt>
+                                <dd>&#9642; Aligns the image to the left.</dd>
+                                <dt>Float End</dt>
+                                <dd>&#9642; Aligns the image to the right.</dd>
+                                <dt>Center</dt>
+                                <dd>&#9642; Center an image by using changing the display to block and setting
+                                    the horizontal margin to auto.
+                                </dd>
+                                <dt>Image Fluid</dt>
+                                <dd>&#9642; Creates a responsive image that scales to the parent.</dd>
+                            </dl>
+                        </div>
+                        <div class="container d-flex justify-content-end">
+                            <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary rounded m-5 p-3">
+                    <h1 class="bg-info text-bg-info rounded display-4 pb-2 text-center">Key Points</h1>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <code>.img-fluid</code> sets the Max Width to 100% and the Height to Auto.
+                        </li>
+                        <li class="list-group-item">
+                            Remember to set the Width, Height and Alternate Text inside the &lt;img&gt; tag.
+                        </li>
+                        <li class="list-group-item">For centering: make sure to add a Width; maybe use a Sizing
+                            Helper Class.
+                        </li>
+                        <li class="list-group-item">
+                            You can also use Text Alignment Classes, like <code>.text-center</code>, on an
+                            images parent container to align images.
+                        </li>
+                        <li class="list-group-item">
+                            Remember to use <code>.clearfix</code> on the container when floating images.
+                        </li>
+                        <li class="list-group-item">
+                            <div class="container d-flex justify-content-end">
+                                <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="tab-pane my-5" id="images-style" aria-label="Styling">
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Rounded Corners</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <img src="Big Ben.jpg" alt="Big Ben" class="rounded m-4 w-25">
+                    </div>
+                    <h2>Add <code>.rounded</code> to &lt;img&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Circle</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <img src="Big Ben.jpg" alt="Big Ben" class="rounded-circle m-4 w-25">
+                    </div>
+                    <h2>Add <code>.rounded-circle</code> to &lt;img&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Thumbnail</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <img src="Big Ben.jpg" alt="Big Ben" class="img-thumbnail m-4 w-25">
+                    </div>
+                    <h2>Add <code>.img-thumbnail</code> to &lt;img&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+            </section>
+            <section class="tab-pane my-5" id="images-position" aria-label="Positioning">
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Float Left</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg clearfix">
+                        <img src="Big Ben.jpg" alt="Big Ben" class="rounded float-start m-4 w-25">
+                    </div>
+                    <h2>
+                        Left alignment is default. If you want to float the image due to other images,
+                        add <code>.float-start</code> to your &lt;img&gt; element.
+                    </h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Center</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <img src="Big Ben.jpg" alt="Big Ben" class="rounded d-block mx-auto m-4 w-25">
+                    </div>
+                    <h2>Add <code>d-block</code>, <code>.mx-auto</code> and set a Width to your &lt;img&gt; element.</h2>
+                    <div class="container my-5 border border-3 border-info shadow-lg text-center">
+                        <img src="Big Ben.jpg" alt="Big Ben" class="rounded m-4 w-25">
+                    </div>
+                    <h2>Alternatively, add <code>.text-center</code> to the parent container.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Align Right</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg clearfix">
+                        <img src="Big Ben.jpg" alt="Big Ben" class="rounded float-end m-4 w-25">
+                    </div>
+                    <h2>Add <code>.float-end</code> to your &lt;img&gt; element.</h2>
+                    <div class="container my-5 border border-3 border-info shadow-lg text-end">
+                        <img src="Big Ben.jpg" alt="Big Ben" class="rounded m-4 w-25">
+                    </div>
+                    <h2>Alternatively, add <code>.text-end</code> to the parent container.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+            </section>
+            <section class="tab-pane my-5" id="images-responsive" aria-label="Responsive">
+                <div class="border border-3 border-primary mb-4">
+                    <h1>Responsive Images</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <img src="Big Ben.jpg" alt="Big Ben" class="rounded img-fluid my-4">
+                    </div>
+                    <h2>Add <code>img-fluid</code> to the &lt;img&gt; element.</h2>
+                    <h3><span class="badge bg-warning">Warning:</span> Be careful about adjusting horizontal margins.</h3>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark py-4">
+            <nav class="d-flex flex-column flex-md-row align-items-center align-content-around justify-content-around" aria-label="Footer">
+                <a href="https://horoserp.github.io/Resume/" data-bs-toggle="tooltip" title="See My Resume">
+                    <img src="Headshot.png" alt="Headshot of Robert" height="100px" class="rounded-circle my-3">
+                </a>
+                <h3 class="my-3"><a href="mailto:robert.horosewski@gmail.com">Email Me</a></h3>
+                <h3 class="my-3"><a href="https://horoserp.github.io/React-Portfolio">See my Portfolio</a></h3>
+                <div class="my-3">
+                    <a href="https://github.com/horoserp" data-bs-toggle="tooltip" title="My Github Account">
+                        <img class="me-5" src="coding.jpg" style="height: 100px;" alt="GitHub logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/robert-horosewski-8a0608196/" data-bs-toggle="tooltip" title="My LinkedIn Account">
+                        <img src="linkedIn.png" style="height: 100px;" alt="LinkedIn Logo">
+                    </a>
+                </div>
+                <h3 class="text-bg-dark text-center my-3">Designed by Robert P. Horosewski &#169; 2024</h3>
+            </nav>
+            <p class="pt-3">*The content on this website is based off information presented at <a href="https://www.w3schools.com/bootstrap5/index.php" data-bs-toggle="tooltip" title="https://www.w3schools.com/bootstrap">
+                W3Schools</a> and is not original content provided by the developer.</p>
+        </div>
+    </footer>
+</body>

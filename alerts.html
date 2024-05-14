@@ -29,6 +29,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--My own stylesheet-->
     <link href="style.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
     <!--My own JavaScript-->
     <script src="script.js"></script>
     <!-- Latest compiled BS5 JavaScript -->
@@ -442,39 +444,51 @@
                     <h1>Animated Alerts</h1>
                     <div class="container my-5 border border-3 border-info shadow-lg">
                         <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                            <i class="bi-check-circle-fill pe-2" aria-label="Circle Check Mark"></i>
                             <strong>Success!</strong>This alert box could indicate a successful or positive action.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         <div class="alert alert-info alert-dismissible fade show" role="alert">
+                            <i class="bi-info-circle-fill pe-2" aria-label="Circle Information Symbol"></i>
                             <strong>Info:</strong> This alert box could indicate a neutral infomative change or action.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <i class="bi-exclamation-triangle-fill pe-2" aria-label="Triangle Exclamation Mark"></i>
                             <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="bi-exclamation-octagon-fill pe-2" aria-label="Octagon Exclamation Mark"></i>
                             <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                            <i class="bi bi-dice-1-fill pe-2" aria-label="Dice 1 Pip"></i>
                             <strong>Primary:</strong> This alert box could indicate an important action.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                            <i class="bi bi-dice-2-fill pe-2" aria-label="Dice 2 Pips"></i>
                             <strong>Secondary:</strong> This alert box could indicate a slightly less important action.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                            <i class="bi bi-cloud-moon-fill pe-2" aria-label="Cloud and Moon"></i>
                             <strong>Dark:</strong> This alert box is actually Dark Gray and not Dark!
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         <div class="alert alert-light alert-dismissible fade show" role="alert">
+                            <i class="bi bi-sun-fill pe-2" aria-label="Sun"></i>
                             <strong>Light:</strong> This alert box is Light Gray.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     </div>
                     <h2>Add <code>.fade</code> and <code>.show</code> to a dismissible alert.</h2>
+                    <h3>
+                        Add the icons by adding a <code>link</code> to the Bootstrap icons and adding
+                        the appropriate class to an &lt;i&gt; element.
+                    </h3>
                     <div class="container d-flex justify-content-end">
                         <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
                     </div>

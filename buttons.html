@@ -76,7 +76,6 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav flex-column">
-                    //TODO: Add class to disable current page (including tabindex and aria-disabled)
                     <li class="nav-item pt-3 me-3">
                         <a class="nav-link ps-4" href="index.html">Home</a>
                     </li>
@@ -229,34 +228,39 @@
     <nav aria-label="Page">
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#//TODO: Add ID">//TODO: Add Tab Name</a>
+                <a class="nav-link active" data-bs-toggle="tab" href="#buttons-info">Information</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#//TODO: Add ID">//TODO: Add Tab Name</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#buttons-colors">Colors</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#//TODO: Add ID">//TODO: Add Tab Name</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#buttons-sizes">Sizes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#//TODO: Add ID">//TODO: Add Tab Name</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#buttons-states">States</a>
             </li>
         </ul>
     </nav>
     <main>
         <!-- Tab Content -->
         <div class="tab-content">
-            <section class="tab-pane active" id="//TODO: Add ID" aria-label="//TODO: Add Label">
+            <section class="tab-pane active" id="buttons-info" aria-label="Information">
                 <div class="row m-5">
                     <div class="col-lg-4 border border-3 border-primary rounded">
                         <div class="p-3 text-center h-100">
                             <h1 class="bg-secondary text-bg-secondary rounded display-4 mb-4">Code</h1>
-                            <h2 class="align-content-center py-4"><code>//TODO: Add code</code></h2>
-                            <h2 class="align-content-center py-4"><code>//TODO: Add code</code></h2>
-                            <h2 class="align-content-center py-4"><code>//TODO: Add code</code></h2>
-                            <!-- Optional Button to Top //TODO: Use or Delete-->
-                            <!-- <div class="container d-flex justify-content-end">
+                            <h2 class="align-content-center py-2"><code>.btn</code></h2>
+                            <h2 class="align-content-center py-2"><code>.btn-*</code></h2>
+                            <h2 class="align-content-center py-2"><code>.btn-outline-*</code></h2>
+                            <h2 class="align-content-center py-2"><code>.btn-sm|lg</code></h2>
+                            <h2 class="align-content-center py-2"><code>.d-grid</code></h2>
+                            <h2 class="align-content-center py-2"><code>.g-*</code></h2>
+                            <h2 class="align-content-center py-2"><code>.active</code></h2>
+                            <h2 class="align-content-center py-2"><code>disabled|.disabled</code></h2>
+                            <h2 class="align-content-center py-2"><code>.spinner-border|-sm</code></h2>
+                            <div class="container d-flex justify-content-end">
                                 <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-1 mb-3" aria-label="Spacer"></div>
@@ -264,135 +268,293 @@
                         <div class="p-3">
                             <h1 class="bg-success text-bg-success rounded display-4 pb-2 text-center">Definitions</h1>
                             <dl class="ps-3 pt-3" style="font-size: 22px;">
-                                <dt>//TODO: Add Term</dt>
-                                <dd>&#9642; //TODO: Add Definition</dd>
-                                <dt>//TODO: Add Term</dt>
-                                <dd>&#9642; //TODO: Add Definition</dd>
-                                <dt>//TODO: Add Term</dt>
-                                <dd>&#9642; //TODO: Add Definition</dd>
+                                <dt>Button</dt>
+                                <dd>&#9642; Applies default styling including rounded corners.</dd>
+                                <dt>Colored Buttons</dt>
+                                <dd>&#9642; Use contextual classes to style buttons.</dd>
+                                <dt>Outline</dt>
+                                <dd>&#9642; Adds colored border and text to a white button.</dd>
+                                <dt>Sizes</dt>
+                                <dd>&#9642; Choose between small and large.</dd>
+                                <dt>Block Level Buttons</dt>
+                                <dd>&#9642; Use grids to create wider buttons.</dd>
+                                <dt>Active</dt>
+                                <dd>&#9642; Adds a slightly darker color.</dd>
+                                <dt>Disabled</dt>
+                                <dd>&#9642; Adds opacity.</dd>
+                                <dt>Spinner</dt>
+                                <dd>&#9642; Add a spinner to the button.</dd>
                             </dl>
                         </div>
-                        <!-- Optional Button to Top //TODO: Use or Delete-->
-                        <!-- <div class="container d-flex justify-content-end">
+                        <div class="container d-flex justify-content-end">
                             <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
                 <div class="border border-3 border-primary rounded m-5 p-3">
                     <h1 class="bg-info text-bg-info rounded display-4 pb-2 text-center">Key Points</h1>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">//TODO: Add Key Item</li>
-                        <li class="list-group-item">//TODO: Add Key Item</li>
-                        <li class="list-group-item">//TODO: Add Key Item</li>
-                        <!-- Optional Button to Top //TODO: Use or Delete-->
-                        <!-- <li class="list-group-item">
+                        <li class="list-group-item">
+                            You can apply button styling to links and inputs, just be careful to use the
+                            correct accessibility features.
+                        </li>
+                        <li class="list-group-item"><code>.btn-block</code> is deprecated in Bootstrap 5.</li>
+                        <li class="list-group-item">Spinners will be covered in more depth <a href="spinners.html">here</a>.</li>
+                        <li class="list-group-item">
                             <div class="container d-flex justify-content-end">
                                 <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
                             </div>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
             </section>
-            <section class="tab-pane my-5" id="//TODO: Add ID" aria-label="//TODO: Add Label">
-                <!-- Option Navbar //TODO: Use or Delete-->
-                <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" aria-label="//TODO: Add label">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#//TODO: Add ID -nav" aria-lable="//TODO: Add label">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="//TODO: Add ID -nav">
-                            <ul class="navbar-nav justify-content-around w-100">
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                            </ul>
+            <section class="tab-pane my-5" id="buttons-colors" aria-label="Colors">
+                <div class="border border-3 border-primary mb-4 p-5">
+                    <h1>Colors</h1>
+                    <div class="container my-5 py-3 border border-3 border-info shadow-lg">
+                        <div class="row text-center">
+                            <div class="col-lg m-2"><button type="button" class="btn">Basic</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-primary">Primary</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-secondary">Secondary</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-success">Success</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-info">Info</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-warning">Warning</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-danger">Danger</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-dark">Dark</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-light">Light</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-link">Link</button></div>
                         </div>
                     </div>
-                </nav> -->
-                <div class="border border-3 border-primary mb-4 p-5" id="//TODO: Add ID if using navbar">
-                    <h1>//TODO: Add Header</h1>
-                    <div class="container my-5 border border-3 border-info shadow-lg">
-                        //TODO: Add content
-                    </div>
-                    <h2>//TODO: Add Instructions</h2>
-                    <!-- Optional Button to Top //TODO: Use or Delete-->
-                    <!-- <div class="container d-flex justify-content-end">
+                    <h2>
+                        Add <code>.btn</code> to a &lt;button&gt; element. For colors, also add
+                        <code>btn-*</code>, where * indicates a contextual class.
+                    </h2>
+                    <div class="container d-flex justify-content-end">
                         <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                    </div> -->
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4 p-5">
+                    <h1>Button Outline</h1>
+                    <div class="container my-5 py-3 border border-3 border-info shadow-lg">
+                        <div class="row text-center">
+                            <div class="col-lg m-2"><button type="button" class="btn btn-outline">Basic</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-outline-primary">Primary</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-outline-secondary">Secondary</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-outline-success">Success</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-outline-info">Info</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-outline-warning">Warning</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-outline-danger">Danger</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-outline-dark">Dark</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-outline-light">Light</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-outline-link">Link</button></div>
+                        </div>
+                    </div>
+                    <h2>
+                        Add <code>.btn-outline-*</code> to a &lt;button&gt; element, where * indicates a contextual class.
+                    </h2>
+                    <h3>
+                        <span class="badge bg-danger">NOTE:</span> Not all outlines show up well and are only meant for
+                        dark themes (e.g. Light), while others don't work at all (e.g. Basic and Link).
+                    </h3>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
                 </div>
             </section>
-            <section class="tab-pane my-5" id="//TODO: Add ID" aria-label="//TODO: Add Label">
-                <!-- Option Navbar //TODO: Use or Delete-->
-                <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" aria-label="//TODO: Add label">
+            <section class="tab-pane my-5" id="buttons-sizes" aria-label="Sizes">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" aria-label="Size">
                     <div class="container-fluid">
-                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#//TODO: Add ID -nav" aria-lable="//TODO: Add label">
+                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#size-nav" aria-lable="Size menu">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="//TODO: Add ID -nav">
+                        <div class="collapse navbar-collapse" id="size-nav">
                             <ul class="navbar-nav justify-content-around w-100">
                                 <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#size-small">Small</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#size-large">Large</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#size-block">Block</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#size-mod-block">Modified Block</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn bg-dark btn-outline-info my-3" href="#size-responsive">Responsive</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </nav> -->
-                <div class="border border-3 border-primary mb-4 p-5" id="//TODO: Add ID if using navbar">
-                    <h1>//TODO: Add Header</h1>
+                </nav>
+                <div class="border border-3 border-primary mb-4 p-5" id="size-small">
+                    <h1>Small Buttons</h1>
                     <div class="container my-5 border border-3 border-info shadow-lg">
-                        //TODO: Add content
+                        <div class="row text-center">
+                            <div class="col-lg m-2"><button type="button" class="btn btn-sm">Basic</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-primary btn-sm">Primary</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-secondary btn-sm">Secondary</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-success btn-sm">Success</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-info btn-sm">Info</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-warning btn-sm">Warning</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-danger btn-sm">Danger</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-dark btn-sm">Dark</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-light btn-sm">Light</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-link btn-sm">Link</button></div>
+                        </div>
                     </div>
-                    <h2>//TODO: Add Instructions</h2>
-                    <!-- Optional Button to Top //TODO: Use or Delete-->
-                    <!-- <div class="container d-flex justify-content-end">
+                    <h2>Add <code>.btn-sm</code> to a &lt;button&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
                         <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                    </div> -->
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4 p-5" id="size-large">
+                    <h1>Large Buttons</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="row text-center">
+                            <div class="col-lg m-2"><button type="button" class="btn btn-lg">Basic</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-primary btn-lg">Primary</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-secondary btn-lg">Secondary</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-success btn-lg">Success</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-info btn-lg">Info</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-warning btn-lg">Warning</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-danger btn-lg">Danger</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-dark btn-lg">Dark</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-light btn-lg">Light</button></div>
+                            <div class="col-lg m-2"><button type="button" class="btn btn-link btn-lg">Link</button></div>
+                        </div>
+                    </div>
+                    <h2>Add <code>.btn-lg</code> to a &lt;button&gt; element.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4 p-5" id="size-block">
+                    <h1>Block Level Buttons</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="d-grid gap-3">
+                            <button type="button" class="btn">Basic</button>
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-dark">Dark</button>
+                            <button type="button" class="btn btn-light">Light</button>
+                            <button type="button" class="btn btn-link">Link</button>
+                        </div>
+                        <button type="button" class="btn btn-info w-100 my-3">.w-100</button>
+                    </div>
+                    <h2>
+                        Wrap your button inside a &lt;div&gt; element with <code>.d-grid</code> and
+                        use <code>.gap</code> to control the space between them.
+                    </h2>
+                    <h3>
+                        <span class="badge bg-info">NOTE:</span> You can achieve the same result by
+                        simply changing the width of the button to 100% (<code>.w-100</code>).
+                    </h3>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4 p-5" id="size-mod-block">
+                    <h1>Modified Block Level Buttons</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="d-grid gap-3">
+                            <button type="button" class="btn">Basic</button>
+                            <button type="button" class="btn btn-primary col-3 mx-auto">Primary</button>
+                            <button type="button" class="btn btn-secondary col-4 mx-auto">Secondary</button>
+                            <button type="button" class="btn btn-success col-6 mx-auto">Success</button>
+                            <button type="button" class="btn btn-info col-8 mx-auto">Info</button>
+                            <button type="button" class="btn btn-warning col-12 mx-auto">Warning</button>
+                            <button type="button" class="btn btn-danger col-2 mx-auto">Danger</button>
+                            <button type="button" class="btn btn-dark col-10 mx-auto">Dark</button>
+                            <button type="button" class="btn btn-light col-9 mx-auto">Light</button>
+                            <button type="button" class="btn btn-link">Link</button>
+                        </div>
+                    </div>
+                    <h2>
+                        To change the size of Block Level Buttons, add <code>.col-*</code> to either
+                        the container or the individual button.
+                    </h2>
+                    <h2>To center Block Level Buttons, add <code>.mx-auto</code> in addition to <code>.col-*</code>.</h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4 p-5" id="size-responsive">
+                    <h1>Responsive Buttons</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="d-grid gap-3 d-lg-flex justify-content-lg-between">
+                            <button type="button" class="btn m-2">Basic</button>
+                            <button type="button" class="btn btn-primary m-lg-2">Primary</button>
+                            <button type="button" class="btn btn-secondary m-lg-2">Secondary</button>
+                            <button type="button" class="btn btn-success m-lg-2">Success</button>
+                            <button type="button" class="btn btn-info m-lg-2">Info</button>
+                            <button type="button" class="btn btn-warning m-lg-2">Warning</button>
+                            <button type="button" class="btn btn-danger m-lg-2">Danger</button>
+                            <button type="button" class="btn btn-dark m-lg-2">Dark</button>
+                            <button type="button" class="btn btn-light m-lg-2">Light</button>
+                            <button type="button" class="btn btn-link m-lg-2">Link</button>
+                        </div>
+                    </div>
+                    <h2>
+                        To make buttons stack responsively, add <code>.d-*-flex</code> to the
+                        grid container, where * indicates a breakpoint.
+                    </h2>
+                    <h2>
+                        To align the buttons when horizontal, add <code>justify-content-*-+</code> to the
+                        grid container, where the * indicates a breakpoint and the + indicates
+                        start, center, end, between or around.
+                    </h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
                 </div>
             </section>
-            <section class="tab-pane my-5" id="//TODO: Add ID" aria-label="//TODO: Add Label">
-                <!-- Option Navbar //TODO: Use or Delete-->
-                <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5 bg-gradient rounded" aria-label="//TODO: Add label">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#//TODO: Add ID -nav" aria-lable="//TODO: Add label">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="//TODO: Add ID -nav">
-                            <ul class="navbar-nav justify-content-around w-100">
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn bg-dark btn-outline-info my-3" href="#//TODO: Add ID">//TODO: Add name</a>
-                                </li>
-                            </ul>
+            <section class="tab-pane my-5" id="buttons-states" aria-label="States">
+                <div class="border border-3 border-primary mb-4 p-5">
+                    <h1>Active/Disabled Buttons</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="d-grid gap-3 d-lg-flex justify-content-lg-between py-3">
+                            <button type="button" class="btn btn-primary active">Active</button>
+                            <button type="button" class="btn btn-primary">Default</button>
+                            <button type="button" class="btn btn-primary" disabled>Disabled</button>
                         </div>
                     </div>
-                </nav> -->
-                <div class="border border-3 border-primary mb-4 p-5" id="//TODO: Add ID if using navbar">
-                    <h1>//TODO: Add Header</h1>
-                    <div class="container my-5 border border-3 border-info shadow-lg">
-                        //TODO: Add content
-                    </div>
-                    <h2>//TODO: Add Instructions</h2>
-                    <!-- Optional Button to Top //TODO: Use or Delete-->
-                    <!-- <div class="container d-flex justify-content-end">
+                    <h2>Add <code>.active</code> to a button to make it appear pressed.</h2>
+                    <h2>Add <code>.disabled</code>, or use the <code>disabled</code> attribute to a button to make it unclickable.</h2>
+                    <div class="container d-flex justify-content-end">
                         <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
-                    </div> -->
+                    </div>
+                </div>
+                <div class="border border-3 border-primary mb-4 p-5">
+                    <h1>Spinner Buttons</h1>
+                    <div class="container my-5 border border-3 border-info shadow-lg">
+                        <div class="d-grid gap-3 d-lg-flex justify-content-lg-between py-3">
+                            <button type="button" class="btn btn-primary">
+                                <span class="spinner-border spinner-border-sm me-2" aria-label="Spinner"></span>
+                                Small
+                            </button>
+                            <button type="button" class="btn btn-primary d-flex align-items-center">
+                                <span class="spinner-border me-3" aria-label="Spinner"></span>
+                                Default
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                <span class="spinner-grow spinner-grow-sm me-2" aria-label="Spinner"></span>
+                                Small Growing Spinner
+                            </button>
+                        </div>
+                    </div>
+                    <h2>
+                        Add a &lt;span&gt; before your button text with <code>.spinner-border|grow</code> and
+                        an optional <code>.spinner-border|grow-sm</code> to make it small.
+                    </h2>
+                    <div class="container d-flex justify-content-end">
+                        <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
+                    </div>
                 </div>
             </section>
         </div>

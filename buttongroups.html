@@ -14,10 +14,10 @@
     <meta name="language" content="english">
 
     <!-- Open Graph Protocol - used to set up Cards on social media -->
-    <!-- The OPG does not work as we do not have an actual url to use. -->
     <meta property="og:title" content="Button Groups">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://horoserp.github.io/bootstrap">
+    <!-- //TODO: Change image to something else -->
     <meta property="og:image" content="bootstrap-logo-shadow.png">
     <meta property="og:description" content="Examples of Button Groups in Bootstrap 5.">
     <meta property="og:locale" content="en_US">
@@ -39,6 +39,7 @@
 <body id="top">
     <!-- Header -->
     <header class="p-5 bg-primary bg-gradient text-bg-primary rounded">
+        <a href="#main" class="btn bg-dark btn-outline-info skip">Skip to Main Content</a>
         <div class="container">
             <a href="https://horoserp.github.io/Resume/" data-bs-toggle="tooltip" title="See My Resume">
                 <img src="Headshot.png" alt="Robert's Resume" height="175px" class="rounded-circle float-md-end mt-4">
@@ -243,7 +244,7 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main id="main">
         <!-- Tab Content -->
         <div class="tab-content">
             <section class="tab-pane active" id="btngrp-info" aria-label="Information">
@@ -447,8 +448,8 @@
                     </div>
                     <h2>
                         Add a button group inside the first button group (nesting). Have the second
-                        button group contain a dropdown menu. Checkout more information on
-                        <a href="dropdowns.html">Dropdowns</a>.
+                        button group contain a dropdown menu. <a href="dropdowns.html">Learn more information
+                        about Dropdowns</a>.
                     </h2>
                     <div class="container d-flex justify-content-end">
                         <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
@@ -468,7 +469,7 @@
                         </div>
                     <h2>
                         Add checkbox &lt;input&gt; and &lt;label&gt; elements inside the button group.
-                        Checkout more information on <a href="checksradios.html">Checkboxes</a>.
+                        <a href="checksradios.html">Find out more information on Checkboxes</a>.
                     </h2>
                     <div class="container d-flex justify-content-end">
                         <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>
@@ -488,7 +489,7 @@
                         </div>
                     <h2>
                         Add radio &lt;input&gt; and &lt;label&gt; elements inside the button group.
-                        Checkout more information on <a href="checksradios.html">Radios</a>.
+                        <a href="checksradios.html">Checkout more information on Radios</a>.
                     </h2>
                     <div class="container d-flex justify-content-end">
                         <a class="btn bg-dark btn-outline-info my-3" href="#top">Top</a>

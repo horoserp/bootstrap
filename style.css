@@ -32,6 +32,22 @@ li {
     color: rgb(220, 53, 69) !important;
 }
 
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    --bs-btn-hover-color: rgb(13,202,240) !important;
+}
+
 @media only screen and (max-width: 575px) {
     /* XS */
     .small, .medium, .large, .xlarge, .xxlarge {
